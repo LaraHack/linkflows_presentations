@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Linkflows@ICT.OPEN 2018</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<!-- Usage: append to link and then CTRL+P
+		?print-pdf#/
+		?print-pdf&showNotes=true#/ -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<style>
+			span.red {
+				color: #ff6a6a;
+			}
+			quote.left {
+				text-align: left;
+			}
+			span.blue {
+				color: #1e90ff;
+			}
+			.reveal h6 {
+				text-transform: none;
+			}
+			.blur {
+    		opacity: 0.5;
+    		filter: alpha(opacity=50); /* For IE8 and earlier */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="img/Network_2.png">
+					<h1></br><h1>
+					<h2>Linkflows</h2></br>
+					<h6>Enabling a web of linked semantic publishing workflows</h6>
+					<p></br>Cristina-Iulia Bucur</p>
+					<small><p>19 March 2018@ICT.OPEN</p></small>
+				</section>
+
+				<section>
+					<h3>About Linkflows</h3>
+					<ul>
+						<li>PhD project started in February 2017
+						</li>
+						<li>Supervisors: Tobias Kuhn, Davide Ceolin, Lora Aroyo
+						</li>
+						<li>Collaborations:
+							<ul>
+								<li>Vrije Universiteit Amsterdam</li>
+								<li>IOS Press</li>
+								<li>Netherlands Sound and Vision</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Why Linkflows?</h3>
+					<ul>
+						<li class="fragment">Scientific publishing: effective means to <span class="red">share</span> information and knowledge</li>
+						<li class="fragment">Shift towards the <span class="red">digital</span> environment</li>
+						<li class="fragment">New ways to <span class="red">represent</span> fine-grained knowledge</li>
+						<li class="fragment">Linked Data: enable the <span class="red">exchange</span>, <span class="red">reuse</span> and <span class="red">linking</span> of data on the Web</li>
+					</ul>
+				</section>
+
+				<section id="Challenges">
+					<h2>Challenges</h2>
+				</section>
+
+				<section data-transition="slide none">
+					<h3>Challenges: Reproducibility</h3>
+						<img class="plain stretch" src="img/Nature_Reproducibility_1.png"/>
+				</section>
+
+				<section data-transition="slide none">
+					<h3>Challenges: Reproducibility</h3>
+					<img class="plain stretch" src="img/Nature_Reproducibility_2.png"/>
+				</section>
+
+				<section data-transition="none">
+					<h3>Challenges: "Knowledge Burying"</h3>
+						<small><table>
+							<tr>
+								<td><img class="plain stretch" src="img/Knowledge_Burying_Mons_1.svg"/></td>
+								<td>
+									<p>More than 40% of information lost from publishing to mining</p>
+									<p><i>RIP (Rest in Paper)</i> knowledge</p>
+									<p>Need to preserve information about the <i>processes</i></p>
+								</td>
+							</tr>
+						</table></small>
+				</section>
+
+				<section data-transition="none">
+					<h3>Challenges: Digital Publishing</h3>
+					<ul>
+						<li> Semantic Web, Linked Data</li>
+						<li>Understandable content for both humans and machines</li>
+						<li><a href="http://www.sparontologies.net/">SPAR ontologies</a>: Semantic Publishing and Referencing Ontologies</li>
+						<li>Fine-grained interconnected parts of knowledge; e.g. <a href="http://nanopub.org">nanopublications</a></li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h3>Challenges: Digital Publishing</h3>
+					<ul>
+						<li> Semantic Web, Linked Data
+							<small><table>
+								<tr>
+									<td style="padding-left: 0px"><img class="plain stretch" style="width:150%" src="img/Representation_Paper.png"/></td>
+									<td style="padding-left: 200px">
+										<p>Shift from <span class="blue">"linear"</span> publications</p>
+										<p><span class="red">Digital artifacts</span>: text, datasets, code, figures, slides, spreadsheets, multimedia objects, methods, protocols, results and reviews, annotations, etc.</p>
+										<p><span class="red">Scientific workflows</span>: how digital artifacts are consumed and produced</p>
+									</td>
+								</tr>
+							</table></small>
+						</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h3>Challenges: Quality assessment</h3>
+					<ul>
+						<li>A new way of assessing the quality of scientific publications</li>
+						<li>Debatable and bias-able indicators; e.g. Journal Impact Factor
+							<img class="plain stretch" src="img/PhD_Comics_References.png"/>
+						</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h3>Challenges: Descentralization</h3>
+					<ul>
+						<li>No control of a central authority anymore; e.g. publishing house</li>
+						<li>Descentralization of content; e.g. academic peer-to-peer networks</li>
+							<img class="plain stretch" src="img/Peer_Review_in_Crisis.svg"/>
+						</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h3>Challenges</h3>
+					<ul>
+						<li>Reproducibility</li>
+						<li>"Knowledge Burying"</li>
+						<li>Digital publishing</li>
+						<li>Quality assessment</li>
+						<li>Descentralization of content</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Focus</h2>
+					How can <strong><em><span class="red">scientific workflows</span></em></strong> that produce and consume digital artifacts be <span class="blue"> assessed, linked and descentrally </span>executed across platforms, such that <span class="red">individual steps</span> of a single workflow can be <span class="red">distributed</span>?
+				</section>
+
+				<section data-transition="slide none">
+					<h3>Approach</h3>
+					<ul>
+						<li>Develop a simple model for linked workflows - <span class="red">linkflows</span></li>
+						<li>Choose sample articles from IOS Press and Netherlands Sounds and Vision</li>
+						<li>Instantiate model with sample articles</li>
+						<li>Use Linked Data Notifications (LDNs) for descentralized execution</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h3>Linkflows</h3>
+					<img class="plain stretch" src="img/Linkflows_Model.svg"/>
+				</section>
+
+				<section data-transition="slide none">
+					<h3></h3>
+					<img class="plain stretch" src="img/0.png"/>
+				</section>
+
+				<section data-transition="none">
+					<h3>Model instantiation with example paper</h3>
+					<img class="plain stretch" src="img/Model_Instantiation.svg"/>
+				</section>
+
+				<!-- <section data-transition="none">
+					<h3>Reviewing workflow using LDNs</h3>
+					<img class="plain stretch" src="img/LDNs.png"/>
+				</section> -->
+
+				<!-- <section data-transition="none">
+					<h3>Content of a reviewing notification</h3>
+					<div></br>
+						<pre></br>
+HTTP/1.1 200 OK
+Content-Type: text/turtle
+
+@prefix schema: &lt;http://schema.org/ &gt; .
+ [	a schema:ReviewAction;
+ 		schema:agent [
+			a schema:Person;
+			schema:name "Alice"
+		];
+		schema:object &lt;http://example.org/article/5 &gt;
+		schema:result [
+			a schema:Review;
+			schema:reviewBody "The article is great!"
+		]
+] .</code>
+					</div>
+				</section> -->
+
+				<section data-background-image="img/Network_2.png">
+					<img class="plain" style="width: 40%" src="img/Questions.png"/>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="init.js"></script>
+	</body>
+</html>

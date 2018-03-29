@@ -1,0 +1,517 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Linkflows @ Online Information Quality, Lorentz Workshop 2018</title>
+
+		<!-- Open all links in a new tab or window -->
+		<base target="_blank">
+
+		<!-- reveal.js css -->
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Customize css -->
+		<link rel="stylesheet" href="css/init.css">
+
+		<!-- Printing and PDF exports -->
+		<script src="js/print-pdf.js"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-background-image="img/Network_2.png" id="front_cover">
+					<h1></br><h1>
+					<h2>Linkflows</h2>
+					<h6>Enabling a web of linked semantic publishing workflows</h6>
+					<p></br>Cristina-Iulia Bucur</p>
+					<small>
+						<p>28 March 2018 @ Online Information Quality, Lorentz Workshop</p>
+						<p><em>These slides:
+							<a href="https://bit.ly/2Gkd4ud"><b>https://bit.ly/2Gkd4ud</b></a> or
+							<a href="https://goo.gl/jYwifu"><b>https://goo.gl/jYwifu</b></a>
+						</em></p>
+					</small>
+				</section>
+
+				<section id="linkflows_about">
+					<h3>About Linkflows</h3>
+					<ul>
+						<li>PhD project started in February 2017
+						</li>
+						<li>Supervisors: Tobias Kuhn, Davide Ceolin, Lora Aroyo
+						</li>
+						<li>Collaborations:
+							<ul>
+								<li><a href="http://ucds.cs.vu.nl/">Vrije Universiteit Amsterdam</a></li>
+								<li><a href="https://www.iospress.nl/">IOS Press</a></li>
+								<li><a href="https://beeldengeluid.nl/en">Netherlands Sound and Vision</a></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section id="linkflows_motivation">
+					<h3>Why Linkflows?</h3>
+					<ul>
+						<li class="fragment">Scientific publishing: effective means to <span class="red">share</span> information and knowledge</li>
+						<li class="fragment">Shift towards the <span class="red">digital</span> environment</li>
+						<li class="fragment">New ways to <span class="red">represent</span> fine-grained knowledge</li>
+						<li class="fragment">Linked Data: enable the <span class="red">exchange</span>, <span class="red">reuse</span> and <span class="red">linking</span> of data on the Web</li>
+					</ul>
+				</section>
+
+				<section id="challenges">
+					<h2>Challenges</h2>
+				</section>
+
+				<section data-transition="slide none" id="challenge_reproducibility_1">
+					<h3>Challenges: Reproducibility</h3>
+					<a href="https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970">
+						<img class="plain strech" style="width:45%; height:45%;"
+							src="img/Nature_Reproducibility_1.png"
+							alt="1500 scientists lift the lid on reproducibility"
+							longdesc="https://doi.org/10.1038/533452a"/>
+					</a>
+				</section>
+
+				<section data-transition="none" id="challenge_reproducibility_2">
+					<h3>Challenges: Reproducibility</h3>
+						<a href="https://www.nature.com/news/a-long-journey-to-reproducible-results-1.22478">
+							<img class="plain strech" style="width:65%; height:65%;"
+								src="img/Nature_Reproducibility_2.png"
+								alt="A long journey to reproducible results"
+								longdesc="https://doi.org/10.1038/548387a"/>
+						</a>
+				</section>
+
+				<section data-transition="none" id="challenge_reproducibility_3">
+					<h3>Challenges: Reproducibility</h3>
+						<a href="https://www.nature.com/articles/d41586-017-07325-2">
+								<img class="plain strech" style="width:70%; height:70%;"
+									src="img/Nature_Reproducibility_3.png"
+									alt="Rewarding negative results keeps science on track"
+									longdesc="https://doi.org/10.1038/d41586-017-07325-2"/>
+						</a>
+				</section>
+
+				<section data-transition="none" id="challenge_reproducibility_4">
+					<h3>Challenges: Reproducibility</h3>
+						<a href="https://www.nature.com/articles/nbt.2748">
+								<img class="plain strech" src="img/Nature_Reproducibility_4.png"
+									alt="Receptive to replication"
+									longdesc="https://doi.org/10.1038/nbt.2748"/>
+						</a>
+				</section>
+
+				<section data-transition="none" id="challenge_reproducibility_5">
+					<h3>Challenges: Reproducibility</h3>
+						<a href="https://www.nature.com/news/replication-studies-offer-much-more-than-technical-details-1.21311">
+								<img class="plain strech" src="img/Nature_Reproducibility_5.png"
+									alt="Replication studies offer much more than technical details"
+									longdesc="https://doi.org/10.1038/541259b"/>
+						</a>
+				</section>
+
+				<section data-transition="none" id="challenge_reproducibility_6">
+					<h3>Challenges: Reproducibility</h3>
+						<a href="https://www.nature.com/news/reality-check-on-reproducibility-1.19961">
+								<img class="plain strech" src="img/Nature_Reproducibility_6.png"
+									alt="Reality check on reproducibility"
+									longdesc="https://doi.org/10.1038/533437a"/>
+						</a>
+				</section>
+
+				<section data-transition="none" id="challenge_reproducibility_7">
+					<h3>Challenges: Reproducibility</h3>
+						<a href="https://www.nature.com/articles/532177d">
+								<img class="plain strech" src="img/Nature_Reproducibility_7.png"
+									alt="Research data: Silver lining to irreproducibility"
+									longdesc="https://doi.org/10.1038/532177d"/>
+						</a>
+				</section>
+
+				<section data-transition="none" id="challenge_reproducibility_8">
+					<h3>Challenges: Reproducibility</h3>
+						<a href="https://www.nature.com/news/no-publication-without-confirmation-1.21509">
+								<img class="plain strech" style="width:44%; height:44%;"
+									src="img/Nature_Reproducibility_8.png"
+									alt="No publication without confirmation"
+									longdesc="https://doi.org/10.1038/542409a"/>
+						</a>
+				</section>
+
+				<section data-transition="none" id="challenge_reproducibility_9">
+					<h3>Challenges: Reproducibility</h3>
+						<a href="https://www.nature.com/news/reproducibility-a-tragedy-of-errors-1.19264">
+								<img class="plain strech" style="width:44%; height:44%;"
+									src="img/Nature_Reproducibility_9.png"
+									alt="Reproducibility: A tragedy of errors"
+									longdesc="https://doi.org/10.1038/530027a"/>
+						</a>
+				</section>
+
+				<section data-transition="none" id="challenge_reproducibility_10">
+					<h3>Challenges: Reproducibility</h3>
+						<a href="https://www.nature.com/news/go-forth-and-replicate-1.20473">
+								<img class="plain strech" src="img/Nature_Reproducibility_10.png"
+									alt="Go forth and replicate!"
+									longdesc="https://doi.org/10.1038/536373a"/>
+						</a>
+				</section>
+
+				<section data-transition="none" id="challenge_reproducibility_11">
+					<h3>Challenges: Reproducibility</h3>
+						<a href="https://www.nature.com/news/collaborate-and-listen-to-reproduce-research-1.18005">
+								<img class="plain strech" src="img/Nature_Reproducibility_11.png"
+								alt="Collaborate and listen to reproduce research"
+								longdesc="https://doi.org/10.1038/523385f"/>
+						</a>
+				</section>
+
+				<section data-transition="none" id="challenge_reproducibility_12">
+					<h3>Challenges: Reproducibility</h3>
+						<a href="https://www.nature.com/news/reproducibility-crisis-blame-it-on-the-antibodies-1.17586">
+								<img class="plain strech" style="width:44%; height:44%;"
+									src="img/Nature_Reproducibility_12.png"
+									alt="Reproducibility crisis: Blame it on the antibodies"
+									longdesc="https://doi.org/10.1038/521274a"/>
+						</a>
+				</section>
+
+				<section data-transition="none" id="challenge_reproducibility_13">
+					<h3>Challenges: Reproducibility</h3>
+						<a href="https://www.nature.com/news/over-half-of-psychology-studies-fail-reproducibility-test-1.18248">
+								<img class="plain strech" style="width:54%; height:54%;"
+									src="img/Nature_Reproducibility_13.png"
+									alt="Over half of psychology studies fail reproducibility test"
+									longdesc="https://doi.org/10.1038/nature.2015.18248"/>
+						</a>
+				</section>
+
+				<section data-transition="none" id="challenge_reproducibility_14">
+					<h3>Challenges: Reproducibility</h3>
+						<a href="https://www.nature.com/news/irreproducible-biology-research-costs-put-at-28-billion-per-year-1.17711">
+								<img class="plain strech" style="width:45%; height:45%;"
+									src="img/Nature_Reproducibility_14.png"
+									alt="Irreproducible biology research costs put at $28 billion per year"
+									longdesc="https://doi.org/10.1038/nature.2015.17711"/>
+						</a>
+				</section>
+
+				<section data-transition="none" id="challenge_reproducibility_15">
+					<h3>Challenges: Reproducibility</h3>
+						<a href="https://www.nature.com/news/robust-research-institutions-must-do-their-part-for-reproducibility-1.18259">
+								<img class="plain strech" style="width:45%; height:45%;"
+								src="img/Nature_Reproducibility_15.png"
+								alt="Robust research: Institutions must do their part for reproducibility"
+								longdesc="https://doi.org/10.1038/525025a"/>
+						</a>
+				</section>
+
+				<section data-transition="none" id="challenge_reproducibility_16">
+					<h3>Challenges: Reproducibility</h3>
+						<a href="https://www.nature.com/news/dutch-agency-launches-first-grants-programme-dedicated-to-replication-1.20287">
+								<img class="plain strech" src="img/Nature_Reproducibility_16.png"
+									alt="Dutch agency launches first grants programme dedicated to replication"
+									longdesc="https://doi.org/10.1038/nature.2016.20287"/>
+						</a>
+				</section>
+
+				<!-- <section>
+					<h3>Challenges: Reproducibility</h3>
+					<div style="position:relative; width:640px; height:480px; margin:0 auto;">
+  					<img class="plain fragment" src="img/Nature_Reproducibility_2.png"  />
+  					<img class="plain fragment" src="img/Nature_Reproducibility_3.png" style="position:absolute;top:30;left:30;" />
+					</div>
+				</section> -->
+
+				<section data-transition="none" challenge="knowledge_burying">
+					<h3>Challenges: "Knowledge Burying"</h3>
+						<small><table>
+							<tr>
+								<td>
+									<a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-6-142">
+										<img class="plain stretch" src="img/Knowledge_Burying_Mons_1.svg"
+											alt="Which gene did you mean?" longdesc="https://doi.org/10.1186/1471-2105-6-142"/>
+									</a>
+								</td>
+								<td>
+									<p>More than 40% of information lost from publishing to mining</p>
+									<p><i>RIP (Rest in Paper)</i> knowledge</p>
+									<p>Need to preserve information about the <i>processes</i></p>
+								</td>
+							</tr>
+						</table></small>
+				</section>
+
+				<section data-transition="none" id="challenge_digital_publishing">
+					<h3>Challenges: Digital Publishing</h3>
+					<ul>
+						<li> Semantic Web, Linked Data</li>
+						<li>Understandable content for both humans and machines</li>
+						<li class="fragment"><span class="red">Digital artifacts</span>: text, datasets, code, figures, slides, spreadsheets, multimedia objects, methods, protocols, results and reviews, annotations, etc.</li>
+						<li class="fragment"><span class="red">Scientific workflows</span>: how digital artifacts are consumed and produced</li>
+					</ul>
+				</section>
+
+				<section data-transition="none" id="digital_publishing_spar_ontologies">
+					<h3>Challenges: Digital Publishing</h3>
+					<ul>
+						<li> Semantic Web, Linked Data
+							<small><table>
+								<tr>
+									<td style="padding-left: 0px"><img class="plain stretch" style="width:140%" src="img/Representation_Paper.png"/></td>
+									<td style="padding-left: 200px">
+										<p><a href="http://www.sparontologies.net/">SPAR ontologies</a>: Semantic Publishing and Referencing Ontologies</p>
+									</td>
+								</tr>
+							</table></small>
+						</li>
+					</ul>
+				</section>
+
+				<section data-transition="none" id="digital_publishing_nanopublications">
+					<h3>Challenges: Digital Publishing</h3>
+					<ul>
+						<li> Semantic Web, Linked Data
+							<small><table>
+								<tr>
+									<td style="padding-left: 0px">
+										<img class="plain stretch" style="width:150%" src="img/Nanopublication_Network.svg"
+											longdesc="http://nanopub.org/wordpress/?page_id=65"/>
+									</td>
+									<td style="padding-left: 200px; padding-top: 50px">
+										<p>Fine-grained interconnected parts of knowledge; e.g. <a href="http://nanopub.org">nanopublications</a></p>
+									</td>
+								</tr>
+							</table></small>
+						</li>
+					</ul>
+				</section>
+
+				<section data-transition="none" id="PhD_Comics_quality_assessment">
+					<h3>Challenges: Quality assessment</h3>
+					<a href="http://phdcomics.com/comics.php?f=1821">
+						<img class="plain" src="img/PhD_Comics_References.png"
+							alt="Optimal number of references, PhD Comics"
+							longdesc="http://phdcomics.com/comics.php?f=1821"/>
+					</a>
+				</section>
+
+				<section data-transition="none" id="challenge_quality_assessment">
+					<h3>Challenges: Quality assessment</h3>
+					<ul>
+						<li>We need a new way of assessing the quality of scientific publications</li>
+						<li class="fragment">Debatable and bias-able indicators; e.g. <span class="blue">Journal Impact Factor</span>
+							<ul>
+								<li class="fragment">
+									<a href="https://www.nature.com/articles/465845a">assessing assessment</a>
+								</li>
+								<li class="fragment">
+									<a href="https://www.nature.com/articles/4351003b">"not-so-deep" impact</a>
+								</li>
+								<li class="fragment">
+									<a href="https://www.nature.com/articles/464488a">science metrics not so scientific</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section data-transition="none" id="decentralization">
+					<h3>Challenges: Decentralization</h3>
+					<small><table>
+						<tr>
+							<td>
+								<a href="https://theconversation.com/peer-review-is-in-crisis-but-should-be-fixed-not-abolished-67972">
+									<img class="plain stretch" src="img/Peer_Review_in_Crisis.svg"
+										alt="Peer review is in crisis, but should be fixed, not abolished"/>
+								</a>
+								<a href="http://www.phys.nthu.edu.tw/~colloquium/2009F/T2.pdf">
+									<img class="plain stretch" src="img/Time_Review_Process.png"
+										alt="How to publish your work in the Physical Review"/>
+								</a>
+							</td>
+							<td style="vertical-align:middle">
+								<p class="fragment">
+									<a href="http://www.phys.nthu.edu.tw/~colloquium/2009F/T2.pdf">
+										<em><b>
+											<span class="red">Editors are from Mars,</br>Referees are from Venus, and</br>Authors are from Earth.
+											</span>
+										</em></b>
+									</a>
+								</p>
+								<p class="fragment"></br></br>No control of a central authority anymore; e.g. <span class="blue">publishing house</span></p>
+								<p class="fragment">Decentralization of content; e.g. <span class="blue">academic peer-to-peer networks</span></p>
+							</td>
+						</tr>
+					</table></small>
+				</section>
+
+				<section data-transition="none" id="challenges_summary">
+					<h3>Challenges</h3>
+					<ul>
+						<li>Reproducibility</li>
+						<li>"Knowledge Burying"</li>
+						<li>Digital publishing</li>
+						<li>Quality assessment</li>
+						<li>Decentralization of content</li>
+					</ul>
+				</section>
+
+				<section data-transition="none" id="research_question">
+					<h2>Focus</h2>
+					<span class="fragment">How can <strong><em><span class="red">scientific workflows</span></em></strong> that produce and consume digital artifacts
+					</span>
+					<span class="fragment">be <span class="blue"> assessed, linked</span> and <span class="blue">decentrally executed</span> across platforms,
+					</span>
+					<span class="fragment">such that <span class="red">individual steps</span> of a single workflow can be <span class="red">distributed</span>?
+				</span>
+			</section>
+
+				<section data-transition="none" id="methodology">
+					<h3>Approach</h3>
+					<ul>
+						<li class="fragment">Develop a <span class="blue">simple model</span> for linked workflows &rarr; <span class="red">linkflows</span></li>
+						<li class="fragment">Choose <span class="blue">sample articles</span> from <a href="https://www.iospress.nl/">IOS Press</a> and <a href="https://beeldengeluid.nl/en">Netherlands Sound and Vision</a></li>
+						<li class="fragment"><span class="blue">Instantiate model</span> with sample articles</li>
+						<li class="fragment">Use <a href="https://www.w3.org/TR/ldn/">Linked Data Notifications (LDNs)</a> for <span class="blue">decentralized execution</span></li>
+					</ul>
+				</section>
+
+				<section data-transition="none" id="model">
+					<h3>Linkflows: Model</h3>
+					<small><table>
+						<tr>
+							<th class="fragment" data-fragment-index="0" style="text-align: center; padding-bottom: 20px; border: none">
+								<span class="red">"New" model</span>
+							</th>
+							<th class="fragment" data-fragment-index="1" style="text-align:center; padding-bottom: 20px; border: none">
+								<a href="https://www.w3.org/TR/prov-o/">
+									<span class="red">PROV-O</span>
+								</a>
+							</th>
+						</tr>
+						<tr>
+							<td class="fragment" data-fragment-index="0">
+								<img class="plain stretch" src="img/Linkflows_Model.svg"/>
+							</td>
+							<td class="fragment" data-fragment-index="1">
+								<a href="https://www.w3.org/TR/prov-o/">
+									<img class="plain strech" src="img/PROV-O.svg"/>
+								</a>
+							</td>
+						</tr>
+					</table></small>
+				</section>
+
+				<section data-transition="none" id="use_cases">
+					<h3>Linkflows: Use cases</h3>
+					<ul>
+						<li class="fragment"><a href="https://www.iospress.nl/"><span class="red">IOS Press</span></a>: publishing house based in Amsterdam
+							<ul>
+								<li><a href="https://datasciencehub.net/">Data Science Journal</a></li>
+								<li><a href="https://www.iospress.nl/journal/jad-reports/">Journal of Alzheimer's Disease Reports</a></li>
+							</ul>
+						</li>
+						<li class="fragment"><a href="https://beeldengeluid.nl/en"><span class="red">Netherlands Sound and Vision</span></a>, the Netherlands cultural archive, has over 70% of the Dutch audio-visual heritage</a>
+							<ul>
+								<li><a href="http://viewjournal.eu/">VIEW Journal of European Television History and Culture</a></li>
+								<li><a href="http://www.tmgonline.nl/">Tijdschrift voor Mediageschiedenis</a> (Magazine for Media History)</li>
+								<li><a href="https://www.vpro.nl/programmas/the-mind-of-the-universe.html">Mind of the Universe videos</a></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section data-transition="slide none" id="sample_paper_workflow">
+					<a href="https://datasciencehub.net/paper/automating-semantic-publishing">
+						<img class="plain stretch" src="img/0.png" style="width: 80%"
+							alt="Automating semantic publishing"
+							longdesc="https://doi.org/10.3233/DS-170012"/>
+					</a>
+				</section>
+
+				<section data-transition="none" id="model_instantantiation">
+					<h6>Model instantiation with <a href="https://datasciencehub.net/paper/automating-semantic-publishing">example paper </a><span class="blue">(v.0.1 alpha)</span></h6>
+					<img class="plain stretch" src="img/Model_Instantiation.svg"/>
+				</section>
+
+				<section data-transition="none" id="LDNs">
+					<h3>Reviewing workflow using <a href="https://www.w3.org/TR/ldn/">LDNs</a></h3>
+					<small><table>
+						<tr>
+							<td>
+								<a href="http://csarven.ca/linked-data-notifications">
+									<img class="plain" src="img/LDNs.png"
+										alt="Linked Data Notifications: a resource-centric communication protocol"
+										longdesc="https://doi.org/10.1007/978-3-319-58068-5_33"/>
+								</a>
+							</td>
+							<td style="vertical-align: middle; width: 40%">
+								<strong><span class="red">
+									<ol>
+										<li class="fragment space_after">submit article/snippet</li>
+										<li class="fragment space_after">invite reviewer</li>
+										<li class="fragment space_after">handshake with reviewer</li>
+										<li class="fragment space_after">submit review</li>
+										<li class="fragment">use review for publishing</li>
+									</ol>
+								</strong></span>
+							</td>
+						</tr>
+					</table></small>
+				</section>
+
+				<section data-transition="none" id="reviewing_notification">
+					<h6>Example content of a reviewing notification</h6>
+					<div>
+						<pre></br>
+ HTTP/1.1 200 OK
+ Content-Type: text/turtle
+
+ @prefix schema: &lt;<a href="http://schema.org/">http://schema.org/</a>&gt; .
+  [ a schema:ReviewAction;
+    schema:agent [
+     a schema:Person;
+     schema:name "Stephen Pettifer"
+    ];
+    schema:object <font size="4">&lt;<a href="https://datasciencehub.net/system/files/ds-paper-511.zip">https://datasciencehub.net/system/files/ds-paper-511.zip</a>&gt;</font>
+    schema:result [
+     a schema:Review;
+     schema:reviewBody <font size="4">"This is an interesting and somewhat controversial..."</font>
+    ]
+ ] .</code>
+					</div>
+				</section>
+
+				<section data-transition="slide none" id="conclusions">
+					<h3>Linkflows: linked workflows</h3>
+					<ul>
+						<li class="fragment">Represent scientific knowledge as <span class="red">nodes in a network</span></li>
+						<li class="fragment">Approach <span class="red">compatible</span> with "traditional" PDFs, <a href="http://www.sparontologies.net/">SPAR</a>-represented articles, <a href="http://nanopub.org">nanopublications</a>, etc. </li>
+						<!-- <li class="fragment"><span class="red">"You are the owner of your data"</span></li> -->
+						<li class="fragment"><span class="red">Decentralized peer-review</span> process</li>
+						<li class="fragment">New measure for <span class="red">quality assessment</span>; e.g. network analysis</li>
+					</ul>
+				</section>
+
+				<section data-background-image="img/Network_2.png" id="questions">
+					<img class="plain" style="width: 40%" src="img/Questions.png"/>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="init.js"></script>
+	</body>
+</html>
