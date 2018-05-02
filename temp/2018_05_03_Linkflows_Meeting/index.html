@@ -1,0 +1,449 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Linkflows bi-monthly Update Meeting</title>
+
+		<!-- Open all links in a new tab or window -->
+		<base target="_blank">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Customize css -->
+		<link rel="stylesheet" href="css/init.css">
+
+		<!-- Printing and PDF exports -->
+		<script src="js/print-pdf.js"></script>
+
+		<style>
+			table.borders {
+	    	border-collapse: collapse;
+			}
+			table.borders, th.borders, td.borders {
+	    	border: 1px solid red;
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="img/Network_2.png" id="front_cover">
+					<h2><strong>Linkflows bi-monthly Meeting</strong></h2>
+					</br>
+					<p>3<small><sup>rd</sup></small> May 2018</p>
+					<small><p>These slides: <a href="">add link!</a></p></small>
+				</section>
+
+				<section>
+					<h3>Project updates</h3>
+					<ul style="font-size: 35px;">
+						<li class="fragment">DC paper accepted@<a href="https://2018.eswc-conferences.org/">ESWC'18</a>, 3-7 June</li>
+						<li class="fragment"><a href="WebSci_abstract">Poster</a> accepted@<a href="https://websci18.webscience.org/">ACM WebSci'18</a>, 27-30 May</li>
+						<li class="fragment">Accepted@<a href="http://isws2018.semanticwebschool.org/">International Semantic Web Research Summer School</a>, 1-7 July</li>
+						<li class="fragment"><a href="http://www.siks.nl/">SIKS</a> course
+							<a href="http://www.siks.nl/KR-2018.php">Knowledge Representation and Reasoning</a>, 9-10 April
+						</li>
+						<li class="fragment">Lorentz workshop on <a href="https://www.lorentzcenter.nl/lc/web/2018/982/info.php3?wsid=982&venue=Snellius">Online Information Quality</a>: <a href="https://rawgit.com/LaraHack/linkflows_presentations/master/2018_03_28_Lorentz_Workshop/index.html">Linkflows presentation</a>, 26-29 March
+						</li>
+						<li class="fragment"><a href="http://www.ictopen.nl/">ICT.OPEN</a></a>: <a href="https://rawgit.com/LaraHack/linkflows_presentations/master/2018_03_19_ICT.OPEN/index.html">Linkflows presentation</a>, 19-20 March
+						</li>
+					</ul>
+				</section>
+
+				<section data-background-iframe="files/WebSci'18_2018-Linkflows.pdf" data-background-interactive id="WebSci_abstract">
+					<h2><a href="https://websci18.webscience.org/">ACM WebSci'18</a> abstract</h2>
+				</section>
+
+				<section id="DC_paper">
+					<h2>DC Paper</h2>
+					<ul>
+						<li>
+							Current version: <a href="https://www.overleaf.com/15793930kzygjyywtvys">Overleaf</a>, <a href="#/DC_paper_draft">PDF</a></a>
+						</li>
+						<li>@<a href="https://2018.eswc-conferences.org/call-phd-symposium/">ESWC'18 in Greece</a>, mentor: <a href="https://www.modul.ac.at/user/Nixon/">Lyndon Nixon</a>
+						</li>
+						<li>Timeline:
+							<ul>
+								<li><s>Revised version of paper to mentor: <span class="red">April 25</span></s></li>
+								<li>Mentor’s feedback on paper: <span class="red">May 2</span></li>
+								<li>Camera-Ready Paper: <span class="red">May 10</span></li>
+								<li>Draft presentation to mentor: <span class="red">May 16</span></li>
+								<li>Mentor’s feedback on presentation: <span class="red">May 23</span></li>
+								<li>Conference: <span class="red">3-7 June</span></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section data-background-iframe="files/DC_Paper_Linkflows.pdf" data-background-interactive id="DC_paper_draft">
+				</section>
+
+				<section id="linkflows_motivation">
+					<h3>RECAP: Why Linkflows?</h3>
+					<ul>
+						<li class="fragment">Scientific publishing: effective means to <span class="red">share</span> information and knowledge</li>
+						<li class="fragment">Shift towards the <span class="red">digital</span> environment</li>
+						<li class="fragment">New ways to <span class="red">represent</span> fine-grained knowledge</li>
+						<li class="fragment">Linked Data: enable the <span class="red">exchange</span>, <span class="red">reuse</span> and <span class="red">linking</span> of data on the Web</li>
+					</ul>
+				</section>
+
+				<section data-transition="none" id="challenges_summary">
+					<h3>RECAP: Challenges</h3>
+					<ul>
+						<li class="fragment">Reproducibility</li>
+						<li class="fragment">"Knowledge Burying"</li>
+						<li class="fragment">Digital publishing</li>
+						<li class="fragment">Quality assessment</li>
+						<li class="fragment">Decentralization of content</li>
+					</ul>
+				</section>
+
+				<section data-transition="slide none" id="challenge_reproducibility">
+					<h3>Challenges: Reproducibility</h3>
+					<small><table>
+						<tr>
+							<td style="width: 40%">
+								<a href="https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970">
+									<img class="plain stretch" style="width:100%; height:45%;"
+										src="img/Nature_Reproducibility_1.png"
+										alt="1500 scientists lift the lid on reproducibility"
+										longdesc="https://doi.org/10.1038/533452a"/>
+								</a>
+							</td>
+							<td style="vertical-align:middle">
+								<small style="font-size: medium"><ul>
+									<li class="space_after_small"><a href="https://www.nature.com/news/a-long-journey-to-reproducible-results-1.22478">A long journey to reproducible results</a></li>
+									<li class="space_after_small"><a href="https://www.nature.com/articles/d41586-017-07325-2">Rewarding negative results keeps science on track</a></li>
+									<li class="space_after_small"><a href="https://www.nature.com/articles/nbt.2748">Receptive to replication</a></li>
+									<li class="space_after_small"><a href="https://www.nature.com/news/replication-studies-offer-much-more-than-technical-details-1.21311">Replication studies offer much more than technical details</a></li>
+									<li class="space_after_small"><a href="https://www.nature.com/news/reality-check-on-reproducibility-1.19961">Reality check on reproducibility</a></li>
+									<li class="space_after_small"><a href="https://www.nature.com/articles/532177d">Research data: Silver lining to irreproducibility</a></li>
+									<li class="space_after_small"><a href="https://www.nature.com/news/no-publication-without-confirmation-1.21509">No publication without confirmation</a></li>
+									<li class="space_after_small"><a href="https://www.nature.com/news/reproducibility-a-tragedy-of-errors-1.19264">Reproducibility: A tragedy of errors</a></li>
+									<li class="space_after_small"><a href="https://www.nature.com/news/go-forth-and-replicate-1.20473">Go forth and replicate!</a></li>
+									<li><a href="https://www.nature.com/news/collaborate-and-listen-to-reproduce-research-1.18005">Collaborate and listen to reproduce research</a></li>
+									<li class="space_after_small"><a href="https://www.nature.com/news/reproducibility-crisis-blame-it-on-the-antibodies-1.17586">Reproducibility crisis: Blame it on the antibodies</a></li>
+									<li class="space_after_small"><a href="https://www.nature.com/news/over-half-of-psychology-studies-fail-reproducibility-test-1.18248">Over half of psychology studies fail reproducibility test</a></li>
+									<li class="space_after_small"><a href="https://www.nature.com/news/irreproducible-biology-research-costs-put-at-28-billion-per-year-1.17711">Irreproducible biology research costs put at $28 billion per year</a></li>
+									<li class="space_after_small"><a href="https://www.nature.com/news/robust-research-institutions-must-do-their-part-for-reproducibility-1.18259">Robust research: Institutions must do their part for reproducibility</a></li>
+									<li class="space_after_small"><a href="https://www.nature.com/news/dutch-agency-launches-first-grants-programme-dedicated-to-replication-1.20287">Dutch agency launches first grants programme dedicated to replication</a></li>
+								</ul><small>
+							</td>
+						</tr>
+					</table></small>
+				</section>
+
+				<section data-transition="none" id="challenge_knowledge_burying">
+					<h3>Challenges: "Knowledge Burying"</h3>
+						<small><table>
+							<tr>
+								<td>
+									<a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-6-142">
+										<img class="plain stretch" src="img/Knowledge_Burying_Mons_1.svg"
+											alt="Which gene did you mean?" longdesc="https://doi.org/10.1186/1471-2105-6-142"/>
+									</a>
+								</td>
+								<td>
+									<p>More than 40% of information lost from publishing to mining</p>
+									<p><i>RIP (Rest in Paper)</i> knowledge</p>
+									<p>Need to preserve information about the <i>processes</i></p>
+								</td>
+							</tr>
+						</table></small>
+				</section>
+
+				<section data-transition="none" id="challenge_digital_publishing">
+					<h3>Challenges: Digital Publishing</h3>
+					<ul style="font-size: 35px;">
+						<li> Semantic Web, Linked Data</li>
+						<li>Understandable content for both humans and machines</li>
+						<li class="fragment"><span class="red">Digital artifacts</span>: text, datasets, code, figures, slides, spreadsheets, multimedia objects, methods, protocols, results and reviews, annotations, etc.</li>
+						<li class="fragment"><span class="red">Scientific workflows</span>: how digital artifacts are consumed and produced</li>
+					</ul>
+				</section>
+
+				<section data-transition="none" id="digital_publishing_spar_ontologies">
+					<h3>Challenges: Digital Publishing</h3>
+					<ul>
+						<li> Semantic Web, Linked Data
+							<small><table>
+								<tr>
+									<td style="padding-left: 0px"><img class="plain stretch" style="width:140%" src="img/Fig1._Representation_Paper.png"/></td>
+									<td style="padding-left: 200px">
+										<p><a href="http://www.sparontologies.net/">SPAR ontologies</a>: Semantic Publishing and Referencing Ontologies</p>
+									</td>
+								</tr>
+							</table></small>
+						</li>
+					</ul>
+				</section>
+
+				<section data-transition="none" id="digital_publishing_nanopublications">
+					<h3>Challenges: Digital Publishing</h3>
+					<ul>
+						<li> Semantic Web, Linked Data
+							<small><table>
+								<tr>
+									<td style="padding-left: 0px">
+										<img class="plain stretch" style="width:150%" src="img/Nanopublication_Network.svg"
+											longdesc="http://nanopub.org/wordpress/?page_id=65"/>
+									</td>
+									<td style="padding-left: 200px; padding-top: 50px">
+										<p>Fine-grained interconnected parts of knowledge; e.g. <a href="http://nanopub.org">nanopublications</a></p>
+									</td>
+								</tr>
+							</table></small>
+						</li>
+					</ul>
+				</section>
+
+				<section data-transition="none" id="PhD_Comics_quality_assessment">
+					<h3>Challenges: Quality assessment</h3>
+					<a href="http://phdcomics.com/comics.php?f=1821">
+						<img class="plain" src="img/PhD_Comics_References.png" style="width:60%"
+							alt="Optimal number of references, PhD Comics"
+							longdesc="http://phdcomics.com/comics.php?f=1821"/>
+					</a>
+				</section>
+
+				<section data-transition="none" id="challenge_quality_assessment">
+					<h3>Challenges: Quality assessment</h3>
+					<ul>
+						<li>We need a new way of assessing the quality of scientific publications</li>
+						<li class="fragment">Debatable and bias-able indicators; e.g. <span class="blue">Journal Impact Factor</span>
+							<ul>
+								<li class="fragment">
+									<a href="https://www.nature.com/articles/465845a">assessing assessment</a>
+								</li>
+								<li class="fragment">
+									<a href="https://www.nature.com/articles/4351003b">"not-so-deep" impact</a>
+								</li>
+								<li class="fragment">
+									<a href="https://www.nature.com/articles/464488a">science metrics not so scientific</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section data-transition="none" id="challenge_decentralization">
+					<h3>Challenges: Decentralization</h3>
+					<small><table>
+						<tr>
+							<td>
+								<a href="https://theconversation.com/peer-review-is-in-crisis-but-should-be-fixed-not-abolished-67972">
+									<img class="plain stretch" src="img/Peer_Review_in_Crisis.svg"
+										alt="Peer review is in crisis, but should be fixed, not abolished"/>
+								</a>
+								<a href="http://www.phys.nthu.edu.tw/~colloquium/2009F/T2.pdf">
+									<img class="plain stretch" src="img/Time_Review_Process.png"
+										alt="How to publish your work in the Physical Review"/>
+								</a>
+							</td>
+							<td style="vertical-align:middle">
+								<p class="fragment">
+									<a href="http://www.phys.nthu.edu.tw/~colloquium/2009F/T2.pdf">
+										<em><b>
+											<span class="red">Editors are from Mars,</br>Referees are from Venus, and</br>Authors are from Earth.
+											</span>
+										</em></b>
+									</a>
+								</p>
+								<p>Reviewing:
+									<ul>
+										<li>It takes time...</li>
+										<li>"A closed-door process"</li>
+										<li>Transparency</li>
+										<li>Quality assessment</li>
+									</ul>
+								</p>
+								<p class="fragment"></br></br>No control of a central authority anymore; e.g. <span class="blue">publishing house</span></p>
+								<p class="fragment">Decentralization of content; e.g. <span class="blue">academic peer-to-peer networks</span></p>
+							</td>
+						</tr>
+					</table></small>
+				</section>
+
+				<!-- <li>Linkflows model and apply on example
+					<a href="https://datasciencehub.net/paper/automating-semantic-publishing">paper</a>
+				</li> -->
+
+				<section data-transition="none" id="challenges_conclusion">
+					<h3>In conclusion...</h3>
+					<p><span class="red">A new way of publishing!!!</span></p>
+					<ul>Consider:
+						<li>Semantic Web, Linked Data technologies</li>
+						<li>Decentralization</li>
+						<li>Quality assessment</li>
+					</ul>
+				</section>
+
+				<section data-transition="none" id="methodology">
+					<h3>Approach</h3>
+					<ul>
+						<li class="fragment">Develop a <span class="blue">simple model</span> for linked workflows &rarr; <span class="red">linkflows</span></li>
+						<li class="fragment">Choose <span class="blue">sample articles</span> from <a href="https://www.iospress.nl/">IOS Press</a> and <a href="https://beeldengeluid.nl/en">Netherlands Sound and Vision</a></li>
+						<li class="fragment"><span class="blue">Instantiate model</span> with sample articles</li>
+						<li class="fragment">Use <a href="https://www.w3.org/TR/ldn/">Linked Data Notifications (LDNs)</a> for <span class="blue">decentralized execution</span></li>
+					</ul>
+				</section>
+
+				<section data-transition="slide none">
+					<h3>Model <a href="https://datasciencehub.net/paper/automating-semantic-publishing">sample paper</a></h3>
+					<img class="plain stretch" src="img/0.png"/>
+				</section>
+
+				<section>
+					<h3>Ontologies used</h3>
+					<ul>
+						<li><a href="https://www.w3.org/TR/prov-o/">PROV-O</a>: Provenance Ontology</li>
+						<li><a href="http://www.sparontologies.net/">SPAR suite</a>: OWL 2 DL ontologies for the publishing domain</li>
+						<li><a href="http://fairreviews.linkeddata.es/">FAIR<sup>*</sup>reviews</a> ontology</li>
+						<li><a href="https://www.w3.org/TR/annotation-model/">Web Annotation Data Model</a>
+						</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h3>Model schema</h3>
+					<span class="red">ADD IMAGE HERE!, the networked structure of the sample article</span>
+				</section>
+
+				<section data-transition="none">
+					<h3>Model schema</h3>
+					<span class="red">ADD IMAGE HERE!, zoom in on how the article structure is represented in RDF</span>
+				</section>
+
+				<section data-transition="none">
+					<h3>Model schema</h3>
+					<span class="red">ADD IMAGE HERE!, zoom in on how connections between references and article parts are represented in RDF</span>
+				</section>
+
+				<section data-transition="none">
+					<h3>Model schema</h3>
+					<span class="red">ADD IMAGE HERE!, zoom in on how connections between references and article parts are represented in RDF</span>
+				</section>
+
+				<section data-transition="none">
+					<h3>Model schema</h3>
+					<span class="red">ADD IMAGE HERE!, zoom in on how connections between different versions of article parts are represented in RDF</span>
+				</section>
+
+				<section>
+					<h4>Linkflows model for <a href="https://datasciencehub.net/paper/automating-semantic-publishing">sample paper</a></h4>
+					<small><table>
+						<tr>
+							<th></th><th>Version 1</th><th>Version 2</th><th>Camera-ready</th><th>Total</th>
+							<th colspan="5"></th>
+						</tr>
+						<tr>
+							<th>#nodes</th>
+							<td>111</td>
+							<td>215</td>
+							<td>217</td>
+							<td>378</td>
+						</tr>
+						<tr>
+							<th>#links</th>
+							<td>380</td>
+							<td>450</td>
+							<td>455</td>
+							<td>503</td>
+						</tr>
+						<tr>
+							<th>#inter-node links</th>
+							<td>210</td>
+							<td>315</td>
+							<td>322</td>
+							<td>478</td>
+						</tr>
+						<tr>
+							<th>#external links</th>
+							<td>30</td>
+							<td>47</td>
+							<td>47</td>
+							<td>69</td>
+						</tr>
+						<tr>
+							<th>#reviewing links</th>
+							<td>57</td>
+							<td>20</td>
+							<td>3</td>
+							<td>80</td>
+						</tr>
+					</table></small>
+					<!-- <h6>What about abstract properties vs. instances?</h6> -->
+				</section>
+
+				<section data-transition="slide none" id="future_work">
+					<h3>Future work</h3>
+					<ul>
+						<li class="fragment">Use Linked Data Notifications (LDNs) for <span class="red">decentralized peer-review</span></li>
+						<li class="fragment">Model more papers both from IOS Press and Sound and Vision</li>
+						<li class="fragment">New measure for <span class="red">quality assessment</span>; e.g. network analysis</li>
+					</ul>
+				</section>
+
+				<section data-transition="none" id="LDNs">
+					<h4>Future work: <h4>
+					<p>Reviewing workflow using <a href="https://www.w3.org/TR/ldn/">LDNs</a></p>
+					<small><table>
+						<tr>
+							<td>
+								<a href="http://csarven.ca/linked-data-notifications">
+									<img class="plain" src="img/LDNs.png"
+										alt="Linked Data Notifications: a resource-centric communication protocol"
+										longdesc="https://doi.org/10.1007/978-3-319-58068-5_33"/>
+								</a>
+							</td>
+							<td style="vertical-align: middle; width: 40%">
+								<strong><span class="red">
+									<ol>
+										<li class="fragment space_after">submit article/snippet</li>
+										<li class="fragment space_after">invite reviewer</li>
+										<li class="fragment space_after">handshake with reviewer</li>
+										<li class="fragment space_after">submit review</li>
+										<li class="fragment">use review for publishing</li>
+									</ol>
+								</strong></span>
+							</td>
+						</tr>
+					</table></small>
+				</section>
+
+				<section data-transition="slide none" id="take_home">
+					<h3>Take-home message</h3>
+					<ul>
+						<li class="fragment">Represent scientific knowledge as <span class="red">nodes in a network</span></li>
+						<li class="fragment">Approach <span class="red">compatible</span> with "traditional" PDFs, <a href="http://www.sparontologies.net/">SPAR</a>-represented articles, <a href="http://nanopub.org">nanopublications</a>, etc. </li>
+						<!-- <li class="fragment"><span class="red">"You are the owner of your data"</span></li> -->
+						<li class="fragment"><span class="red">Decentralized peer-review</span> process</li>
+					</ul>
+				</section>
+
+				<section data-background-image="img/Network_2.png" id="questions">
+					<img class="plain" style="width: 40%" src="img/Questions.png"/>
+				</section>
+
+				<section data-background-image="img/background.jpg">
+				<!-- Image source: https://www.un.org/development/desa/en/wp-content/uploads/2017/04/wave_commitmentstory-845x476.jpg -->
+					<h3><strong>Discussion</strong></h3>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="init.js"></script>
+	</body>
+</html>
