@@ -34,7 +34,7 @@
 					<h3>Project updates</h3>
 					<ul style="font-size: 35px;">
 						<li class="fragment">DC paper accepted@<a href="https://2018.eswc-conferences.org/">ESWC'18</a>, 3-7 June</li>
-						<li class="fragment"><a href="WebSci_abstract">Poster</a> accepted@<a href="https://websci18.webscience.org/">ACM WebSci'18</a>, 27-30 May</li>
+						<li class="fragment"><a href="#/WebSci_abstract">Poster</a> accepted@<a href="https://websci18.webscience.org/">ACM WebSci'18</a>, 27-30 May</li>
 						<li class="fragment">Accepted@<a href="http://isws2018.semanticwebschool.org/">International Semantic Web Research Summer School</a>, 1-7 July</li>
 						<li class="fragment"><a href="http://www.siks.nl/">SIKS</a> course
 							<a href="http://www.siks.nl/KR-2018.php">Knowledge Representation and Reasoning</a>, 9-10 April
@@ -95,7 +95,7 @@
 					</ul>
 				</section>
 
-				<section data-transition="slide none" id="challenge_reproducibility">
+				<!-- <section data-transition="slide none" id="challenge_reproducibility">
 					<h3>Challenges: Reproducibility</h3>
 					<small><table>
 						<tr>
@@ -147,63 +147,9 @@
 								</td>
 							</tr>
 						</table></small>
-				</section>
+				</section> -->
 
-				<section data-transition="none" id="challenge_digital_publishing">
-					<h3>Challenges: Digital Publishing</h3>
-					<ul style="font-size: 35px;">
-						<li> Semantic Web, Linked Data</li>
-						<li>Understandable content for both humans and machines</li>
-						<li class="fragment"><span class="red">Digital artifacts</span>: text, datasets, code, figures, slides, spreadsheets, multimedia objects, methods, protocols, results and reviews, annotations, etc.</li>
-						<li class="fragment"><span class="red">Scientific workflows</span>: how digital artifacts are consumed and produced</li>
-					</ul>
-				</section>
-
-				<section data-transition="none" id="digital_publishing_spar_ontologies">
-					<h3>Challenges: Digital Publishing</h3>
-					<ul>
-						<li> Semantic Web, Linked Data
-							<small><table>
-								<tr>
-									<td style="padding-left: 0px"><img class="plain stretch" style="width:140%" src="img/Fig1._Representation_Paper.png"/></td>
-									<td style="padding-left: 200px">
-										<p><a href="http://www.sparontologies.net/">SPAR ontologies</a>: Semantic Publishing and Referencing Ontologies</p>
-									</td>
-								</tr>
-							</table></small>
-						</li>
-					</ul>
-				</section>
-
-				<section data-transition="none" id="digital_publishing_nanopublications">
-					<h3>Challenges: Digital Publishing</h3>
-					<ul>
-						<li> Semantic Web, Linked Data
-							<small><table>
-								<tr>
-									<td style="padding-left: 0px">
-										<img class="plain stretch" style="width:150%" src="img/Nanopublication_Network.svg"
-											longdesc="http://nanopub.org/wordpress/?page_id=65"/>
-									</td>
-									<td style="padding-left: 200px; padding-top: 50px">
-										<p>Fine-grained interconnected parts of knowledge; e.g. <a href="http://nanopub.org">nanopublications</a></p>
-									</td>
-								</tr>
-							</table></small>
-						</li>
-					</ul>
-				</section>
-
-				<section data-transition="none" id="PhD_Comics_quality_assessment">
-					<h3>Challenges: Quality assessment</h3>
-					<a href="http://phdcomics.com/comics.php?f=1821">
-						<img class="plain" src="img/PhD_Comics_References.png" style="width:60%"
-							alt="Optimal number of references, PhD Comics"
-							longdesc="http://phdcomics.com/comics.php?f=1821"/>
-					</a>
-				</section>
-
-				<section data-transition="none" id="challenge_quality_assessment">
+				<!-- <section data-transition="none" id="challenge_quality_assessment">
 					<h3>Challenges: Quality assessment</h3>
 					<ul>
 						<li>We need a new way of assessing the quality of scientific publications</li>
@@ -259,7 +205,7 @@
 							</td>
 						</tr>
 					</table></small>
-				</section>
+				</section> -->
 
 				<!-- <li>Linkflows model and apply on example
 					<a href="https://datasciencehub.net/paper/automating-semantic-publishing">paper</a>
@@ -285,14 +231,71 @@
 				</span>
 			</section>
 
+				<section data-transition="none" id="research_question">
+					<h3>More specifically...</h3>
+					How can we <span class="red">model</span> the <span class="blue">decentralized execution</span> of workflows by using <span class="blue">Linked Data</span> principles and tools?
+				</section>
+
 				<section data-transition="none" id="methodology">
 					<h3>Approach</h3>
 					<ul>
 						<li class="fragment">Develop a <span class="blue">simple model</span> for linked workflows &rarr; <span class="red">linkflows</span></li>
 						<li class="fragment">Choose <span class="blue">sample articles</span> from <a href="https://www.iospress.nl/">IOS Press</a> and <a href="https://beeldengeluid.nl/en">Netherlands Sound and Vision</a></li>
-						<li class="fragment"><span class="blue">Instantiate model</span> with sample articles</li>
+						<li class="fragment"><span class="blue">Evaluate model</span> with sample articles</li>
 						<li class="fragment">Use <a href="https://www.w3.org/TR/ldn/">Linked Data Notifications (LDNs)</a> for <span class="blue">decentralized execution</span></li>
 					</ul>
+				</section>
+
+				<section data-transition="none" id="challenge_digital_publishing">
+					<h3>Digital Publishing</h3>
+					<ul style="font-size: 35px;">
+						<li> Semantic Web, Linked Data</li>
+						<li>Understandable content for both humans and machines</li>
+						<li class="fragment"><span class="red">Digital artifacts</span>: text, datasets, code, figures, slides, spreadsheets, multimedia objects, methods, protocols, results and reviews, annotations, etc.</li>
+						<li class="fragment"><span class="red">Scientific workflows</span>: how digital artifacts are consumed and produced</li>
+					</ul>
+				</section>
+
+				<section data-transition="none" id="digital_publishing_spar_ontologies">
+					<h3>Digital Publishing</h3>
+					<ul>
+						<li> Semantic Web, Linked Data
+							<small><table>
+								<tr>
+									<td style="padding-left: 0px"><img class="plain stretch" style="width:140%" src="img/Fig1._Representation_Paper.png"/></td>
+									<td style="padding-left: 200px">
+										<p><a href="http://www.sparontologies.net/">SPAR ontologies</a>: Semantic Publishing and Referencing Ontologies</p>
+									</td>
+								</tr>
+							</table></small>
+						</li>
+					</ul>
+				</section>
+
+				<section data-transition="none" id="model">
+					<h3>Linkflows model, last time...</h3>
+					<small><table>
+						<tr>
+							<th class="fragment" data-fragment-index="0" style="text-align: center; padding-bottom: 20px; border: none">
+								<span class="red">"New" model (v.0.1 alpha)</span>
+							</th>
+							<th class="fragment" data-fragment-index="1" style="text-align:center; padding-bottom: 20px; border: none">
+								<a href="https://www.w3.org/TR/prov-o/">
+									<span class="red">PROV-O</span>
+								</a>
+							</th>
+						</tr>
+						<tr>
+							<td class="fragment" data-fragment-index="0">
+								<img class="plain stretch" src="img/Linkflows_Model.svg"/>
+							</td>
+							<td class="fragment" data-fragment-index="1">
+								<a href="https://www.w3.org/TR/prov-o/">
+									<img class="plain strech" src="img/PROV-O.svg"/>
+								</a>
+							</td>
+						</tr>
+					</table></small>
 				</section>
 
 				<section data-transition="slide none">
@@ -306,8 +309,8 @@
 						<li><a href="https://www.w3.org/TR/prov-o/">PROV-O</a>: Provenance Ontology</li>
 						<li><a href="http://www.sparontologies.net/">SPAR suite</a>: OWL 2 DL ontologies for the publishing domain</li>
 						<li><a href="http://fairreviews.linkeddata.es/">FAIR<sup>*</sup>reviews</a> ontology</li>
-						<li><a href="https://www.w3.org/TR/annotation-model/">Web Annotation Data Model</a>
-						</li>
+						<li><a href="https://www.w3.org/TR/annotation-model/">Web Annotation Data Model</a></li>
+						<li>And others...</li>
 					</ul>
 				</section>
 
@@ -334,6 +337,30 @@
 				<section data-transition="none">
 					<h3>Model schema</h3>
 					<span class="red">ADD IMAGE HERE!, zoom in on how connections between different versions of article parts are represented in RDF</span>
+				</section>
+
+				<section data-transition="none" id="digital_publishing_nanopublications">
+					<h3>Digital Publishing</h3>
+					<ul>
+						<li> Semantic Web, Linked Data
+							<small><table>
+								<tr>
+									<td style="padding-left: 0px">
+										<img class="plain stretch" style="width:150%" src="img/Nanopublication_Network.svg"
+											longdesc="http://nanopub.org/wordpress/?page_id=65"/>
+									</td>
+									<td style="padding-left: 200px; padding-top: 50px">
+										<p>Fine-grained interconnected parts of knowledge; e.g. <a href="http://nanopub.org">nanopublications</a></p>
+									</td>
+								</tr>
+							</table></small>
+						</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h3>Model schema</h3>
+					<span class="red">ADD IMAGE HERE! from RDF snippets to nanopublications</span>
 				</section>
 
 				<section>
@@ -382,17 +409,28 @@
 					<!-- <h6>What about abstract properties vs. instances?</h6> -->
 				</section>
 
+				<section data-transition="none" id="PhD_Comics_quality_assessment">
+					<h3>Quality assessment: in progress!</h3>
+					<a href="http://phdcomics.com/comics.php?f=1821">
+						<img class="plain" src="img/PhD_Comics_References.png" style="width:60%"
+							alt="Optimal number of references, PhD Comics"
+							longdesc="http://phdcomics.com/comics.php?f=1821"/>
+					</a>
+				</section>
+
 				<section data-transition="slide none" id="future_work">
 					<h3>Future work</h3>
 					<ul>
+						<li class="fragment">A way to <span class="red">visualize</span> the network structure and content</li>
 						<li class="fragment">Use Linked Data Notifications (LDNs) for <span class="red">decentralized peer-review</span></li>
-						<li class="fragment">Model more papers both from <a href="https://www.iospress.nl/">IOS Press</a> and <a href="https://beeldengeluid.nl/en">Netherlands Sound and Vision</a></li>
+						<li class="fragment">Evaluation: model more papers both from <a href="https://www.iospress.nl/">IOS Press</a> and <a href="https://beeldengeluid.nl/en">Netherlands Sound and Vision</a></li>
 						<li class="fragment">New measure for <span class="red">quality assessment</span>; e.g. network analysis</li>
+						<li class="fragment">Write it all up!!!</li>
 					</ul>
 				</section>
 
 				<section data-transition="none" id="LDNs">
-					<h4>Future work: <h4>
+					<h4>Future work: example<h4>
 					<p>Reviewing workflow using <a href="https://www.w3.org/TR/ldn/">LDNs</a></p>
 					<small><table>
 						<tr>
@@ -425,6 +463,15 @@
 						<li class="fragment">Approach <span class="red">compatible</span> with "traditional" PDFs, <a href="http://www.sparontologies.net/">SPAR</a>-represented articles, <a href="http://nanopub.org">nanopublications</a>, etc. </li>
 						<!-- <li class="fragment"><span class="red">"You are the owner of your data"</span></li> -->
 						<li class="fragment"><span class="red">Decentralized peer-review</span> process</li>
+					</ul>
+				</section>
+
+				<section data-transition="slide none" id="useful_links">
+					<h3>Useful links</h3>
+					<ul>
+						<li>DC paper: current version: <a href="https://www.overleaf.com/15793930kzygjyywtvys">Overleaf</a>, <a href="#/DC_paper_draft">PDF</li>
+						<li>WebSci'18 poster abstract: <a href="https://drive.google.com/drive/u/0/folders/1To2dI_718yFxo71F2Bq3bmtwI9-A3-19">Google Drive, </a><a href="#/WebSci_abstract">slide</a></li>
+						<li><a href="https://github.com/LaraHack/linkflows_model">Linkflows model repository</a></li>
 					</ul>
 				</section>
 
