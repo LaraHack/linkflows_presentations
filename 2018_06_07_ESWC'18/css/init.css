@@ -1,0 +1,16 @@
+.reveal h6 {
+  text-transform: none;
+}
+.blur {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+span.red {
+  color: #ff6a6a;
+}
+span.blue {
+  color: #1e90ff;
+}
+li.space_after {
+  margin-bottom: 25px;
+}
