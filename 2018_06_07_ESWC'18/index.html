@@ -51,13 +51,13 @@
 							<ul>
 								<li><a href="http://ucds.cs.vu.nl/">Vrije Universiteit Amsterdam</a></li>
 								<li><a href="https://www.iospress.nl/">IOS Press</a></li>
-								<li><a href="https://beeldengeluid.nl/en">Netherlands Sound and Vision</a></li>
+								<li><a href="https://beeldengeluid.nl/en">Netherlands Institute for Sound and Vision</a></li>
 							</ul>
 						</li>
 					</ul>
 				</section>
 
-				<section id="linkflows_motivation_1">
+				<section>
 					<h3>Science and publishing</h3>
 					<ul>
 						<li class="fragment"><span class="red">Scientific publishing</span>: effective means to <span class="red">share</span> information and knowledge</li>
@@ -69,17 +69,22 @@
 					<p class="fragment" style="text-align: right;"><strong><span class="red">BUT...</span></strong></p>
 				</section>
 
-				<section id="linkflows_motivation_2">
+				<section>
 					<h3>Publishing in a digital environment</h3>
 					<ul>
 						<li class="fragment">Initial <span class="blue">paradigm of publishing</span>: <span class="red">the same</red>!</li>
 						<li class="fragment"><span class="blue">Article PDFs</span>: coarse-grained structures in which scientific contributions are communicated</li>
 						<li class="fragment">It takes <span class="blue">time to publish</span>! even ~ 1 year</li>
-						<li class="fragment">It takes <span class="blue">time to stay up to date</span>! ~21 hours/week for epidemiologists (2004)</li>
+						<li class="fragment">It takes <span class="blue">time to stay up to date</span>!
+							<ul>
+								<li>~21 hours/week for epidemiologists (2004)</li>
+								<li>2000 papers/day in PubMed (2018)</li>
+							</ul>
+						</li>
 					</ul>
 				</section>
 
-				<section id="linkflows_motivation_3">
+				<!-- <section>
 					<h3>Digital publishing</h3>
 					<ul>
 						<li class="fragment"><span class="red">A social construct</span>: submission systems, journals, conferences</li>
@@ -87,15 +92,9 @@
 						<li class="fragment">Scientific journal publishing frameworks: <span class="red">Open vs. Closed Access</span></li>
 						<li class="fragment"><span class="blue">Stakes of sharing</span>: complicated!</li>
 					</ul>
-				</section>
+				</section> -->
 
-				<section id="linkflows_problems_summary">
-					<img class="plain stretch"
-						src="img/Digital_Publishing_Problems.svg"
-						alt="Digital publishing"/>
-				</section>
-
-				<section data-transition="none" id="problems_summary">
+				<!-- <section data-transition="none">
 					<h3>Problems</h3>
 					<ul>
 						<li>"Knowledge Burying"</li>
@@ -105,13 +104,13 @@
 					</ul>
 				</section>
 
-				<section id="img_knowledge_burying">
+				<section>
 					<img class="plain stretch"
 						src="img/Digital_Publishing_Problems_1.svg"
 						alt="Digital publishing"/>
-				</section>
+				</section> -->
 
-				<section data-transition="none" id="knowledge_burying">
+				<section data-transition="none">
 					<h3>Problem: "Knowledge Burying"</h3>
 						<small><table>
 							<tr>
@@ -133,13 +132,13 @@
 						</table></small>
 				</section>
 
-				<section id="img_reproducibility">
+				<!-- <section>
 					<img class="plain stretch"
 						src="img/Digital_Publishing_Problems_2.svg"
 						alt="Digital publishing"/>
 				</section>
 
-				<section data-transition="slide none" id="challenge_reproducibility">
+				<section data-transition="slide none">
 				<h3>Problem: Reproducibility</h3>
 				<small><table>
 					<tr>
@@ -176,16 +175,16 @@
 				</table></small>
 			</section>
 
-			<section id="img_quality_assessment">
+			<section>
 				<img class="plain stretch"
 					src="img/Digital_Publishing_Problems_3.svg"
 					alt="Digital publishing"/>
-			</section>
+			</section> -->
 
-			<section data-transition="none" id="quality_assessment_1">
+			<!-- <section data-transition="none">
 				<h3>Problem: Quality assessment</h3>
 				<ul>
-					<li>We need a new way of assessing the quality of scientific publications</li>
+					<li>A new way of assessing the quality of scientific publications</li>
 					<li class="fragment">Debatable and bias-able indicators; e.g. <span class="blue">Journal Impact Factor</span>
 						<ul>
 							<li class="fragment">
@@ -202,13 +201,13 @@
 				</ul>
 			</section>
 
-			<section id="img_descentralization">
+			<section>
 				<img class="plain stretch"
 					src="img/Digital_Publishing_Problems_4.svg"
 					alt="Digital publishing"/>
-			</section>
+			</section> -->
 
-			<section data-transition="none" id="decentralization">
+			<section data-transition="none">
 				<h3>Problem: Decentralization</h3>
 				<small><table>
 					<tr>
@@ -246,7 +245,7 @@
 				</table></small>
 			</section>
 
-				<section data-transition="none" id="background">
+				<section data-transition="none">
 					<h3>Digital Publishing</h3>
 					<ul style="font-size: 35px;">
 						<li class="fragment"><span class="red">Semantic Web, Linked Data</span></li>
@@ -258,23 +257,145 @@
 					</ul>
 				</section>
 
-				<section data-transition="none" id="digital_publishing_spar_ontologies">
-					<h3>Digital Publishing</h3>
+				<section data-transition="none">
+					<h3>Research Question</h3>
+					<span class="fragment">How can <strong><em><span class="red">scientific workflows</span></em></strong> that produce and consume digital artifacts
+					</span>
+					<span class="fragment">be <span class="blue"> assessed, linked</span> and <span class="blue">decentrally executed</span> across platforms,
+					</span>
+					<span class="fragment">such that <span class="red">individual steps</span> of a single workflow can be <span class="red">distributed</span>?
+				</span>
+			</section>
+
+			<section data-transition="none">
+				<h3>Approach</h3>
+				<ul>
+					<li class="fragment"><span class="red">Digital artifacts</span></li>
+					<li class="fragment"><span class="red">Scientific workflows
+					</li>
+					<li class="fragment"><span class="blue">Linked Data + scientific workflows + (Web) links</span> = <span class="red">LINKFLOWS</span></li>
+				</ul>
+			</section>
+
+			<section data-transition="none">
+				<h3>Digital artifacts</h3>
+				<ul>
+					<li><span class="red">All objects or resources that belong to a scientific publication</span></li>
+					<li>Text, code, datasets, figures, multimedia objects, spreadsheets, reviews, methods, protocols, and results</li>
+					<li>The more <span class="blue">fine-grained</span>, the better!</li>
+				</ul>
+			</section>
+
+			<section data-transition="none">
+				<h3>Scientific workflows</h3>
+				<ul>
+					<li class="fragment"><span class="red">Concrete specifications that can be automatically executed </span> - a set of inter-connected steps that <span class="blue">produce and consume objects or digital artifacts</span> that together combine for a certain result goal</li>
+					<li class="fragment"><span class="red">Abstract definitions or templates</span> of scientific workflows or scientific workflow steps that can be executed by users</li>
+				</ul>
+			</section>
+
+			<section data-transition="none">
+				<h3><span class="red">Linkflows = Linked Data + scientific workflows + (Web) links</span></h3>
+				<ul>
+					<li>Use Linked Data and Web links together: <span class="blue">deferenceable HTTP links</span></li>
+					<li><span class="blue">Describe formally</span> the scientific workflows and <span class="blue">link steps across platforms</span> using Web links</li>
+				</ul>
+			</section>
+
+			<section data-transition="none">
+				<h3>Research Question Reloaded</h3>
+				How can <strong><em><span class="red">scientific workflows</span></em></strong> that produce and consume digital artifacts be <span class="blue"> assessed, linked</span> and <span class="blue">decentrally executed</span> across platforms, such that <span class="red">individual steps</span> of a single workflow can be <span class="red">distributed</span>?
+		</section>
+
+			<section data-transition="none">
+				<h3>Approach</h3>
+				<ul>
+					<li>Represent scientific knowledge as <span class="red">nodes in a network</span></li>
+					<li><span class="red">Decentralized peer-review</span> process</li>
+					<li>New way of publishing at a very <span class="red">fine-grained level</span>:
+						<ul>
+							<li>ontologies on digital publishing - <a href="http://www.sparontologies.net/">SPAR</a></li>
+							<li>new forms of granular provenance modeling - <a href="http://nanopub.org">nanopublications</a> </li>
+						<ul>
+				</ul>
+			</section>
+
+			<!-- <section data-transition="none">
+				<h3>Digital Publishing</h3>
+				<ul>
+					<li> Semantic Web, Linked Data
+						<small><table>
+							<tr>
+								<td style="padding-left: 0px"><img class="plain stretch" style="width:70%" src="img/SPAR_Ontologies.png"/></td>
+								<td style="padding-left: -300px">
+									<p><a href="http://www.sparontologies.net/">SPAR ontologies</a>: Semantic Publishing and Referencing Ontologies</p>
+								</td>
+							</tr>
+						</table></small>
+					</li>
+				</ul>
+			</section>
+ -->
+			<!-- <section data-transition="none">
+				<h3>Digital Publishing</h3>
+				<ul>
+					<li> Semantic Web, Linked Data
+						<small><table>
+							<tr>
+								<td style="padding-left: 0px">
+									<img class="plain stretch" style="width:150%" src="img/Nanopublication_Network.svg"
+										longdesc="http://nanopub.org/wordpress/?page_id=65"/>
+								</td>
+								<td style="padding-left: 200px; padding-top: 50px">
+									<p>Fine-grained interconnected parts of knowledge; e.g. <a href="http://nanopub.org">nanopublications</a></p>
+								</td>
+							</tr>
+						</table></small>
+					</li>
+				</ul>
+			</section> -->
+
+			<section data-transition="none">
+				<h3>Linkflows: Use cases</h3>
+				<ul>
+					<li class="fragment"><a href="https://www.iospress.nl/"><span class="red">IOS Press</span></a>: publishing house based in Amsterdam
+						<ul>
+							<li><a href="https://datasciencehub.net/">Data Science journal</a></li>
+							<li><a href="https://www.iospress.nl/journal/jad-reports/">Journal of Alzheimer's Disease Reports</a></li>
+						</ul>
+					</li>
+					<li class="fragment"><a href="https://beeldengeluid.nl/en"><span class="red">Netherlands Institute for Sound and Vision</span></a>, the Netherlands cultural archive, has over 70% of the Dutch audio-visual heritage</a>
+						<ul>
+							<li><a href="http://viewjournal.eu/">VIEW Journal of European Television History and Culture</a></li>
+							<li><a href="http://www.tmgonline.nl/">Tijdschrift voor Mediageschiedenis</a> (Magazine for Media History)</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+				<section data-transition="none">
+					<h3>Sub-research question 1</h3>
+					How can we <span class="red">model</span> the <span class="blue">decentralized execution</span> of workflows by using <span class="blue">Linked Data</span> principles and tools?
+				</section>
+
+				<section data-transition="none">
+					<h3>Approach</h3>
 					<ul>
-						<li> Semantic Web, Linked Data
-							<small><table>
-								<tr>
-									<td style="padding-left: 0px"><img class="plain stretch" style="width:70%" src="img/SPAR_Ontologies.png"/></td>
-									<td style="padding-left: -300px">
-										<p><a href="http://www.sparontologies.net/">SPAR ontologies</a>: Semantic Publishing and Referencing Ontologies</p>
-									</td>
-								</tr>
-							</table></small>
-						</li>
+						<li class="fragment">Develop a <span class="blue">simple model</span> for linked workflows &rarr; <span class="red">linkflows</span></li>
+						<li class="fragment">Use <span class="blue">Linked Data </span> principles and tools to <span class="blue">publish</span> and <span class="blue">link</span> scientific workflows</li>
+						<li class="fragment">Build framework based on <a href="http://git2prov.org:8902/prov-pings/index.html">PROV-Pings</a> and <a href="https://www.w3.org/TR/ldn/">Linked Data Notifications</a></li>
+						<li class="fragment">Track provenance using <a href="https://www.w3.org/TR/prov-o/">PROV-O</a> and <a href="http://trustyuri.net/">Trusty URIs</a></li>
+						<li class="fragment"><span class="red">Innovation:</span> <span class="blue">workflow steps</span> are <span class="blue">distributed</span> on different platforms, <span class="blue">linked</span> together using Web links, <span class="blue">reused</span> and <span class="blue">consumed</span> on other platforms</li>
 					</ul>
 				</section>
 
-				<section data-transition="none" id="digital_publishing_nanopublications">
+				<section>
+					<img class="plain stretch"
+						src="img/Network.svg"
+						alt="Network"/>
+				</section>
+
+				<section data-transition="none">
 					<h3>Digital Publishing</h3>
 					<ul>
 						<li> Semantic Web, Linked Data
@@ -291,106 +412,6 @@
 							</table></small>
 						</li>
 					</ul>
-				</section>
-
-				<section data-transition="none" id="research_question">
-					<h3>Research Question</h3>
-					<span class="fragment">How can <strong><em><span class="red">scientific workflows</span></em></strong> that produce and consume digital artifacts
-					</span>
-					<span class="fragment">be <span class="blue"> assessed, linked</span> and <span class="blue">decentrally executed</span> across platforms,
-					</span>
-					<span class="fragment">such that <span class="red">individual steps</span> of a single workflow can be <span class="red">distributed</span>?
-				</span>
-			</section>
-
-				<section data-transition="none" id="research_question">
-					<h3>Sub-research question 1</h3>
-					How can we <span class="red">model</span> the <span class="blue">decentralized execution</span> of workflows by using <span class="blue">Linked Data</span> principles and tools?
-				</section>
-
-				<section data-transition="none" id="approach_intro_1">
-					<h3>Approach</h3>
-					<ul>
-						<li class="fragment">Represent scientific knowledge as <span class="red">nodes in a network</span></li>
-						<li class="fragment">Approach <span class="red">compatible</span> with "traditional" PDFs, <a href="http://www.sparontologies.net/">SPAR</a>-represented articles, <a href="http://nanopub.org">nanopublications</a>, etc. </li>
-						<li class="fragment"><span class="red">Decentralized peer-review</span> process</li>
-					</ul>
-				</section>
-
-				<section data-transition="none" id="approach_intro_2">
-					<h3>Approach</h3>
-					<ul>
-						<li class="fragment"><span class="red">Digital artifacts</span></li>
-						<li class="fragment"><span class="red">Scientific workflows
-						</li>
-						<li class="fragment"><span class="blue">Linked Data + scientific workflows + (Web) links</span> = <span class="red">LINKFLOWS</span></li>
-					</ul>
-				</section>
-
-				<section data-transition="none" id="approach_1">
-					<h3>Digital artifacts</h3>
-					<ul>
-						<li class="fragment"><span class="red">all objects or resources that belong to a scientific publication</span></li>
-						<li class="fragment">text, code, datasets, figures, multimedia objects, spreadsheets, reviews, methods, protocols, and results</li>
-						<li class="fragment">the more <span class="blue">fine-grained</span>, the better!</li>
-					</ul>
-				</section>
-
-				<section data-transition="none" id="approach_2">
-					<h3>Scientific workflows</h3>
-					<ul>
-						<li class="fragment"><span class="red">concrete specifications that can be automatically executed </span> - a set of inter-connected steps that <span class="blue">produce and consume objects or digital artifacts</span> that together combine for a certain result goal</li>
-						<li class="fragment"><span class="red">abstract definitions or templates</span> of scientific workflows or scientific workflow steps that can be executed by users</li>
-					</ul>
-				</section>
-
-				<section data-transition="none" id="approach_3">
-					<h3>Linkflows</h3>
-					<ul>
-						<li class="fragment"><span class="red">Linked Data + scientific workflows + (Web) links</span></li>
-						<li class="fragment"><span class="blue">modeling</span> of scientific workflows using <span class="blue">Linked Data </span> principles and tools</li>
-						<li class="fragment"><span class="blue">workflow steps</span> can be <span class="blue">distributed</span> on different platforms, but <span class="blue">linked</span> together using Web links</li>
-					</ul>
-				</section>
-
-				<section id="img_approach">
-					<img class="plain stretch"
-						src="img/Network.svg"
-						alt="Network"/>
-				</section>
-
-				<section data-transition="none" id="evaluation_design">
-					<h3>Evaluation design</h3>
-					<ul>
-						<li class="fragment">Develop a <span class="blue">simple model</span> for linked workflows &rarr; <span class="red">linkflows</span></li>
-						<li class="fragment">Choose <span class="blue">sample articles</span> from <a href="https://www.iospress.nl/">IOS Press</a> and <a href="https://beeldengeluid.nl/en">Netherlands Sound and Vision</a></li>
-						<li class="fragment"><span class="blue">Instantiate model</span> with sample articles</li>
-						<li class="fragment">Use <a href="https://www.w3.org/TR/ldn/">Linked Data Notifications (LDNs)</a> for <span class="blue">decentralized execution</span></li>
-					</ul>
-				</section>
-
-				<section data-transition="none" id="use_cases">
-					<h3>Linkflows: Use cases</h3>
-					<ul>
-						<li class="fragment"><a href="https://www.iospress.nl/"><span class="red">IOS Press</span></a>: publishing house based in Amsterdam
-							<ul>
-								<li><a href="https://datasciencehub.net/">Data Science Journal</a></li>
-								<li><a href="https://www.iospress.nl/journal/jad-reports/">Journal of Alzheimer's Disease Reports</a></li>
-							</ul>
-						</li>
-						<li class="fragment"><a href="https://beeldengeluid.nl/en"><span class="red">Netherlands Sound and Vision</span></a>, the Netherlands cultural archive, has over 70% of the Dutch audio-visual heritage</a>
-							<ul>
-								<li><a href="http://viewjournal.eu/">VIEW Journal of European Television History and Culture</a></li>
-								<li><a href="http://www.tmgonline.nl/">Tijdschrift voor Mediageschiedenis</a> (Magazine for Media History)</li>
-								<li><a href="https://www.vpro.nl/programmas/the-mind-of-the-universe.html">Mind of the Universe videos</a></li>
-							</ul>
-						</li>
-					</ul>
-				</section>
-
-				<section data-transition="slide none">
-					<h3>Model <a href="https://datasciencehub.net/paper/automating-semantic-publishing">sample paper</a></h3>
-					<img class="plain stretch" src="img/0_1.svg"/>
 				</section>
 
 				<section>
@@ -405,36 +426,32 @@
 				</section>
 
 				<section data-transition="none">
-					<h3>Incomplete view of network</h3>
-					<img class="plain stretch" style="width:150%" src="img/Article.png"/>
-				</section>
-
-				<section data-transition="none">
-					<img class="plain stretch" style="width:150%" src="img/Meta.png"/>
-				</section>
-
-				<section data-transition="none" id="digital_publishing_nanopublications_2">
-					<h3>Digital Publishing</h3>
+					<h3>Evaluation design</h3>
 					<ul>
-						<li> Semantic Web, Linked Data
-							<small><table>
-								<tr>
-									<td style="padding-left: 0px">
-										<img class="plain stretch" style="width:150%" src="img/Nanopublication_Network.svg"
-											longdesc="http://nanopub.org/wordpress/?page_id=65"/>
-									</td>
-									<td style="padding-left: 200px; padding-top: 50px">
-										<p>Fine-grained interconnected parts of knowledge; e.g. <a href="http://nanopub.org">nanopublications</a></p>
-									</td>
-								</tr>
-							</table></small>
-						</li>
+						<li class="fragment"><span class="red">Qualitative analysis</span> on a corpus of selected articles</li>
+						<li class="fragment">Choose ~20 <span class="blue">sample articles</span> from <a href="https://www.iospress.nl/">IOS Press</a> and <a href="https://beeldengeluid.nl/en">Netherlands Institute for Sound and Vision</a></li>
+						<li class="fragment"><span class="blue">Instantiate model</span> with sample articles</li>
+						<li class="fragment">Consider <span class="blue">reviews, comments and annotations</span></li>
 					</ul>
 				</section>
 
-				<section data-transition="none">
-					<img class="plain stretch" style="width:150%" src="img/Nanopubs.png"/>
+				<section data-transition="slide none">
+					<h3>Model <a href="https://datasciencehub.net/paper/automating-semantic-publishing">sample paper</a></h3>
+					<img class="plain stretch" src="img/0_1.svg"/>
 				</section>
+
+				<section data-transition="none">
+					<h3>Results: Incomplete view of network</h3>
+					<img class="plain stretch" style="width:150%" src="img/Article.png"/>
+				</section>
+
+				<!-- <section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Meta.png"/>
+				</section> -->
+
+				<!-- <section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Nanopubs.png"/>
+				</section> -->
 
 				<section>
 					<h4>Linkflows model for <a href="https://datasciencehub.net/paper/automating-semantic-publishing">sample paper</a></h4>
@@ -482,26 +499,16 @@
 					<!-- <h6>What about abstract properties vs. instances?</h6> -->
 				</section>
 
-				<section data-transition="slide none" id="future_work">
-					<h3>Future work</h3>
+				<section data-transition="slide none">
+					<h3>Next steps</h3>
 					<ul>
-						<li class="fragment">Use Linked Data Notifications (LDNs) for <span class="red">decentralized execution</span> of workflows</li>
-						<li class="fragment">Evaluation: model more papers both from <a href="https://www.iospress.nl/">IOS Press</a> and <a href="https://beeldengeluid.nl/en">Netherlands Sound and Vision</a></li>
+						<li class="fragment">Use <a href="https://www.w3.org/TR/ldn/">Linked Data Notifications (LDNs)</a> for <span class="red">decentralized execution</span> of workflows</li>
+						<li class="fragment">Evaluation: model more papers both from <a href="https://www.iospress.nl/">IOS Press</a> and <a href="https://beeldengeluid.nl/en">Netherlands Institute for Sound and Vision</a></li>
 						<li class="fragment">New measure for <span class="red">quality assessment</span>; e.g. network analysis</li>
 					</ul>
 				</section>
 
-				<!-- <section data-transition="none" id="PhD_Comics_quality_assessment">
-					<h3>Quality assessment: in progress!</h3>
-					<a href="http://phdcomics.com/comics.php?f=1821">
-						<img class="plain" src="img/PhD_Comics_References.png" style="width:60%"
-							alt="Optimal number of references, PhD Comics"
-							longdesc="http://phdcomics.com/comics.php?f=1821"/>
-					</a>
-				</section> -->
-
-				<section data-transition="none" id="LDNs">
-					<h4>Future work: example<h4>
+				<section data-transition="none">
 					<p>Reviewing workflow using <a href="https://www.w3.org/TR/ldn/">LDNs</a></p>
 					<small><table>
 						<tr>
@@ -513,7 +520,7 @@
 								</a>
 							</td>
 							<td style="vertical-align: middle; width: 40%">
-								<strong><span class="red">
+								<span class="red">
 									<ol style="text-transform: none;">
 										<li class="fragment space_after">submit article/snippet</li>
 										<li class="fragment space_after">invite reviewer</li>
@@ -521,13 +528,122 @@
 										<li class="fragment space_after">submit review</li>
 										<li class="fragment">use review for publishing</li>
 									</ol>
-								</strong></span>
+								</span>
 							</td>
 						</tr>
 					</table></small>
 				</section>
 
-				<section data-transition="slide none" id="take_home_1">
+				<section data-transition="none">
+					<h2>Future work</h2>
+				</section>
+
+				<section data-transition="none">
+					<h3>Sub-research question 2</h3>
+					How can we <span class="red">execute</span> workflows that <span class="blue">produce</span> and <span class="blue">consume</span> digital artifacts?
+				</section>
+
+				<section data-transition="none">
+					<h3>Approach</h3>
+					<ul>
+						<li>Use the <span class="blue">model</span> developed for <span class="red">linkflows</span></li>
+						<li>Focus on <span class="blue">workflow decentralization</span> and the <span class="blue">small granularity</span> of digital artifacts</li>
+						<li>Build <span class="blue">prototype</span> for a <span class="blue">fully decentralized</span> reviewing workflow</li>
+						<li class="fragment"><span class="red">Innovation:</span> produce, link and consume workflows in an <span class="blue">automated manner</span> across platforms</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h3>Evaluation</h3>
+					<ul>
+						<li><span class="red">Controlled user experiment</span> on the software prototype created</li>
+						<li>Give feedback and rate:
+							<ul>
+								<li><span class="blue">user interfaces</span></li>
+								<li>the new way the <span class="blue">reviews</span> are conducted</li>
+								<li>the generation of the <span class="blue">reviewing linkflows</span></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h3>Sub-research question 3</h3>
+					How can we <span class="red">automatically</span> analyze digital artifacts and <span class="blue">assess</span> their <span class="blue">quality and impact</span> based on the linked workflows that produce and consume them?
+				</section>
+
+				<section data-transition="none">
+					<a href="http://phdcomics.com/comics.php?f=1821">
+						<img class="plain" src="img/PhD_Comics_References.png" style="width:60%"
+							alt="Optimal number of references, PhD Comics"
+							longdesc="http://phdcomics.com/comics.php?f=1821"/>
+					</a>
+				</section>
+
+				<section data-transition="none">
+					<h3>Approach</h3>
+					<ul style="text-size:35px;">
+						<li>Build a <span class="blue">prototype of a user interface</span> that connects visually the digital artifact with the workflow that generated it</li>
+						<li>Develop <span class="blue">metrics</span> for <span class="blue">quality assessment</span> of the digital artifact</li>
+						<!-- <li>Analyze and measure the <span class="blue">impact</span> of the digital artifact</li> -->
+						<li class="fragment"><span class="red">Innovation:</span>
+							<ul>
+								<li><span class="blue">track and visualize</span> the workflow steps and the digital artifacts that contain them </li>
+								<li>new ways of <span class="blue">measuring</span> quality and impact of digital artifacts</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h3>Evaluation</h3>
+					<ul>
+						<li><span class="red">Nichesourcing</span> (crowdsourcing with experts) to evaluate the quality and impact metrics</li>
+						<li>Use existing data to <span class="blue">import workflows</span> and use it as a <span class="red">ground truth</span> for workflow generation</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h3>Sub-research question 4</h3>
+					Can we use digital artifacts and the linked workflows that contain them to <span class="blue">support inquires</span> from users?
+				</section>
+
+				<section data-transition="none">
+					<h3>Approach</h3>
+					<ul>
+						<!-- <li>Blend all previous aspects together: <span class="blue">model and execution</span> of linked workflow, <span class="blue">impact and quality assessment</span> of digital artifact</li> -->
+						<li>An inquiry: <span class="blue">a search</span> of a digital artifact</li>
+						<li><span class="blue">Generate linked workflow steps</span>, opening the execution of workflow for users</li>
+						<li class="fragment"><span class="red">Innovation:</span>
+							<ul>
+								<li><span class="blue">retrieve digital artifacts and their workflows</span> at a fine-grained level</li>
+								<li>produce, consume and execute linked workflows <span class="blue">on the fly</span></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h3>Evaluation</h3>
+					<ul>
+						<li>Develop <span class="blue">prototype</span> to <span class="blue">retrieve</span> digital artifacts and their linked workflows in response to user queries</li>
+						<li>Use<span class="blue">prototype</span> to create <span class="blue">on the fly</span> linked workflows</li>
+						<li><span class="red">Crowdsourcing</span> for software prototype evaluation:
+							<ul>
+								<li><span class="blue">relevancy</span> of returned results</li>
+								<li><span class="blue">rating</span> of the creation and execution of linked workflows</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<img class="plain stretch"
+						src="img/Digital_Publishing_Problems.svg"
+						alt="Digital publishing"/>
+				</section>
+
+				<section data-transition="slide none">
 								<a href="https://scholarlykitchen.sspnet.org/2018/05/09/fsci-training-people-not-going/">
 									<img class="plain" src="img/We_Do_Not_Need_PDFs.png"
 										alt="Where we're going we do not need PDFs"/>
@@ -535,7 +651,7 @@
 				</section>
 
 				<!-- <section data-background-image="img/Network_2.png" id="questions"> -->
-			<section id="questions">
+			<section>
 					<img class="plain" style="width: 40%" src="img/Questions.png"/>
 			</section>
 
