@@ -1,0 +1,188 @@
+too much text, too many words
+the message does not come across
+be more bold!
+disruptive technology: convince fo rpotential for users
+publishers need to have a good motivation to adopt the system and get out of their comfort zone: cultural and community bottlenecks
+working together with publishers to create incentives to them
+a tool is never a solution, but a change of culture
+focus on technology from the beginning -: mention it!
+completely unrealisting -> goal: knowledge, innovation; something innovative: more about processes and incentives
+what is my target in this big gigantic picture
+too many details in the research questions
+Solutions right now are not interesting!!!
+hypotheses are more interesting
+simplify the message in my head"3 things I am going to talk about 
+clear sections! -> outline!!!
+motivation, rq, approach, hypothesis, measuring the success
+no future work!
+3 things, visualize them and give them names
+decentralization is not a problem! it is a component of the solution
+3 most proeminent ones, some visual picture, connect them in some flow and the connection between them is linkflows
+together they build my research question, some possible approaches 
+data, process, metrics
+one overview 
+
+start and end with my message: imagine how the ideal world will be there if my research would be out there, negative picture, then blue sky, then repeat it again -> Cristina is working on this...
+subresearch question in context
+
+3 problems, 3 solutions, make choices in terms of hypotheses fof the rqs
+review of an existing DA
+
+what is the semantics of red and blue? the highlighted
+remove fragments!
+
+Twitter handle on each slide, affiliation
+S2: Vu is the affiliation
+S3: take-away message: we still publish in science like hundreds of 
+very bold
+digital publishing title -: is scientific publishing still in the dark edges
+no first bullet point
+blue things: sub-bullets 
+maybe get rid of the slide
+
+S4: start with this slide!
+we publish digitally but mimick how we publish 300 years ago
+stone age for publication: we still change
+I do not mention knowledge burying here and I introduce it on the next slide!
+
+time-consuming to publish (months to years), to stay up to date, knowledge burying
+
+I do not need all this build-up! 
+
+overarching theeme: digital publishing but it is just a picture of how we used ot publish hundreds of years ago
+VOLUME!!! is one of the more journals, more conferences, more time, but there are many more players than it used to be before; the space has grown exponentially
+a tool is never a solution, it is an engineering problem!!!! The answers to my uqestion can never be a tool!!!
+
+I only talk about consumers (researchers) here!!! WHich perspective am i using? 3 players are missing: authors, reviewers, publishing houses -> introduce ecosystem and each of them carries a lot of problems
+
+How things could work and remember that I work with a publisher!!! Incentivizing them as well!
+
+S5: cite paper!!! 
+incude 40% info in title
+take out last bullet point about processes
+
+S6: decentralization is not a problem, then I mix reviewers, take out the slide
+decentralization makes things slower!!!
+sounds anarchistic!!! -> who says that is better?
+a tool thak might solve something, not trivial to apply this solution, is this ingredient used 
+decentralization soes not solve time, a lot of papaers, none of the problems are addressed by it
+for reviewing might be a sense od descentralization
+
+make things smaller, publish faster are more interesting aspects!!!
+decentrlaiza single workflows: workflows do not need to start and end on the same platform, reuse a step that was already conducted, use reviers to reviw on that platform -> a solution to a problem I did not specify
+
+last stept: only if I manage to decomposition of info, to flow, deal with privacy, etc.
+could we even fdo all that that will allw to decentrlaization
+
+links + workflows -> de-chunk the process into smaller inte0connected places, where they live becomes irrelevant
+
+the fact that the granularuty is smaller and the linking -> nain aspects
+
+make th egranularity smaller and smaller, let people let content find it
+
+more or less comes naturally applying reusability and web-focus of web data -> aspect of decentrlaization, works together iwth LDNs that can be used, difficult ot simulate, 
+
+
+connect reviews on different pieces: review of Elsevier, reuse on ESWC and on IOS platform
+they stay exactly as they are, but it is all information flow
+
+
+S7: is it motivation, problem? make meaningful title!!!
+
+title is strange: summary of problems, approach
+1st bullet poit seems strange
+disparate things
+couldnt we o thingslike this and this
+and all related work is about this and this
+
+S8: too many words? What if we can have, how can we change this? Intro subrqs more smaller granularity s.t it takes less time to find out new inventions, things linkes, etc. things living on different platforms
+introduce 3 ingredients of my rq them sum it up is a whole rq, plusses, and this is linkflows!!!
+scoping: many more things related, but htis is the focus of my research
+remove deifnitions, give quick examples
+DA: single review comment that targets a specific question, a paragraph in a sections, etc; I only show boring ones
+SW: reviews, I do not acutally mention an example!!!
+
+More examples: 3 different representative examples
+make sure that they cover many levels!
+
+Leave the slides with the definitions out!
+
+S12: DA I mention and use link data
+
+S11: automatically executed -> no! it is exactly what that not it is
+
+
+use pictures in the beginning to show what I am talking about
+no result: an intermediate exploratory thin
+illustrate my viison with the 
+
+
+LDN is extremely difficult to explain, completely omit it
+if I will skip something, do not put it there!!!
+
+end with a meaningful slide: pdf is not a meaningful problem that I am trying to solve! the others need to remmeber the message!!! 
+
+linkflows target
+bigger slide number
+exploit the fact that people there suffer for the problems: people submitting papers and not getting reviews quick, the audience tackles some of the
+
+Next steps: no quality in there!!!
+LDNs:subrq2 -> execution of workflows
+
+all sub-research questions -> how thay go togethre to answer the overarching rq? 
+srs: title on slide for approach
+innovation sounds a bot like engineering, nnovation -> novel!
+i slide per srq
+remove phd comics 
+in th eend: come back to how will I contribute to solving these problems? KNOWLEDGE!!!
+
+linked data to edit scientific workflows , what is the novelty here? 
+
+Maybe a shortened version that I can have as a title for RQ
+
+As a title over arching RQ and bullet points subrqs
+
+2 approach slides: specific technologies used the first one
+
+
+Add references for articles cited
+
+epidemiologists: cannot stay fully up to date because it is impossible-> check for exact hours
+
+Give examples with scientific workflows!!!
+
+Approach: general approach, descentralized... -> specific instance, looking at a specific use case: peer-reviewing; it is all-over the place
+
+is the approach about peer-review or does it include it as a use case?
+
+Modify figure with network: different color for reviews, something that I want to show much earlier to sow my overall approach!, maybe before or after RQ -> a growing and changing network
+
+no nanopublications: digital publishing is confusing, labels out of nowhere Semantic Web, Linked Data, too small to read, big nanopublication and have a 
+
+remove ontologies if I have too many slides
+
+qualitative and quantitative analysis as well because I have some 
+
+Is it realistic to consider 20 papers? - 1, 2 months, evan 10 or 5 is good!
+
+sample paper : papwer workflow eample: paper, editor contribution, author contribution, ox time, get rid of randomness
+
+Results: how d owe know that the similarity of the content has stayed the same? take out external links, put nodes that link to the preveious version
+
+LDN with diagram: second subrq, just the picture and tell in title: using LDS to do this and this, no steps 
+
+flower thingie if I can put in the beginning 
+
+Last slide with pdfs: there should be another one before it!
+
+Be realistic and the kind of outcome expected from the community! 
+
+
+I have gained knowledge, I have gained things, we do not know how this should be solved, this is a hypothesis, prossibly it will hep with this and that
+
+All evaluations should expect surprising results: something that is not related to how I make my project, if all is decentralized, actually quality can decrease; we expect it to increase; everything is so transparent tha teveytone woudl manage to cheat the system
+
+Outocme: get insight and see if the specific combinationsof tools, methods, aetc. to waht aspects and to what extnd they can be solved, how much additional informationdo we get with respect to quality of such a descentral 
+
+New insight into these wuestions: a successful project!
+
