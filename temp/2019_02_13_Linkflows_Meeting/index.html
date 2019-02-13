@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Linkflows (bi-monthly) Update Meeting</title>
+
+		<!-- Open all links in a new tab or window -->
+		<base target="_blank">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Customize css -->
+		<link rel="stylesheet" href="css/init.css">
+
+		<!-- Printing and PDF exports -->
+		<script src="js/print-pdf.js"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2><strong>Linkflows (bi-monthly) Meeting</strong></h2>
+					</br>
+					<p>13<small><sup>th</sup></small> February 2019</p>
+				</section>
+
+				<section>
+					<h3>"Bi-monthly" project updates</h3>
+					<ul style="font-size: 35px;">
+						<li>Main research direction</li>
+						<li>Linkflows model</li>
+						<li>Dataset</li>
+						<li>Research strategy and experiments</li>
+						<li>Next steps</li>
+					</ul>
+				</section>
+
+				<section data-transition="none" id="research_question">
+					<h3>Last time:</h3>
+					How can we <span class="red">model</span> the [<span class="blue">decentralized</span>] <span class="blue">execution</span> of workflows by using <span class="blue">Linked Data</span> principles and tools?
+				</section>
+
+				<section data-transition="none">
+					<h3>General idea: recap</h3>
+					<img class="plain stretch" style="width:150%" src="img/Representation_Papers.png"/>
+				</section>
+
+				<section data-transition="none">
+					<h3>Linkflows model</h3>
+					<img class="plain stretch" style="width:150%" src="img/Representation_One_Paper.png"/>
+				</section>
+
+				<!-- <section data-transition="slide none">
+					<h3>Model <a href="https://datasciencehub.net/paper/automating-semantic-publishing">sample paper</a></h3>
+					<img class="plain stretch" src="img/0.png"/>
+				</section> -->
+
+				<section>
+					<h3>Ontologies used</h3>
+					<ul style="font-size: 30px;">
+						<li><a href="https://www.w3.org/TR/prov-o/">PROV-O</a>: Provenance Ontology</li>
+						<li><a href="http://www.sparontologies.net/">SPAR suite</a>: ontologies for the publishing domain</li>
+						<li><a href="http://fairreviews.linkeddata.es/">FAIR<sup>*</sup>reviews</a> ontology</li>
+						<li><a href="https://www.w3.org/TR/annotation-model/">Web Annotation Data Model</a></li>
+						<li>and others...</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Linkflows model in a nutshell</h3>
+					<ul style="font-size: 35px;">
+						<li>Actors: authors, peer-reviewers, editors, other</li>
+						<li>Target: root, intermediary, leaf</li>
+						<li>Aspect: syntax, style, content</li>
+						<li>Impact: 1 to 5</li>
+						<li>Action type: suggestion, no_action_needed, needs_to_be_addressed</li>
+						<li>Sentiment: positive, balanced/neutral, negative</li>
+						<li>Action: add, remove, modify</li>
+						<li>Reply: agree, dismiss, ignore</li>
+						<li>Response: addressed, not_addressed, partially_addressed</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h4>Can we <span class="blue">automate</span> the <span class="red">editing</span> process?</h4>
+					<ul style="font-size: 35px;">
+						<li>Can we define a <span class="blue">complete</span> and <span class="blue">precise</span> <span class="red">model</span> of editing actions?</li>
+						<li><span class="red">Model:</span> identify and perform actions
+							<ol style="font-size: 30px;">
+								<li>manually -> dataset creation</li>
+								<li>nichesourcing -> ask peer-reviewers</li>
+								<li>crowdsourcing -> ask the crowd</li>
+							</ol>
+						</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h4>Can we <span class="blue">automate</span> the <span class="red">editing</span> process?</h4>
+					<ul style="font-size: 35px;">
+						<li>Can we define a <span class="blue">complete</span> and <span class="blue">precise</span> <span class="red">model</span> of editing actions?</li>
+						<li><span class="blue">Complete:</span>
+							<ol style="font-size: 30px;">
+								<li>ask editors: survey to check model</li>
+								<li>ask reviewer: survey to check model and questionnaire -><a href="https://docs.google.com/forms/d/1ZaYfsp4iqrJcMJQ91_kQki5PabJ9Tn4V6JI7X0U3wAU/edit">pilot</a></li>
+								<li>check reviews</li>
+							</ol>
+						</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h4>Can we <span class="blue">automate</span> the <span class="red">editing</span> process?</h4>
+					<ul style="font-size: 35px;">
+						<li>Can we define a <span class="blue">complete</span> and <span class="blue">precise</span> <span class="red">model</span> of editing actions?</li>
+						<li><span class="blue">Precise:</span>
+							<ol style="font-size: 30px;">
+								<li>ask reviewers -> experiment: set ground truth</li>
+								<li>action + model type</li>
+							</ol>
+						</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h4>Can we <span class="blue">automate</span> the <span class="red">editing</span> process?</h4>
+					<ul style="font-size: 35px;">
+						<li>Can we define a <span class="blue">complete</span> and <span class="blue">precise</span> <span class="red">model</span> of editing actions?</li>
+						<li>Can the model be applied <span class="blue">automatically</span>? And to what degree?</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h3>Dataset</h3>
+					<img class="plain stretch" style="width:150%" src="img/General_Statistics.png"/>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Example_Snippet_1.png"/>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Example_Snippet_2.png"/>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Data_Science_Journal.png"/>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/SemWeb_Journal.png"/>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/PeerJ_CS_Journal.png"/>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/ISWC-DeSemWeb.png"/>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/ISMIR-WoRMS.png"/>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Node_Types_Sample_Dataset.png"/>
+				</section>
+
+				<section>
+					<h3>Linkflows model evaluation</h3>
+					<ul style="font-size: 35px;">
+						<li>Granular reviews address snippets of text</li>
+						<li>The chain of changes that one or more reviews launched</li>
+						<li>Sentiment of a review: positive, neutral, negative</li>
+						<li>"Ground truth": peer-review rating of own written review</li>
+						<li>Use crowd/experts to see if reviews were addressed</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Questionnaire_1.png"/>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Questionnaire_2.png"/>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Questionnaire_3.png"/>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Questionnaire_4.png"/>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Questionnaire_5.png"/>
+				</section>
+
+				<section data-transition="slide none" id="future_work">
+					<h3>Future work</h3>
+					<ul>
+						<li>Conduct experiments</li>
+						<li>Refine model</li>
+						<li>Interface(s)</li>
+						<li>Proof of concept implementation</li>
+						<li>Write it all up!!!</li>
+					</ul>
+				</section>
+
+				<!-- <section data-transition="slide none" id="useful_links">
+					<h3>Useful links</h3>
+					<ul style="font-size: 35px;">
+						<li>ESWC'18 paper: <a href="https://link.springer.com/chapter/10.1007%2F978-3-319-98192-5_45">Springer</a>, <a href="#/Linkflows_Springer">PDF</a></li>
+						<li>WebSci'18 extended abstract: <a href="https://drive.google.com/drive/u/0/folders/1To2dI_718yFxo71F2Bq3bmtwI9-A3-19">Google Drive, </a><a href="#/WebSci_abstract">slide</a> and <a href="https://drive.google.com/file/d/1krwHNaUF-b00P8EA9uPl0tpPNmNt74as/view?usp=sharing">poster</a></li>
+						<li><a href="https://github.com/LaraHack/linkflows_model">Linkflows model repository</a></li>
+					</ul>
+				</section> -->
+
+				<section>
+					<img class="plain" style="width: 40%" src="img/Questions.png"/>
+				</section>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="init.js"></script>
+	</body>
+</html>
