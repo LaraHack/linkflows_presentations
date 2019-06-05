@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Linkflows@WAI Meeting 2019</title>
+
+		<!-- Open all links in a new tab or window -->
+		<base target="_blank">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Customize css -->
+		<link rel="stylesheet" href="css/init.css">
+
+		<!-- Printing and PDF exports -->
+		<script src="js/print-pdf.js"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<h2>Linkflows</h2>
+					<h6 style="letter-spacing: 0.01em;">A new model for scientific publishing at a granular level</h6>
+					</br>
+					<small>
+						<p></br>Cristina-Iulia Bucur</p>
+						<p>3<small><sup>rd</sup></small> June 2019 @ WAI Meeting</p>
+						<!-- <p><em>These slides: <a href="https://goo.gl/pQwiE7"><b>https://goo.gl/pQwiE7</b></a>
+						</em></p> -->
+					</small>
+				</section>
+
+				<section>
+					<h3>Scientific publishing: still in the Middle Ages?</h3>
+					<ul>
+						<li>Initial <span class="blue">paradigm of publishing</span>: <span class="red">the same</red>!</li>
+						<li><span class="blue">Article PDFs</span>: coarse-grained structures in which scientific contributions are communicated</li>
+						<li>Measure of quality: <span class="blue">reviewing</span>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>How to keep up?</h3>
+					<ul>
+						<li>It takes <span class="blue">time to publish</span>! even ~ 1 year</li>
+						<li>It takes <span class="blue">time to stay up to date</span>!
+							<ul>
+								<li>~22 hours/week for epidemiologists (2004)</li>
+								<li>2000 papers/day in PubMed (2018)</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/The_Peer_Review_Process.svg"/>
+				</section>
+
+				<section data-transition="none">
+					<h3>Research question</h3>
+					<!-- How can we <span class="red">model</span> the [<span class="blue">decentralized</span>] <span class="blue">execution</span> of workflows by using <span class="blue">Linked Data</span> principles and tools? -->
+					Can a <span class="red">fine-grained model</span> of the scientific publishing workflow help us make <span class="red">reviewing processes</span> more <span class="blue">efficient</span> and more <span class="blue">accurate</span>?
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Workflow_Linkflows.svg"/>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Workflow_Linkflows_1.svg"/>
+				</section>
+
+				<section data-transition="none">
+					<h3>Fine-grained reviewing</h3>
+					<img class="plain stretch" style="height:300%" src="img/Changes_Title_Sample_Article.svg"/>
+				</section>
+
+				<section>
+					<h3>Ontologies used</h3>
+					<ul style="font-size: 30px;">
+						<li><a href="https://www.w3.org/TR/prov-o/">PROV-O</a>: Provenance Ontology</li>
+						<li><a href="http://www.sparontologies.net/">SPAR suite</a>: ontologies for the publishing domain</li>
+						<li><a href="http://fairreviews.linkeddata.es/">FAIR<sup>*</sup>reviews</a> ontology</li>
+						<li><a href="https://www.w3.org/TR/annotation-model/">Web Annotation Data Model</a></li>
+						<li>and others...</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Linkflows model in a nutshell</h3>
+					<ul style="font-size: 35px;">
+						<li>Actors: authors, peer-reviewers, editors, other</li>
+						<li>Target: root, intermediary, leaf</li>
+						<li>Aspect: syntax, style, content</li>
+						<li>Impact: 1 to 5</li>
+						<li>Action type: suggestion, no_action_needed, needs_to_be_addressed</li>
+						<li>Sentiment: positive, balanced/neutral, negative</li>
+						<li>Action: add, remove, modify</li>
+						<li>Reply: agree, dismiss, ignore</li>
+						<li>Response: addressed, not_addressed, partially_addressed</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%; border-width:2px; border-color: Black;" src="img/HTML_Form.svg"/>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Meta.png"/>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Workflow_Linkflows_2345.svg"/>
+				</section>
+
+				<section>
+					<h3>Linkflows model evaluation</h3>
+					<ul style="font-size: 35px;">
+						<li>Granular reviews address snippets of text</li>
+						<li>The chain of changes that one or more reviews launched</li>
+						<li>Sentiment of a review: positive, neutral, negative</li>
+						<li>"Ground truth": peer-review rating of own written review</li>
+						<li>Use crowd/experts to see if reviews were addressed</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Workflow_Linkflows_2.svg"/>
+				</section>
+
+				<section>
+					<h4>Datasets</h4>
+					<small><table class="borders">
+						<tr>
+							<th rowspan="2" colspan="2" class="borders">Data Science Journal</th>
+							<th rowspan="2" colspan="2" class="borders">Semantic Web Journal</th>
+							<th rowspan="2" colspan="2" class="borders">PeerJ CS Journal</th>
+							<th colspan="4" class="borders">Openreview.net</th>
+						</tr>
+						<tr>
+							<th colspan="2" class="borders">ISWC-DeSemWeb</th>
+							<th colspan="2" class="borders">ISMIR-WoRMS</th>
+						</tr>
+						<tr>
+							<th class="borders">Total</th><th class="borders">Excluded</th>
+							<th class="borders">Total</th><th class="borders">Selected</th>
+							<th class="borders">Total</th><th class="borders">Excluded</th>
+							<th class="borders">Total</th><th class="borders">Not accepted</th>
+							<th class="borders">Total</th><th class="borders">Excluded</th>
+						</tr>
+						<tr>
+							<td class="borders">13</td>
+							<td class="borders">4</td>
+							<td class="borders">38</td>
+							<td class="borders">10</td>
+							<td class="borders">26</td>
+							<td class="borders">15</td>
+							<td class="borders">10</td>
+							<td class="borders">2</td>
+							<td class="borders">11</td>
+							<td class="borders">1</td>
+						</tr>
+					</table></small>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Workflow_Linkflows_3.svg"/>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Example_Snippet_1.png"/>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Example_Snippet_2.png"/>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Datasets_Node_Type.png"/>
+				</section>
+
+				<section data-transition="none">
+					<h4>Accuracy of Sentiment Analysis Methods</h4>
+					<img class="plain stretch" style="width:150%" src="img/Accuracy_Sentiment_Analysis.svg"/>
+				</section>
+
+				<section data-transition="none">
+					<h4>Sentiment Analysis: Confusion Matrix</h4>
+					<img class="plain stretch" style="width:150%" src="img/Confusion_Matrix_Heatmap.svg"/>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Workflow_Linkflows_4.svg"/>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Questionnaire.png"/>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Workflow_Linkflows_5.svg"/>
+				</section>
+
+				<section data-transition="slide none">
+					<h3>Future work</h3>
+					<ul>
+						<li>Finish conducting experiments</li>
+						<li>Refine model</li>
+						<li>Build interface(s)</li></li>
+						<li>Write it all up!!!</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Workflow_Linkflows.svg"/>
+				</section>
+
+				<section>
+					<img class="plain" style="width: 40%" src="img/Questions.png"/>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="init.js"></script>
+	</body>
+</html>
