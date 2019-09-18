@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Linkflows Updates, September 2019</title>
+
+		<!-- Open all links in a new tab or window -->
+		<base target="_blank">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Customize css -->
+		<link rel="stylesheet" href="css/init.css">
+
+		<!-- Printing and PDF exports -->
+		<script src="js/print-pdf.js"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<h4 style="letter-spacing: 0.01em;">Peer Reviewing Revisited: </br>Assessing Research with Interlinked Semantic Comments</h4></br>
+					<small>
+						<p>Linkflows Project Updates</p>
+						</br>
+						<p>18<small><sup>th</sup></small> September 2019</p>
+						<p><em>These slides: <a href="https://tinyurl.com/Linkflows-Updates-18-September-2019"><b>https://tinyurl.com/Linkflows-Updates-18-September-2019</b></a>
+						</em></p>
+					</small>
+				</section>
+
+				<section data-background-iframe="files/K_CAP_19_Peer_Reviewing_Revisited.pdf" data-background-interactive id="K-CAP_article">
+					<h2><a href="http://www.k-cap.org/2019/index.html">K-CAP'19</a> research article track</h2>
+				</section>
+
+				<!-- <section data-transition="none">
+					<h4>Traditional scientific publishing (with coarse-grained reviewing)</h4>
+					<img class="plain stretch" style="width:150%; height:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Changed_Title_The_Peer_Review_Process.svg"/>
+				</section> -->
+
+				<section data-transition="none">
+					<h4>A model of the processes of fine-grained reviews</h4>
+					<img class="plain stretch" style="height:300%" src="img/Changes_Title_Sample_Article.svg"/>
+				</section>
+
+				<section data-transition="none">
+					<h3>Research question</h3>
+					<!-- How can we <span class="red">model</span> the [<span class="blue">decentralized</span>] <span class="blue">execution</span> of workflows by using <span class="blue">Linked Data</span> principles and tools? -->
+					Can an approach for scientific publishing based on <span class="red">a fine-grained semantic model</span> help to make <span class="red">reviewing</span> better <span class="blue">structured</span> and more <span class="blue">accurate</span>?
+				</section>
+
+				<section data-transition="none">
+					<h4>Reviews can be made more structured and precise</h4>
+					<img class="plain stretch" style="width:150%; border-width:2px; border-color: black;" src="img/HTML_Form_in_Context.svg"/>
+				</section>
+
+				<section>
+					<h4>Can reviewing be better automatically organized by writing structured fine-grained reviews?</h4>
+					<ul style="font-size: 30px;">
+						<li><span class="blue">Aspects:</span> the main aspect that the review comment mentions about the text snippet</li>
+						<li><span class="blue">Positivity/Negativity:</span> the point raised in the review comment by the reviewer about the text snippet</li>
+						<li><span class="blue">Action needed:</span> the action that needs to be taken by the author(s) of the text snippet according to the reviewer</li>
+						<li><span class="blue">Overall impact on quality:</span> the impact of the point raised in the review comment on the overall quality of the article according to the reviewer</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h4>Linkflows model for reviewing</h4>
+					<a href="http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/LaraHack/linkflows_model/master/Linkflows.ttl"><img class="plain stretch" style="width:50%; border-width:2px; border-color: black;" src="img/Linkflows_Model.svg"/></a>
+				</section>
+
+				<!-- <section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Workflow_Linkflows_Simplified.svg"/>
+				</section> -->
+
+				<section>
+					<h3>Selected datasets</h3>
+					<ul style="font-size: 30px;">
+						<li>Recent publications with open peer-reviews</li>
+						<li>Journals and conferences in the Computer Science field</li>
+						<li>Articles and reviews selected randomly</li>
+					</ul>
+				</br><p></p>
+					<small><table class="borders">
+						<tr>
+							<th rowspan="2" colspan="2" class="borders" style="text-align:center;">Data Science Journal 2017-2018</th>
+							<th rowspan="2" colspan="2" class="borders" style="text-align:center;">Semantic Web Journal 2018</th>
+							<th rowspan="2" colspan="2" class="borders" style="text-align:center;">PeerJ CS Journal 2018</th>
+							<th colspan="4" class="borders" style="text-align:center;">Openreview.net 2018</th>
+						</tr>
+						<tr>
+							<th colspan="2" class="borders" style="text-align:center;">ISWC-DeSemWeb</th>
+							<th colspan="2" class="borders" style="text-align:center;">ISMIR-WoRMS</th>
+						</tr>
+						<tr>
+							<th class="borders" style="text-align:center;">Total</th><th class="borders" style="text-align:center;">Selected</th>
+							<th class="borders" style="text-align:center;">Total</th><th class="borders" style="text-align:center;">Selected</th>
+							<th class="borders" style="text-align:center;">Total</th><th class="borders" style="text-align:center;">Selected</th>
+							<th class="borders" style="text-align:center;">Total</th><th class="borders" style="text-align:center;">Selected</th>
+							<th class="borders" style="text-align:center;">Total</th><th class="borders" style="text-align:center;">Selected</th>
+						</tr>
+						<tr>
+							<td class="borders" style="text-align:center;">13</td>
+							<td class="borders selected" style="text-align:center;">7</td>
+							<td class="borders" style="text-align:center;">38</td>
+							<td class="borders selected" style="text-align:center;">7</td>
+							<td class="borders" style="text-align:center;">26</td>
+							<td class="borders selected" style="text-align:center;">7</td>
+							<td class="borders" style="text-align:center;">10</td>
+							<td class="borders selected" style="text-align:center;">7</td>
+							<td class="borders" style="text-align:center;">11</td>
+							<td class="borders selected" style="text-align:center;">7</td>
+						</tr>
+					</table></small>
+				</section>
+
+				<section data-transition="none">
+					<h4>What part of an article does a review comment target?</h4>
+					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Node_Type_All_1.png"/>
+				</section>
+
+				<section data-transition="none">
+					<h4>What are the results of the model expert annotations?</h4>
+					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Node_Type_All_1.svg"/>
+				</section>
+
+				<section data-transition="none">
+					<h4>Most Sentiment Analysis methods perform badly</h4>
+					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Ground-Truth_Accuracy_Sorted.svg"/>
+				</section>
+
+				<section>
+					<h4>Next steps: implementation of Linkflows model for reviewing (1)</h4>
+					<ul style="font-size: 30px;">
+						<li>Continue the research proposed in the K-CAP article</li>
+						<li>Extend the model to a more complete set of interactions and processes of the scientific publishing workflow</li>
+						<li><span class="blue">Novelty:</span> scientific publishing at a finer-grained level that uses a decentralized network as a publication means with semantic Web-like links</li>
+					</ul>
+				</section>
+
+				<section>
+					<h4>Next steps: implementation of Linkflows model for reviewing (2)</h4>
+					<ul style="font-size: 35px;">
+						<li>Connect nanopublications to model</li>
+						<li>Extend the model: <em>refersTo, isResponseTo, isUpdateOf, hasCommentAuthor, hasCommentText</em></li>
+						<li>Implement interfaces: evaluation-driven interfaces!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h4>Perform evaluation for different aspects</h4>
+					<ul style="font-size: 35px;">
+						<li><span class="blue">User study:</span> let users use our system and rate its usefulness</li>
+						<li><span class="blue">Competency questions:</span> what information would be interesting for editors/authors when the Linkflows model is used</li>
+						<li><span class="blue">Editors study:</span> let editors rate the usefulness of the system</li>
+					</ul>
+				</section>
+
+				<section>
+					<h4><span class="blue">Competency questions</span>: <a href="https://docs.google.com/document/d/1ih9yB7RRq0cBlAiz3gJO48EJNIRXBCAMoEY5bhAqOyA/edit?usp=sharing">your input</a> is needed!</h4>
+					<ul style="font-size: 30px;">
+						<li>How many comments were positive/negative per review?</li>
+						<li>How many negative review comments had an impact higher than 3?</li>
+						<li>Which reviewer focused more on content/style/syntax?</li>
+						<li>Comparing papers: which of the papers was more controversial?</li>
+						<li>Which part is most (positively/negatively) commented?</li>
+						<li>How many high impact comments that needed to be addressed were not addressed?</li>
+						<li>Important points that need fixing</li>
+					</ul>
+				</section>
+
+				<section>
+					<img class="plain" style="width: 40%" src="img/Questions.png"/>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="init.js"></script>
+	</body>
+</html>
