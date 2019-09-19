@@ -65,7 +65,7 @@
 					<h4>Can reviewing be better automatically organized by writing structured fine-grained reviews?</h4>
 					<ul style="font-size: 30px;">
 						<li><span class="blue">Aspects:</span> whether the review comment is about syntax, style or content</li>
-						<li><span class="blue">Positivity/Negativity:</span> whether a negative, neutral, balanced or positive comment was mentioned</li>
+						<li><span class="blue">Positivity/Negativity:</span> whether a negative, neutral, balanced or positive comment was pointed out by the reviewer</li>
 						<li><span class="blue">Action needed:</span> the action that needs to be taken by the author(s) of the text snippet according to the reviewer</li>
 						<li><span class="blue">Overall impact on quality:</span> the impact of the point raised in the review comment on the overall quality of the article according to the reviewer</li>
 					</ul>
@@ -73,7 +73,12 @@
 
 				<section data-transition="none">
 					<h4>Linkflows model for reviewing</h4>
-					<a href="http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/LaraHack/linkflows_model/master/Linkflows.ttl"><img class="plain stretch" style="width:50%; border-width:2px; border-color: black;" src="img/Linkflows_Model.svg"/></a>
+						<figure>
+  						<a href="http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/LaraHack/linkflows_model/master/Linkflows.ttl">
+								<img class="plain stretch" style="width:50%; border-width:2px; border-color: black;" src="img/Linkflows_Model.svg"/>
+							</a>
+  						<figcaption style="font-size: 16px">*click on image for interactive <a href="http://vowl.visualdataweb.org/webvowl.html">WebVOWL</a> visualization</figcaption>
+						</figure>
 				</section>
 
 				<!-- <section data-transition="none">
@@ -122,19 +127,48 @@
 				</section>
 
 				<section data-transition="none">
-					<h4>What part of an article does a review comment target?</h4>
-					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Node_Type_All_1.png"/>
+					<h4>Most review comments target paragraphs in the article</h4>
+					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Node_Type_All.svg"/>
 				</section>
 
 				<section data-transition="none">
-					<h4>What are the results of the model expert annotations?</h4>
-					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Node_Type_All_1.svg"/>
+					<h4>Results of the model expert annotations are as expected</h4>
+					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Model_Experts_Annotations.svg"/>
 				</section>
 
-				<!-- <section data-transition="none">
+				<section data-transition="none">
 					<h4>Most Sentiment Analysis methods perform badly</h4>
-					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Ground-Truth_Accuracy_Sorted.svg"/>
-				</section> -->
+					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/SA_Ground-truth_Sorted.svg"/>
+				</section>
+
+				<section>
+					<h4>Evaluation of the Linkflows model</h4>
+					<ul style="font-size: 35px;">
+						<li><span class="blue">Model experts:</span> rate snippets according to model dimensions</li>
+						<li><span class="blue">Original peer-reviewer:</span> establish ground-truth for model dimensions</li>
+						<li><span class="blue">Peers:</span> how they compare with model experts and original reviewers</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h4>The dimensions of the Linkflows model are well understood and easy to apply </h4>
+					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Peers_Experiment_Not_Possible_to_Answer.png"/>
+				</section>
+
+				<section data-transition="none">
+					<h4>Model experts and peers agree with each other more than with the original reviewer</h4>
+					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Disagreement_Scores_1.png"/>
+				</section>
+
+				<section data-transition="none">
+					<h4>Peers perform much better than model experts and sentiment analysis tools</h4>
+					<img class="plain stretch" style="width:50%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Disagreement_Scores_2.png"/>
+				</section>
+
+				<section data-transition="none">
+					<h4>Model experts do not perform significantly better than peers and there is a wisdom of the crowd effect</h4>
+					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Model_Experts_vs_Peers.png"/>
+				</section>
 
 				<section>
 					<h4>Next steps: implementation of Linkflows model for reviewing (1)</h4>
@@ -148,9 +182,9 @@
 				<section>
 					<h4>Next steps: implementation of Linkflows model for reviewing (2)</h4>
 					<ul style="font-size: 35px;">
-						<li>Connect nanopublications to model</li>
-						<li>Extend the model: <em>refersTo, isResponseTo, isUpdateOf, hasCommentAuthor, hasCommentText</em></li>
-						<li>Implement interfaces: evaluation-driven interfaces!</li>
+						<li>Connect <span class="blue">nanopublications</span> to model</li>
+						<li><span class="blue">Extend the model</span>: <em>refersTo, isResponseTo, isUpdateOf, hasCommentAuthor, hasCommentText</em></li>
+						<li><span class="blue">Implement interfaces</span>: evaluation-driven interfaces!</li>
 					</ul>
 				</section>
 
@@ -164,7 +198,7 @@
 				</section>
 
 				<section>
-					<h4><span class="blue">Competency questions</span>: <a href="https://docs.google.com/document/d/1ih9yB7RRq0cBlAiz3gJO48EJNIRXBCAMoEY5bhAqOyA/edit?usp=sharing">your input</a> is needed!</h4>
+					<h4><span class="blue">Competency questions</span>: <a href="https://docs.google.com/document/d/1ih9yB7RRq0cBlAiz3gJO48EJNIRXBCAMoEY5bhAqOyA/edit?usp=sharing"><span class="red">your input<sup>*</sup></span></a> is needed!</h4>
 					<ul style="font-size: 30px;">
 						<li>How many comments were positive/negative per review?</li>
 						<li>How many negative review comments had an impact higher than 3?</li>
@@ -172,8 +206,9 @@
 						<li>Comparing papers: which of the papers was more controversial?</li>
 						<li>Which part is most (positively/negatively) commented?</li>
 						<li>How many high impact comments that needed to be addressed were not addressed?</li>
-						<li>What are important points that need fixing</li>
+						<li>What are important points that need fixing?</li>
 					</ul>
+					<p style="font-size: 16px; text-align: left;"><span class="red"><sup>*please add your competency questions in the linked document</sup></span></p>
 				</section>
 
 				<section>
