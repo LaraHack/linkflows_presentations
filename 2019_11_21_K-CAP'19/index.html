@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>K-CAP presentation, November 2019</title>
+
+		<!-- Open all links in a new tab or window -->
+		<base target="_blank">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Customize css -->
+		<link rel="stylesheet" href="css/init.css">
+
+		<!-- Printing and PDF exports -->
+		<script src="js/print-pdf.js"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<h4 style="letter-spacing: 0.01em;">Peer Reviewing Revisited: </br>Assessing Research with Interlinked Semantic Comments</h4></br>
+					<small>
+						<p>Cristina-Iulia Bucur<small><sup>1</sup></small> , Tobias Kuhn<small><sup>2</sup></small> , Davide Ceolin <small><sup>3</sup></small> </br>
+						<small><sup>1, 2</sup></small> Vrije Universiteit Amsterdam, <small><sup>3</sup></small> Centrum Wiskunde&Informatika (CWI) </br></p>
+						<p></br>21<small><sup>th</sup></small> November 2019</p>
+						<p style="font-size: 18px;"><em>These slides: <a href="https://raw.githack.com/LaraHack/linkflows_presentations/master/2019_11_21_Linkflows_K-CAP/index.html"><b>https://tinyurl.com/K-CAP-21-November-2019</b></a>
+						</em></p>
+					</small>
+				</section>
+
+				<!-- <section data-transition="none">
+					<h4>Traditional scientific publishing (with coarse-grained reviewing)</h4>
+					<img class="plain stretch" style="width:150%; height:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Changed_Title_The_Peer_Review_Process.svg"/>
+				</section> -->
+
+				<section>
+					<h3><span class="blue">Scientific publishing</span>: still <span class="red">in the Middle Ages</span>?</h3>
+					<ul style="font-size: 30px;">
+						<li>Scientific publishing and peer reviews: communicating and assessing research</li>
+						<!-- <li>Initial <span class="blue">paradigm of publishing</span>: <span class="red">the same</red>!</li> -->
+						<li><span class="blue">Large bulk of text in natural language</span>: coarse-grained structures in which scientific contributions are communicated</li>
+						<li>Articles: <span class="blue">digitized</span> and maybe <span class="blue">semantically enriched</span></li>
+						<!-- <li>Measure of quality: <span class="blue">reviewing</span> -->
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>How to keep up?</h3>
+					<ul>
+						<li>It takes <span class="red">time</span> to stay up to date!
+							<ul>
+								<li><span class="blue">~20 hours/week</span> for epidemiologists (2004)</li>
+								<li><span class="blue">2000 papers/day</span> in PubMed (2018)</li>
+								<li><span class="blue">4-5%/year increase</span> in number of scientists</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3><span class="red">Quality</span> of research: <span class="red">peer reviewing</span>!</h3>
+					<ul>
+						<li>Takes a lot amount of <span class="blue">time</span></li>
+						<li>Lack of <span class="blue">transparency</span></li>
+						<li>Lack of <span class="blue">software integration</span></li>
+						<li>Lack of <span class="blue">attribution</span> for reviewers</li>
+						</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h4>A model of the <span class="blue">processes</span> of <span class="red">fine-grained reviews</span></h4>
+					<img class="plain stretch" style="height:300%" src="img/Changes_Title_Sample_Article.svg"/>
+				</section>
+
+				<section data-transition="none">
+					<h3>Research question</h3></br>
+					<!-- How can we <span class="red">model</span> the [<span class="blue">decentralized</span>] <span class="blue">execution</span> of workflows by using <span class="blue">Linked Data</span> principles and tools? -->
+					Can an approach for scientific publishing based on <span class="red">a fine-grained semantic model</span> help to make <span class="red">reviewing</span> better <span class="blue">structured</span> and more <span class="blue">accurate</span>?
+				</section>
+
+				<section data-transition="none">
+					<h4><span class="blue">Reviews</span> can be made <span class="red">more structured</span> and <span class="red">precise</span></h4>
+					<img class="plain stretch" style="width:150%; border-width:2px; border-color: black;" src="img/HTML_Form_in_Context.svg"/>
+				</section>
+
+				<section>
+					<h3>DImensions of the model for review comments</h3>
+					<ul style="font-size: 30px;">
+						<li><span class="blue">Aspects:</span> whether the review comment is about syntax, style or content</li>
+						<li><span class="blue">Positivity/Negativity:</span> whether a negative, neutral, balanced or positive comment was pointed out by the reviewer</li>
+						<li><span class="blue">Action needed:</span> the action that needs to be taken by the author(s) of the text snippet according to the reviewer</li>
+						<li><span class="blue">Overall impact on quality:</span> the impact of the point raised in the review comment on the overall quality of the article according to the reviewer</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h4>Linkflows model for reviewing</h4>
+						<figure>
+  						<a href="http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/LaraHack/linkflows_model/master/Linkflows.ttl">
+								<img class="plain stretch" style="width:50%; border-width:2px; border-color: black;" src="img/Linkflows_Model.svg"/>
+							</a>
+  						<figcaption style="font-size: 16px">*click on image for interactive <a href="http://vowl.visualdataweb.org/webvowl.html">WebVOWL</a> visualization</figcaption>
+						</figure>
+				</section>
+
+				<!-- <section data-transition="none">
+					<img class="plain stretch" style="width:150%" src="img/Workflow_Linkflows_Simplified.svg"/>
+				</section> -->
+
+				<section>
+					<h3>Evaluation of the Linkflows model</h3>
+					<ul style="font-size: 35px;">
+						<li><span class="red">Applied model:</span> descriptive results on a small case study</li>
+						<li><span class="red">Questionnaire-based comparison</span></li>
+						<ul style="font-size: 35px;">
+						<li><span class="blue">Model experts:</span> rate snippets according to model dimensions</li>
+						<li><span class="blue">Original peer-reviewer:</span> establish ground-truth for model dimensions</li>
+						<li><span class="blue">Peers:</span> how they compare with model experts and original reviewers</li>
+					</ul>
+						<li>Can it be <span class="red">automated</span> to a certain extent: <span class="blue">sentiment analysis</span></li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Selected datasets</h3>
+					<ul style="font-size: 30px;">
+						<li><span class="blue">Recent publications</span> with <b><span class="red">open peer-reviews</span></b></li>
+						<li>Journals and conferences in the <span class="blue">Computer Science field</span></li>
+						<li>Articles and reviews <span class="red">selected randomly</span></li>
+					</ul>
+				</br></br><p></p>
+					<small><table class="borders">
+						<tr>
+							<th rowspan="2" colspan="2" class="borders" style="text-align:center;">Data Science Journal 2017-2018</th>
+							<th rowspan="2" colspan="2" class="borders" style="text-align:center;">Semantic Web Journal 2018</th>
+							<th rowspan="2" colspan="2" class="borders" style="text-align:center;">PeerJ CS Journal 2018</th>
+							<th colspan="4" class="borders" style="text-align:center;">Openreview.net 2018</th>
+						</tr>
+						<tr>
+							<th colspan="2" class="borders" style="text-align:center;">ISWC-DeSemWeb</th>
+							<th colspan="2" class="borders" style="text-align:center;">ISMIR-WoRMS</th>
+						</tr>
+						<tr>
+							<th class="borders" style="text-align:center;">Total</th><th class="borders" style="text-align:center;">Selected</th>
+							<th class="borders" style="text-align:center;">Total</th><th class="borders" style="text-align:center;">Selected</th>
+							<th class="borders" style="text-align:center;">Total</th><th class="borders" style="text-align:center;">Selected</th>
+							<th class="borders" style="text-align:center;">Total</th><th class="borders" style="text-align:center;">Selected</th>
+							<th class="borders" style="text-align:center;">Total</th><th class="borders" style="text-align:center;">Selected</th>
+						</tr>
+						<tr>
+							<td class="borders" style="text-align:center;">13</td>
+							<td class="borders selected" style="text-align:center;">7</td>
+							<td class="borders" style="text-align:center;">38</td>
+							<td class="borders selected" style="text-align:center;">7</td>
+							<td class="borders" style="text-align:center;">26</td>
+							<td class="borders selected" style="text-align:center;">7</td>
+							<td class="borders" style="text-align:center;">10</td>
+							<td class="borders selected" style="text-align:center;">7</td>
+							<td class="borders" style="text-align:center;">11</td>
+							<td class="borders selected" style="text-align:center;">7</td>
+						</tr>
+					</table></small>
+				</section>
+
+				<section data-transition="none">
+					<h4>Most <span class="blue">review comments</span> <span class="red">target</span> <span class="blue">paragraphs</span>: <span class="red">fine-grained reviewing</span> makes sense!</h4>
+					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Node_Type_All.svg"/>
+				</section>
+
+				<section data-transition="none">
+					<h4>The results of the <span class="blue">model expert annotations</span> are within <span class="red">expectations</span></h4>
+					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Model_Experts_Annotations.svg"/>
+				</section>
+
+				<section data-transition="none">
+					<h4>Can the <span class="blue">interpretation</span> of model experts or peers </br> <span class="blue">match</span> the one of the <span class="red">original peer reviewer</span>?</h4>
+					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Questionnaire_Q1.png"/>
+				</section>
+
+				<section data-transition="none">
+					<h4><span class="blue">The dimensions</span> of the Linkflows model are <span class="red">well understood</span> and <span class="red">easy to apply</span></h4>
+					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Peers_Experiment_Not_Possible_to_Answer.png"/>
+				</section>
+
+				<section data-transition="none">
+					<h4><span class="blue">Model experts</span> and <span class="blue">peers</span> <span class="red"> partly agree</span> with <span class="blue">the original reviewer</span></h4>
+					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Disagreement_Scores_1.png"/>
+				</section>
+
+				<section data-transition="none">
+					<h4><span class="blue">Sentiment Analysis methods</span> perform <span class="red">far from perfect</span></h4>
+					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/SA_Ground-truth_Sorted.svg"/>
+				</section>
+
+				<section data-transition="none">
+					<h4><span class="blue">Peers</span> perform <span class="red">much better than</span> <span class="blue">model experts</span> and <span class="blue">sentiment analysis tools</span></h4>
+					<img class="plain stretch" style="width:50%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Disagreement_Scores_2.png"/>
+				</section>
+
+				<section data-transition="none">
+					<h4><span class="blue">Model experts</span> do <span class="red">not</span> perform <span class="red">significantly better than</span> <span class="blue">peers</span> and </br>there is a <span class="blue">wisdom of the crowd</span> effect</h4>
+					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Model_Experts_vs_Peers.png"/>
+				</section>
+
+				<section>
+					<h3>Future work</h3>
+					<ul>
+						<li><span class="blue">Implementation</span> of Linkflows model for reviewing</li>
+						<li><span class="blue">Apply model</span> and <span class="blue">embed it</span> in the reviewing process</li>
+						<li>Connect <span class="blue">nanopublications</span> to model</li>
+						<li><span class="red">Tool</span> that helps <span class="red">editors</span>, <span class="red">reviewers</span> and <span class="red">authors<span></li>
+					</ul>
+				</section>
+
+				<!-- <section>
+					<h4>Next steps: implementation of Linkflows model for reviewing (2)</h4></br>
+					<ul style="font-size: 35px;">
+						<li>Connect <span class="blue">nanopublications</span> to model</li>
+						<li><span class="blue">Extend the model</span>: <em>refersTo, isResponseTo, isUpdateOf, hasCommentAuthor, hasCommentText</em></li>
+						<li><span class="blue">Implement interfaces</span>: evaluation-driven interfaces!</li>
+					</ul>
+				</section> -->
+
+				<section>
+					<img class="plain" style="width: 40%" src="img/Questions.png"/>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="init.js"></script>
+	</body>
+</html>
