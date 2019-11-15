@@ -37,7 +37,7 @@
 				</section>
 
 				<!-- <section data-transition="none">
-					<h4>Traditional scientific publishing (with coarse-grained reviewing)</h4>
+					<h3>Traditional scientific publishing (with coarse-grained reviewing)</h3>
 					<img class="plain stretch" style="width:150%; height:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Changed_Title_The_Peer_Review_Process.svg"/>
 				</section> -->
 
@@ -53,7 +53,7 @@
 					</ul>
 				</section>
 
-				<section>
+				<!-- <section>
 					<h3>How to keep up?</h3>
 					<ul>
 						<li>It takes <span class="red">time</span> to stay up to date!
@@ -64,7 +64,7 @@
 							</ul>
 						</li>
 					</ul>
-				</section>
+				</section> -->
 
 				<section>
 					<h3><span class="red">Quality</span> of research: <span class="red">peer reviewing</span>!</h3>
@@ -77,8 +77,16 @@
 					</ul>
 				</section>
 
+				<section data-background-iframe="http://www.semantic-web-journal.net/content/n-ary-relation-extraction-simultaneous-t-box-and-box-knowledge-base-augmentation" data-background-interactive id="SemanticWeb article">
+						<h3>Classical reviewing</h3>
+				</section>
+
+				<!-- <section>
+					<iframe data-src="http://www.semantic-web-journal.net/content/n-ary-relation-extraction-simultaneous-t-box-and-box-knowledge-base-augmentation" data-preload></iframe>
+				</section> -->
+
 				<section data-transition="none">
-					<h4>A model of the <span class="blue">processes</span> of <span class="red">fine-grained reviews</span></h4>
+					<h3>A model of the <span class="blue">processes</span> of <span class="red">fine-grained reviews</span></h3>
 					<img class="plain stretch" style="height:300%" src="img/Changes_Title_Sample_Article.svg"/>
 				</section>
 
@@ -89,11 +97,11 @@
 				</section>
 
 				<section data-transition="none">
-					<h4><span class="blue">Reviews</span> can be made <span class="red">more structured</span> and <span class="red">precise</span></h4>
+					<h3><span class="blue">Reviews</span> can be made <span class="red">more structured</span> and <span class="red">precise</span></h3>
 					<img class="plain stretch" style="width:150%; border-width:2px; border-color: black;" src="img/HTML_Form_in_Context.svg"/>
 				</section>
 
-				<section>
+				<!-- <section>
 					<h3><span class="red">Dimensions</span> of the model for <span class="blue">review comments</span></h3>
 					<ul style="font-size: 30px;">
 						<li><span class="blue">Aspects:</span> whether the review comment is about syntax, style or content</li>
@@ -101,15 +109,18 @@
 						<li><span class="blue">Action needed:</span> the action that needs to be taken by the author(s) of the text snippet according to the reviewer</li>
 						<li><span class="blue">Overall impact on quality:</span> the impact of the point raised in the review comment on the overall quality of the article according to the reviewer</li>
 					</ul>
-				</section>
+				</section> -->
 
 				<section data-transition="none">
-					<h4>Linkflows model for reviewing</h4>
+					<h3>Core of Linkflows model for reviewing </h3>
 						<figure>
   						<a href="http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/LaraHack/linkflows_model/master/Linkflows.ttl">
 								<img class="plain stretch" style="width:50%; border-width:2px; border-color: black;" src="img/Linkflows_Model.svg"/>
 							</a>
-  						<figcaption style="font-size: 16px">*click on image for interactive <a href="http://vowl.visualdataweb.org/webvowl.html">WebVOWL</a> visualization</figcaption>
+  						<figcaption style="font-size: 16px">*click on image for interactive <a href="http://vowl.visualdataweb.org/webvowl.html">WebVOWL</a> visualization or on
+								<a href="http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/LaraHack/linkflows_model/master/Linkflows.ttl">
+									<b><span class="red">http://bit.do/Linkflows-model</span></b></a>
+							</figcaption>
 						</figure>
 				</section>
 
@@ -117,24 +128,39 @@
 					<img class="plain stretch" style="width:150%" src="img/Workflow_Linkflows_Simplified.svg"/>
 				</section> -->
 
+				<section data-transition="none">
+					<h3>Sub-research questions</h3></br>
+					<ul>
+						<li>RQ1: Does our model help to represent and uncover the structure and nature of review comments?</li>
+						<!-- <li>RQ1: Does a finer-grained model of reviewing make sense?</li>
+						<li>RQ2: What is the distribution of review comments?</li> -->
+						<li>RQ2: How easy is it for researchers to understand and apply our model?</li>
+						<li>RQ3: Does our model help to clarify the interpretation of review comments?</li>
+						<!-- <li>RQ3v1: How good are humans at reconstructing the peer reviewer's intention?</li>
+						<li>RQ3v2: How well can humans reconstruct what the original peer reviewer meant?</li> -->
+						<!-- <li>RQ4: How often do human readers misunderstand what the original peer reviewer meant?</li> -->
+						<!-- <li>RQ3A: How well do automated methods perform?</li> -->
+					</ul>
+				</section>
+
+
 				<section>
 					<h3>Evaluation of the Linkflows model</h3>
 					<ul style="font-size: 35px;">
-						<li><span class="red">Applied model:</span> descriptive results on a small case study</li>
+						<li><span class="red">Applying model:</span> descriptive results on a small case study</li>
 						<li><span class="red">Questionnaire-based comparison</span></li>
 						<ul style="font-size: 35px;">
-							<li><span class="blue">Original peer-reviewer:</span> establish ground-truth for model dimensions</li>
-							<li><span class="blue">Model experts:</span> rate snippets according to model dimensions</li>
-							<li><span class="blue">Peers:</span> how they compare with model experts and original reviewers</li>
+							<li><span class="blue">Original peer-reviewer:</span> how would they have classified their review comments with our model?</li>
+							<li><span class="blue">Other researchers:</span> would they misinterpret the review comments on our model dimensions?</li>
 						</ul>
-						<li>Can it be <span class="red">automated</span> to a certain extent: <span class="blue">sentiment analysis</span></li>
+						<li><span class="red">Comparison of automated methods</span>: are they accurate enough to be used?</li>
 					</ul>
 				</section>
 
 				<section>
 					<h3>Selected datasets</h3>
 					<ul style="font-size: 30px;">
-						<li><span class="blue">Recent publications</span> with <b><span class="red">open peer-reviews</span></b></li>
+						<li><span class="blue">Recent publications</span> with <b><span class="red">open and non-anonymous peer-reviews</span></b></li>
 						<li>Journals and conferences in the <span class="blue">Computer Science field</span></li>
 						<li>Articles and reviews <span class="red">selected randomly</span></li>
 					</ul>
@@ -175,56 +201,65 @@
 				<section>
 					<h3>Evaluation of the Linkflows model</h3>
 					<ul style="font-size: 35px;">
-						<li><span class="red">Applied model:</span> 35 papers, 421 review comments</li>
+						<li><span class="red">Applying model:</span> 35 reviews, XXX review comments identified, 421 review comments annotated</li>
 						<li><span class="red">Questionnaire-based comparison</span></li>
 						<ul style="font-size: 32px;">
-							<li><span class="blue">Original peer-reviewer:</span> 11 review comments (ground-truth)</li>
-							<li><span class="blue">Model experts:</span> 415 review comments (articles in ground-truth)</li>
-							<li><span class="blue">Peers:</span> 79 answers in total </li>
+							<li><span class="blue">Original peer-reviewer:</span> annotations for review comments from 11 reviews</li>
+							<li><span class="blue">Model experts:</span> 415 review comments (3 annotations each) </li>
+							<li><span class="blue">Peers:</span> 79 responses with overall 431 annotations </li>
 					</ul>
-						<li>Sentiment analysis:  18 methods</li>
+						<li><span class="red">Comparison of automated methods:</span> 18 sentiment analysis methods</li>
 					</ul>
 				</section>
 
 				<section data-transition="none">
-					<h4>Most <span class="blue">review comments</span> target <span class="blue">paragraphs</span>: <span class="red">fine-grained reviewing</span> makes sense!</h4>
+					<h3>(RQ1) Most review comments target <span class="blue">paragraphs</span>: <br/>
+						<span class="red">fine-grained reviewing</span> makes sense!</h3>
 					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Node_Type_All.svg"/>
 				</section>
 
 				<section data-transition="none">
-					<!-- <h4>The results of the <span class="blue">model expert annotations</span> are within <span class="red">expectations</span></h4> -->
-					<h4>Applying <span class="red">Linkflows model for reviewing</span> to papers</h4>
+					<!-- <h3>The results of the <span class="blue">model expert annotations</span> are within <span class="red">expectations</span></h3> -->
+					<h3>(RQ2) What is the distribution of review comments?</h3>
 					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Model_Experts_Annotations.svg"/>
 				</section>
 
 				<section data-transition="none">
-					<h4>Can the <span class="blue">interpretation</span> of model experts or peers </br> <span class="blue">match</span> the one of the <span class="red">original peer reviewer</span>?</h4>
+					<!-- <h3>(RQ3) Can the <span class="blue">interpretation</span> of model experts or peers </br> <span class="blue">match</span> the one of the <span class="red">original peer reviewer</span>?</h3> -->
+					<h3>Questionnaire to find out how helpful our model is to clarify review interpretation</h3>
 					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Questionnaire_Q1.png"/>
 				</section>
 
 				<section data-transition="none">
-					<h4><span class="blue">The dimensions</span> of the Linkflows model are <span class="red">well understood</span> and <span class="red">easy to apply</span></h4>
+					<h3>(RQ5) <span class="blue">The dimensions</span> of the Linkflows model are <span class="red">well understood</span> and <span class="red">easy to apply</span></h3>
 					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Peers_Experiment_Not_Possible_to_Answer.png"/>
 				</section>
 
 				<section data-transition="none">
-					<h4><span class="blue">Model experts</span> and <span class="blue">peers</span> <span class="red"> partly agree</span> with <span class="blue">the original reviewer</span></h4>
+					<h3>(RQ4)<span class="blue">Model experts</span> and <span class="blue">peers</span> <span class="red"> only partly agree</span> with <span class="blue">the original reviewer</span></h3>
 					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Disagreement_Scores_1.png"/>
 				</section>
 
 				<section data-transition="none">
-					<h4><span class="blue">Sentiment Analysis methods</span> perform <span class="red">far from perfect</span></h4>
+					<h3>(RQ6)<span class="blue">Sentiment Analysis methods</span> perform <span class="red">far from perfect</span></h3>
 					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/SA_Ground-truth_Sorted.svg"/>
 				</section>
 
 				<section data-transition="none">
-					<h4><span class="blue">Peers</span> perform <span class="red">much better than</span> <span class="blue">model experts</span> and <span class="blue">sentiment analysis tools</span></h4>
+					<h3><span class="blue">Peers</span> perform <span class="red">much better than</span> <span class="blue">model experts</span> and <span class="blue">sentiment analysis tools</span></h3>
 					<img class="plain stretch" style="width:50%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Disagreement_Scores_2.png"/>
 				</section>
 
 				<section data-transition="none">
-					<h4><span class="blue">Model experts</span> do <span class="red">not</span> perform <span class="red">significantly better than</span> <span class="blue">peers</span> and </br>there is a <span class="blue">wisdom of the crowd</span> effect</h4>
+					<h3><span class="blue">Model experts</span> do <span class="red">not</span> perform <span class="red">significantly better than</span> <span class="blue">peers</span> and </br>there is a <span class="blue">wisdom of the crowd</span> effect</h3>
 					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Model_Experts_vs_Peers.png"/>
+				</section>
+
+				<section>
+					<h3>Conclusions</h3>
+					<ul>
+						<li>Add something here...</li>
+					</ul>
 				</section>
 
 				<section>
@@ -238,7 +273,7 @@
 				</section>
 
 				<!-- <section>
-					<h4>Next steps: implementation of Linkflows model for reviewing (2)</h4></br>
+					<h3>Next steps: implementation of Linkflows model for reviewing (2)</h3></br>
 					<ul style="font-size: 35px;">
 						<li>Connect <span class="blue">nanopublications</span> to model</li>
 						<li><span class="blue">Extend the model</span>: <em>refersTo, isResponseTo, isUpdateOf, hasCommentAuthor, hasCommentText</em></li>

@@ -1,6 +1,27 @@
+.reveal h1 {
+  text-transform: none;
+}
+
+.reveal h2 {
+  text-transform: none;
+}
+
+.reveal h3 {
+  text-transform: none;
+}
+
+.reveal h4 {
+  text-transform: none;
+}
+
+.reveal h5 {
+  text-transform: none;
+}
+
 .reveal h6 {
   text-transform: none;
 }
+
 .blur {
   opacity: 0.5;
   filter: alpha(opacity=50); /* For IE8 and earlier */
