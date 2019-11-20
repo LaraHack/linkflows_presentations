@@ -241,9 +241,97 @@
 
 				<section data-transition="none">
 					<h3><span class="blue">Model experts</span> and <span class="blue">peers</span> <span class="red"> only partly agree</span> with <span class="blue">the original reviewer</span></h3>
-					<p>Disagreement scores:</p>
-					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Disagreement_Scores_1.png"/>
-					<p>If our model is not applied from the start, the intention of the review comments is often misinterpreted!</p>
+					<small><table class="borders"  style="table-layout: fixed; width: 100%;">
+						<caption>Disagreement scores: <br /> </caption>
+						<tr>
+							<th rowspan="2" class="borders" style="text-align:center; width:25%;"></th>
+							<th colspan="3" class="borders" style="text-align:center; width:15%;">aspect</th>
+							<th colspan="3" class="borders" style="text-align:center; width:15%;">positivity/ negativity</th>
+							<th colspan="3" class="borders" style="text-align:center; width:15%;">action needed</th>
+							<th colspan="3" class="borders" style="text-align:center; width:15%;">impact</th>
+							<th colspan="3" class="borders" style="text-align:center; width:15%;">action taken</th>
+						</tr>
+						<tr>
+							<th class="borders" style="text-align:center;">R</th>
+							<th class="borders" style="text-align:center;">M</th>
+							<th class="borders" style="text-align:center;">P</th>
+							<th class="borders" style="text-align:center;">R</th>
+							<th class="borders" style="text-align:center;">M</th>
+							<th class="borders" style="text-align:center;">P</th>
+							<th class="borders" style="text-align:center;">R</th>
+							<th class="borders" style="text-align:center;">M</th>
+							<th class="borders" style="text-align:center;">P</th>
+							<th class="borders" style="text-align:center;">R</th>
+							<th class="borders" style="text-align:center;">M</th>
+							<th class="borders" style="text-align:center;">P</th>
+							<th class="borders" style="text-align:center;">R</th>
+							<th class="borders" style="text-align:center;">M</th>
+							<th class="borders" style="text-align:center;">P</th>
+						</tr>
+						<tr>
+							<th class="borders" style="text-align:left;">Reviewer (R)</th>
+							<td class="borders" style="text-align:center; font-size: 20px">0</td>
+							<td class="borders" style="text-align:center;"></td>
+							<td class="borders" style="text-align:center;"></td>
+							<td class="borders" style="text-align:center; font-size: 20px">0</td>
+							<td class="borders" style="text-align:center;"></td>
+							<td class="borders" style="text-align:center;"></td>
+							<td class="borders" style="text-align:center; font-size: 20px">0</td>
+							<td class="borders" style="text-align:center;"></td>
+							<td class="borders" style="text-align:center;"></td>
+							<td class="borders" style="text-align:center; font-size: 20px">0</td>
+							<td class="borders" style="text-align:center;"></td>
+							<td class="borders" style="text-align:center;"></td>
+							<td class="borders" style="text-align:center; font-size: 20px">0</td>
+							<td class="borders" style="text-align:center;"></td>
+							<td class="borders" style="text-align:center;"></td>
+						</tr>
+						<tr>
+							<th class="borders" style="text-align:left;">Model experts (M)</th>
+							<td class="borders" style="text-align:left; font-size: 20px">0.32</td>
+							<td class="borders" style="text-align:center; font-size: 20px">0</td>
+							<td class="borders" style="text-align:center;"></td>
+							<td class="borders" style="text-align:center; font-size: 20px">0.32</td>
+							<td class="borders" style="text-align:center; font-size: 20px">0</td>
+							<td class="borders" style="text-align:center;"></td>
+							<td class="borders" style="text-align:center; font-size: 20px">0.26</td>
+							<td class="borders" style="text-align:center; font-size: 20px">0</td>
+							<td class="borders" style="text-align:center;"></td>
+							<td class="borders" style="text-align:center; font-size: 20px">0.21</td>
+							<td class="borders" style="text-align:center; font-size: 20px">0</td>
+							<td class="borders" style="text-align:center;"></td>
+							<td class="borders" style="text-align:center; font-size: 20px">0.38</td>
+							<td class="borders" style="text-align:center; font-size: 20px">0</td>
+							<td class="borders" style="text-align:center;"></td>
+						</tr>
+						<tr>
+							<th class="borders" style="text-align:left;">Peers (P)</th>
+							<td class="borders" style="text-align:center; font-size: 20px">0.29</td>
+							<td class="borders" style="text-align:center; font-size: 20px">0.12</td>
+							<td class="borders" style="text-align:center; font-size: 20px">0</td>
+							<td class="borders" style="text-align:center; font-size: 20px">0.29</td>
+							<td class="borders" style="text-align:center; font-size: 20px">0.12</td>
+							<td class="borders" style="text-align:center; font-size: 20px">0</td>
+							<td class="borders" style="text-align:center; font-size: 20px">0.29</td>
+							<td class="borders" style="text-align:center; font-size: 20px">0.17</td>
+							<td class="borders" style="text-align:center; font-size: 20px">0</td>
+							<td class="borders" style="text-align:center; font-size: 20px">0.31</td>
+							<td class="borders" style="text-align:center; font-size: 20px">0.14</td>
+							<td class="borders" style="text-align:center; font-size: 20px">0</td>
+							<td class="borders" style="text-align:center; font-size: 20px">0.34</td>
+							<td class="borders" style="text-align:center; font-size: 20px">0.21</td>
+							<td class="borders" style="text-align:center; font-size: 20px">0</td>
+						</tr>
+						<tr style="border-top:double;">
+							<th class="borders" style="text-align:left;">Random baseline</th>
+							<td colspan="3" class="borders selected" style="text-align:center; font-size: 20px">0.67</td>
+							<td colspan="3" class="borders selected" style="text-align:center; font-size: 20px">0.67</td>
+							<td colspan="3" class="borders selected" style="text-align:center; font-size: 20px">0.67</td>
+							<td colspan="3" class="borders selected" style="text-align:center; font-size: 20px">0.50</td>
+							<td colspan="3" class="borders selected" style="text-align:center; font-size: 20px">0.67</td>
+						</tr>
+					</table></small>
+					<p style="font-size: 30px;">If our model is not applied from the start, the intention of the review comments is often misinterpreted!</p>
 				</section>
 
 				<section data-transition="none">
@@ -263,11 +351,11 @@
 
 				<section data-transition="none">
 					<h3>Conclusions</h3></br>
-					<ul>
+					<ul style="font-size: 35px;">
 						<li>Answer to RQ1: Our model helps to represent and uncover the structure and nature of review comments</li>
 						<!-- <li>RQ1: Does a finer-grained model of reviewing make sense?</li>
 						<li>RQ2: What is the distribution of review comments?</li> -->
-						<li>Answer to RQ2: researchers can easily understand and apply our model?</li>
+						<li>Answer to RQ2: Researchers can easily understand and apply our model?</li>
 						<li>Answer to RQ3: Our model helps to clarify the interpretation of review comments</li>
 						<!-- <li>RQ3v1: How good are humans at reconstructing the peer reviewer's intention?</li>
 						<li>RQ3v2: How well can humans reconstruct what the original peer reviewer meant?</li> -->
@@ -278,7 +366,7 @@
 
 				<section>
 					<h3>Future work</h3>
-					<ul>
+					<ul style="font-size: 35px;">
 						<li><span class="red">Aggregations and visualizations</span> to help <span class="red">editors</span>, <span class="red">reviewers</span> and <span class="red">authors<span></li>
 						<li><span class="blue">Application</span> of our model in a real reviewing system</li>
 						<li>Combining our model with <span class="blue">nanopublication</span> technology</li>
