@@ -60,6 +60,7 @@ td.selected
 {
   color:red;
   font-weight:bold;
+  padding: 100px;
 }
 img.borders {
    padding:1px;
