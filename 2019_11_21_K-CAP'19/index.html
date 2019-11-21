@@ -205,7 +205,7 @@
 				<section>
 					<h3>Evaluation of the Linkflows model</h3>
 					<ul style="font-size: 35px;">
-						<li><span class="red">Applying model:</span> 35 reviews, XXX review comments identified, 421 review comments annotated</li>
+						<li><span class="red">Applying model:</span> 35 reviews, < 1k review comments identified, 421 review comments annotated</li>
 						<li><span class="red">Questionnaire-based comparison</span></li>
 						<ul style="font-size: 32px;">
 							<li><span class="blue">Original peer-reviewer:</span> annotations for review comments from 11 reviews</li>
@@ -249,30 +249,30 @@
 						</tr>
 						<tr>
 							<th class="borders" style="text-align:left; font-size:20px;">"more context needed"</th>
-							<td class="borders" style="text-align:center;"><span class="blue">0.75%</blue></td>
-							<td class="borders" style="text-align:center;">1.50%</td>
-							<td class="borders" style="text-align:center;">2.64%</td>
-							<td class="borders" style="text-align:center;">4.90%</td>
-							<td class="borders" style="text-align:center;">2.64%</td>
-							<td class="borders" style="text-align:center;">2.49%</td>
+							<td class="borders" style="text-align:center; padding:15px; font-size:22px;"><span class="blue">0.75%</blue></td>
+							<td class="borders" style="text-align:center; font-size:22px;">1.50%</td>
+							<td class="borders" style="text-align:center; font-size:22px;">2.64%</td>
+							<td class="borders" style="text-align:center; font-size:22px;">4.90%</td>
+							<td class="borders" style="text-align:center; font-size:22px;">2.64%</td>
+							<td class="borders" style="text-align:center; font-size:22px;">2.49%</td>
 						</tr>
 						<tr>
 							<th class="borders" style="text-align:left; font-size:20px;">"confusing"</th>
-							<td class="borders" style="text-align:center;">1.89%</td>
-							<td class="borders" style="text-align:center;">1.70%</td>
-							<td class="borders" style="text-align:center;">1.32%</td>
-							<td class="borders" style="text-align:center;">2.07%</td>
-							<td class="borders" style="text-align:center;"><span class="blue">0.94%</span></td>
-							<td class="borders" style="text-align:center;">1.58%</td>
+							<td class="borders" style="text-align:center; padding:15px; font-size:22px;">1.89%</td>
+							<td class="borders" style="text-align:center; font-size:22px;">1.70%</td>
+							<td class="borders" style="text-align:center; font-size:22px;">1.32%</td>
+							<td class="borders" style="text-align:center; font-size:22px;">2.07%</td>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="blue">0.94%</span></td>
+							<td class="borders" style="text-align:center; font-size:22px;">1.58%</td>
 						</tr>
-						<tr style="border-top:double;">
+						<tr style="border-top:solid; border-top-width:2px;">
 							<th class="borders" style="text-align:left; font-size:20px;">Total</th>
-							<td class="borders" style="text-align:center;"><span class="blue">2.64%</span></td>
-							<td class="borders" style="text-align:center;">3.20%</td>
-							<td class="borders" style="text-align:center;">3.96%</td>
-							<td class="borders" style="text-align:center;">6.97%</td>
-							<td class="borders" style="text-align:center;">3.58%</td>
-							<td class="borders selected" style="text-align:center;">4.07%</td>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="blue">2.64%</span></td>
+							<td class="borders" style="text-align:center; padding:15px; font-size:22px;">3.20%</td>
+							<td class="borders" style="text-align:center; font-size:22px;">3.96%</td>
+							<td class="borders" style="text-align:center; font-size:22px;">6.97%</td>
+							<td class="borders" style="text-align:center; font-size:22px;">3.58%</td>
+							<td class="borders selected" style="text-align:center; font-size:22px;">4.07%</td>
 						</tr>
 					</table></small>
 				</section>
@@ -360,7 +360,7 @@
 							<td class="borders" style="text-align:center; font-size: 20px">0.21</td>
 							<td class="borders" style="text-align:center; font-size: 20px">0</td>
 						</tr>
-						<tr style="border-top:double;">
+						<tr style="border-top:solid; border-top-width:2px;">
 							<th class="borders" style="text-align:left; font-size:20px;">Random baseline</th>
 							<td colspan="3" class="borders" style="text-align:center; font-size: 20px; font-weight:bold;">0.67</td>
 							<td colspan="3" class="borders" style="text-align:center; font-size: 20px; font-weight:bold;">0.58</td>
@@ -383,8 +383,113 @@
 				</section> -->
 
 				<section data-transition="none">
-					<h3><span class="red">No significant difference</span> between model experts and peers, but there seems to be a <span class="blue">wisdom of the crowd</span> effect</h3>
-					<img class="plain stretch" style="width:150%; border-style:solid; border-spacing:3px; border-width:1px;" src="img/Model_Experts_vs_Peers.png"/>
+					<h3>Model experts and peers: <span class="red">no significant difference</span><span class="transparent">, but there seems to be a wisdom of the crowd effect</span></h3>
+					<small><table class="borders"  style="table-layout: fixed; width: 100%;">
+						<!-- <caption>Disagreement scores: <br /> </caption> -->
+						<tr>
+							<th class="borders" style="text-align:center; width:30%;"></th>
+							<th class="borders" style="text-align:center; width:12%; font-size:20px;">aspect</th>
+							<th class="borders" style="text-align:center; width:12%; font-size:20px;">positivity/ negativity</th>
+							<th class="borders" style="text-align:center; width:12%; font-size:20px;">action needed</th>
+							<th class="borders" style="text-align:center; width:12%; font-size:20px;">impact</th>
+							<th class="borders" style="text-align:center; width:12%; font-size:20px;">action taken</th>
+						</tr>
+						<tr>
+							<th class="borders" style="text-align:left; font-size:20px;">Model experts</th>
+							<td class="borders" style="text-align:center; font-size:22px;">0.32</td>
+							<td class="borders" style="text-align:center; font-size:22px;">0.32</td>
+							<td class="borders" style="text-align:center; font-size:22px;">0.26</td>
+							<td class="borders" style="text-align:center; font-size:22px;">0.21</td>
+							<td class="borders" style="text-align:center; font-size:22px;">0.38</td>
+						</tr>
+						<tr>
+							<th class="borders" style="text-align:left; font-size:20px;">Peers</th>
+							<td class="borders" style="text-align:center; font-size:22px;">0.29</td>
+							<td class="borders" style="text-align:center; font-size:22px;">0.16</td>
+							<td class="borders" style="text-align:center; font-size:22px;">0.29</td>
+							<td class="borders" style="text-align:center; font-size:22px;">0.31</td>
+							<td class="borders" style="text-align:center; font-size:22px;">0.34</td>
+						</tr>
+						<tr style="border-top:solid; border-top-width:2px;">
+							<th class="borders" style="text-align:left; font-size:20px;">Difference</th>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="blue">0.03</span></td>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="blue">0.16</span></td>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="blue">-0.03</span></td>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="blue">-0.10</span></td>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="blue">0.04</span></td>
+						</tr>
+						<tr>
+							<th class="borders" style="text-align:left; font-size:20px;"><span class="red"><em>p</em>-value <font size="4.5;">(Wilcoxon signed-rank test)</font></span></th>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="red"><b>0.21</b></span></td>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="red"><b>0.28</b></span></td>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="red"><b>0.42</b></span></td>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="red"><b>0.09</b></span></td>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="red"><b>0.66</b></span></td>
+						</tr>
+						<tr style="border-top:solid; border-top-width:2px;">
+							<th class="borders" style="text-align:left; font-size:20px;">Average group of 3 peers</th>
+							<td class="borders" style="text-align:center; font-size:22px;">0.34</td>
+							<td class="borders" style="text-align:center; font-size:22px;">0.22</td>
+							<td class="borders" style="text-align:center; font-size:22px;">0.31</td>
+							<td class="borders" style="text-align:center; font-size:22px;">0.34</td>
+							<td class="borders" style="text-align:center; font-size:22px;">0.44</td>
+						</tr>
+					</table></small>
+				</section>
+
+				<section data-transition="none">
+					<h3>Model experts and peers: <span class="red">no significant difference</span>, but there seems to be a <span class="blue">wisdom of the crowd</span> effect</h3>
+					<small><table class="borders"  style="table-layout: fixed; width: 100%;">
+						<!-- <caption>Disagreement scores: <br /> </caption> -->
+						<tr>
+							<th class="borders" style="text-align:center; width:30%;"></th>
+							<th class="borders" style="text-align:center; width:12%; font-size:20px;">aspect</th>
+							<th class="borders" style="text-align:center; width:12%; font-size:20px;">positivity/ negativity</th>
+							<th class="borders" style="text-align:center; width:12%; font-size:20px;">action needed</th>
+							<th class="borders" style="text-align:center; width:12%; font-size:20px;">impact</th>
+							<th class="borders" style="text-align:center; width:12%; font-size:20px;">action taken</th>
+						</tr>
+						<tr>
+							<th class="borders" style="text-align:left; font-size:20px;">Model experts</th>
+							<td class="borders" style="text-align:center; font-size:22px;">0.32</td>
+							<td class="borders" style="text-align:center; font-size:22px;">0.32</td>
+							<td class="borders" style="text-align:center; font-size:22px;">0.26</td>
+							<td class="borders" style="text-align:center; font-size:22px;">0.21</td>
+							<td class="borders" style="text-align:center; font-size:22px;">0.38</td>
+						</tr>
+						<tr>
+							<th class="borders" style="text-align:left; font-size:20px;">Peers</th>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="blue">0.29</span></td>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="blue">0.16</span></td>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="blue">0.29</span></td>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="blue">0.31</span></td>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="blue">0.34</span></td>
+						</tr>
+						<tr style="border-top:solid; border-top-width:2px;">
+							<th class="borders" style="text-align:left; font-size:20px;">Difference</th>
+							<td class="borders" style="text-align:center; font-size:22px;">0.03</td>
+							<td class="borders" style="text-align:center; font-size:22px;">0.16</td>
+							<td class="borders" style="text-align:center; font-size:22px;">-0.03</td>
+							<td class="borders" style="text-align:center; font-size:22px;">-0.10</td>
+							<td class="borders" style="text-align:center; font-size:22px;">0.04</td>
+						</tr>
+						<tr>
+							<th class="borders" style="text-align:left; font-size:20px;"><em>p</em>-value <font size="4.5;">(Wilcoxon signed-rank test)</font></th>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="red">0.21</span></td>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="red">0.28</span></td>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="red">0.42</span></td>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="red">0.09</span></td>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="red">0.66</span></td>
+						</tr>
+						<tr style="border-top:solid; border-top-width:2px;">
+							<th class="borders" style="text-align:left; font-size:20px;">Average group of 3 peers</th>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="blue">0.34</span></td>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="blue">0.22</span></td>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="blue">0.31</span></td>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="blue">0.34</span></td>
+							<td class="borders" style="text-align:center; font-size:22px;"><span class="blue">0.44</span></td>
+						</tr>
+					</table></small>
 				</section>
 
 				<section data-transition="none">

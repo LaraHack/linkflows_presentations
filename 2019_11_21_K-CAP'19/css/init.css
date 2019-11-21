@@ -60,9 +60,12 @@ td.selected
 {
   color:red;
   font-weight:bold;
-  padding: 100px;
 }
 img.borders {
    padding:1px;
    border:1px solid #021a40;
+}
+span.transparent {
+    color: #000; /* Fallback for older browsers */
+    color: rgba(0, 0, 0, 0);
 }
