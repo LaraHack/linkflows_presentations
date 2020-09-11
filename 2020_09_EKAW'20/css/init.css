@@ -60,6 +60,11 @@ th.green, td.green
   /* background-color: #CCE5FF; */
   background-color: #E5FFCC;
 }
+th.orange, td.orange
+{
+  /* background-color: #CCE5FF; */
+  background-color: #ffdfbf;
+}
 td.selected
 {
   color:red;
