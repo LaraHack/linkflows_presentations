@@ -1,6 +1,6 @@
 body {
 background: #fff;
-background-color: #fff; } 
+background-color: #fff; }
 
 .reveal h1 {
   text-transform: none;
@@ -55,7 +55,7 @@ table.borders, th.borders, td.borders
   text-align: center;
   vertical-align: middle;
 }
-th.borders
+th.green, td.green
 {
   /* background-color: #CCE5FF; */
   background-color: #E5FFCC;
