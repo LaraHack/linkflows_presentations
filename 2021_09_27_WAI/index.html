@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>WAI presentation, September 2021</title>
+
+		<!-- Open all links in a new tab or window -->
+		<base target="_blank">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Customize css -->
+		<link rel="stylesheet" href="css/init.css">
+
+		<!-- Printing and PDF exports -->
+		<script src="js/print-pdf.js"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3 style="letter-spacing: 0.01em;">Expressing High-Level Scientific Claims with Formal Semantics</h3></br>
+					<small>
+						<p>Cristina-Iulia Bucur<small><sup>1</sup></small> , Tobias Kuhn<small><sup>2</sup></small> , Davide Ceolin <small><sup>3</sup></small> Jacco van Ossenbruggen<small><sup>4</sup></small></br>
+						<small><sup>1, 2, 4</sup></small> Vrije Universiteit Amsterdam, <small><sup>3</sup></small> Centrum Wiskunde & Informatica (CWI) </br></p>
+						<p></br>WAI September 2021</p>
+						<p style="font-size: 24px;"><em>These slides: <a href="https://raw.githack.com/LaraHack/linkflows_presentations/master/2021_09_27_WAI/index.html"><b>http://bit.do/WAI-Sept-2020</b></a>
+						</em></p>
+					</small>
+				</section>
+
+				<section>
+					<h3><span class="blue">Scientific communication</span>: accessible to <span class="red">human readers</span></h3>
+					<ul style="font-size: 30px;">
+						<li><span class="blue">Long texts in natural language</span> in formats like PDF</li>
+						<li>Digitized, but <span class="red">not machine-interpretable</span></li>
+						<li><span class="blue">Semantic technologies</span>: mostly to <span class="red">annotate</span> and <span class="red">describe</span> on a metalevel scientific knowledge
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3><span class="blue">Scientific knowledge</span>: making it accessible for <span class="red">automated systems</span></h3>
+					<ul style="font-size: 30px;">
+						<li>Full <span class="blue">semantic representation</span> of natural language: still too <span class="red">complex</span></li>
+						<li>Mature <span class="blue">semantic technologies</span>: RDF, OWL and other formalisms <span class="red">based on formal logic</span></li>
+						<li>Extract simple <span class="blue">RDF structures from content</span>: needs <span class="red">manual curation</span></li>
+						<li>Represent <span class="blue">scientific findings in formal logic</span>: <span class="red">challenging for experts</span>
+							<ul class="fragment" data-fragment-index="1">
+								<li><b><span class="red">no general scheme or procedure!</span></b></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Express the content of scientific claims in formal logic</h3>
+					<ul style="font-size: 30px;">
+						<!-- <li>Expressing the content of high-level scientific claims using formal semantics</li> -->
+						<!-- <li>The "super-pattern": a semantic template expressed in RDF</li> -->
+						<li>The <span class="red">"super-pattern"</span>: a general template of a logical statement that can be instantiated to represent scientific claims in formal logic</li>
+					</ul>
+					<img class="plain stretch" style="height:70%"src="img/to_replace_1.png"/>
+				</section>
+
+				<section>
+					<h3>How can we represent high-level claims?</h3>
+					<img class="plain stretch" style="height:70%; border: 2px solid #555;"src="img/SuperPattern_ontology.png"/>
+				</section>
+
+				<section>
+					<h3>Semantics of instantiated super-pattern</h3>
+					<img class="plain stretch" style="height:70%; border: 2px solid #555;"src="img/sp_expression_template.png"/>
+					where:
+					<ul>
+						<li>c, s, o = ....</li>
+						<img class="plain stretch" style="height:20%;"src="img/sp_qualifiers.png"/>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Super-pattern interpretation</h3>
+					<img class="plain stretch" style="height:70%;"src="img/to_replace_2.png"/>
+				</section>
+
+				<!-- <section data-transition="none">
+					<small><table>
+						<tr>
+							<td><img class="plain stretch" style="height:70%"src="img/Article_View.png"/>
+							<td><img class="plain stretch" style="height:70%"src="img/Reviews_Bulk.png"/>
+							</td>
+						</tr>
+					</table></small>
+				</section> -->
+
+				<section data-transition="none">
+					<h3>Research questions</h3>
+					<ol style="font-size: 34px;">
+					 <li>To what <span class="blue">extent</span> can our <span class="red">super-pattern</span> be used to <span class="red">formalize the main claims</span> of scientific articles from <span class="blue">different disciplines</span>?
+					 </li>
+					 <li class="fragment" data-fragment-index="1">How <span class="blue">reliably</span> can the <span class="red">super-pattern be applied</span> to formalize existing claims by knowledge representation <span class="blue">experts</span>?
+					 </li>
+					</ol>
+				</section>
+
+				<section data-transition="none">
+					<h3>Formalize main claims from different disciplines</h3>
+					<ul style="font-size: 34px;">
+					 <li>Dataset A (50 claims):
+						 <ol>
+							 <li>select articles: random from Semantic Scholar, in English, published 2000+, research article with abstract</li>
+							 <li>identify main claim: choose most high-level one, rephrase to an AIDA sentence</li>
+							 <li>apply super-pattern: identify main classes, relation and qualifier from SP ontology</li>
+							 <li>find identifiers in existing ontologies: Wikidata, BioOntology and LOV</li>
+						 </ol>
+					 </li>
+					 <li>Dataset B (25 claims): used for evaluation
+					 </li>
+				 </ul>
+				</section>
+
+				<section>
+					<h3>(extend this)</h3>
+					<img class="plain stretch" style="height:70%;"src="img/to_replace_3.png"/>
+				</section>
+
+				<section data-transition="none">
+					<h3>Vocabulary usage and descriptive analysis</h3>
+					<img class="plain stretch" style="height:70%;"src="img/to_replace_4.png"/>
+				</section>
+
+				<section data-transition="none">
+					<h3>Reliability of super-pattern: formalization study</h3>
+					<ul style="font-size: 34px;">
+						<li>Knowledge representation experts independently apply the super-pattern</li>
+						<ul style="font-size: 30px;">
+						<li>Stage 1: intro session, about the super-pattern, examples of formalizations from Dataset A, apply super-pattern on Dataset B (25 claims).</li>
+						<li>Stage 2: independently inspect and review all formalizations from Stage 1 (100 formalizations), vote on the best formalization for a claim and for formalizations that had mistakes.</li>
+						<li>Stage 3: discussion among participants of the choices in Stage 2 with the possibility to update decisions.</li>
+					</ul>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h3>Results formalization study: levels of agreement</h3>
+					<img class="plain stretch" style="height:70%;"src="img/to_replace_5.png"/>
+				</section>
+
+				<section data-transition="none">
+					<h3>Formalization study: agreement "convergence"</h3>
+					<img class="plain stretch" style="height:70%;"src="img/voting_heatmap.png"/>
+				</section>
+
+				<section data-transition="none">
+					<h3>Conclusions</h3>
+					<ul style="font-size: 30px;">
+						<li>The super-pattern can be used to formalize the main claims of scientific articles from different disciplines (RQ1)</li>
+						<li class="fragment" data-fragment-index="1">The super-pattern can be applied in a reliable manner to formalize existing claims by knowledge representation experts (RQ2)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Discussion</h3>
+					<ul style="font-size: 30px;">
+						<li>Semantic technologies like RDF: a framework to represent the content of scientific claims with formal semantics is possible</li>
+						<li>The super-pattern: a cross-disciplinary approach that works</li>
+						<li>Solved: formally expressing the meaning of claims, even if most of the classes used are not top-level ones</li>
+						<li>Interesting to see how regular users would perform</li>
+						<li>Super-pattern in practice: Formalization Papers</li>
+						<li>The extent to which reasoning can be applied</li>
+						<li>Possible applications: (partial) reasoning, answering questions, finding contradicting claims, etc.</li>
+					</ul>
+				</section>
+
+				<section>
+					<img class="plain" style="width: 40%" src="img/Questions.png"/>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="init.js"></script>
+	</body>
+</html>

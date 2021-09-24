@@ -1,0 +1,80 @@
+body {
+background: #fff;
+background-color: #fff; }
+
+.reveal h1 {
+  text-transform: none;
+}
+
+.reveal h2 {
+  text-transform: none;
+}
+
+.reveal h3 {
+  text-transform: none;
+}
+
+.reveal h4 {
+  text-transform: none;
+}
+
+.reveal h5 {
+  text-transform: none;
+}
+
+.reveal h6 {
+  text-transform: none;
+}
+
+.blur {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+span.red {
+  color: #ff6a6a;
+}
+span.blue {
+  color: #1e90ff;
+}
+li.shift{
+    margin-left: 50px;
+}
+li.space_after {
+  margin-bottom: 25px;
+}
+li.space_after_small {
+  margin-bottom: 5px;
+}
+quote.left {
+  text-align: left;
+}
+table.borders, th.borders, td.borders
+{
+  /* border-right: thin solid #A9A9A9;
+  border-left: thin solid #A9A9A9; */
+  text-align: center;
+  vertical-align: middle;
+}
+th.green, td.green
+{
+  /* background-color: #CCE5FF; */
+  background-color: #E5FFCC;
+}
+th.orange, td.orange
+{
+  /* background-color: #CCE5FF; */
+  background-color: #ffdfbf;
+}
+td.selected
+{
+  color:red;
+  font-weight:bold;
+}
+img.borders {
+   padding:1px;
+   border:1px solid #021a40;
+}
+span.transparent {
+    color: #000; /* Fallback for older browsers */
+    color: rgba(0, 0, 0, 0);
+}
