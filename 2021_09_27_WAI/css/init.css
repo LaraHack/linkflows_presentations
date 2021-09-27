@@ -48,6 +48,13 @@ li.space_after_small {
 quote.left {
   text-align: left;
 }
+table {
+  border-collapse: collapse;
+}
+table, tr, td{
+    border: none;
+    padding: 0;
+}
 table.borders, th.borders, td.borders
 {
   /* border-right: thin solid #A9A9A9;
