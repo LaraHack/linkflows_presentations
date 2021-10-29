@@ -43,10 +43,10 @@
 					<img class="plain stretch" style="height:70%"src="img/obesity_example.png"/>
 				</section>
 
-				<section>
+				<!-- <section>
 					<h3>How can we <span class="red">represent</span> high-level claims? Use <a href="https://larahack.github.io/linkflows_superpattern/doc/sp/index-en.html">ontology</a>:</h3>
 					<a href="https://larahack.github.io/linkflows_superpattern/doc/sp/index-en.html"><img class="plain stretch" style="height:50%; border: 2px solid #555;" alt="SuperPattern ontology" src="img/SuperPattern_ontology.png"/></a>
-				</section>
+				</section> -->
 
 				<section>
 					<h3>Super-pattern interpretation</h3>
@@ -56,10 +56,10 @@
 				<section>
 					<h3><span class="blue">Semantics</span> of instantiated <span class="red">super-pattern</span></h3>
 					<table style="border:1px solid green;margin-bottom: 30px;"><tr><td class="green">
-						P( m(&exist;z(o(z)&xwedge;i(z,x)&xwedge;r(y,z)) | s(y)&xwedge;c(x)&xwedge;i(y,x) ) &leg; q
+						P( m(&exist;z(o(z)&and;i(z,x)&and;r(y,z)) | s(y)&and;c(x)&and;i(y,x) ) &leg; q
 					</td></tr></table>
 					<ul style="font-size:26px;">
-						<li><b><i>x, y</i></b> - free variables; <b><i>z</i></b> - bound variable</li>
+						<li><b><i>x, y, z</i></b> - variables</li>
 						<li><b><i>c</i></b> - context, <b><i>s</i></b> - subject, <b><i>o</i></b> - object classes, map to unary predicates</li>
 						<li><b><i>i</i></b> - <i>"is in the context of"</i>, maps instances of <b><i>s</i></b> and <b><i>o</i></b> to <b><i>c</i></b></li>
 						<li><b><i>r</i></b> - relation, mapped to a binary predicate, from fixed list</li>
@@ -70,217 +70,7 @@
 					</ul>
 				</section>
 
-				<section data-transition="none">
-					<h3><span class="blue">Descriptive analysis</span>: used <span class="red">qualifiers</span></h3>
-					<small><table>
-						<tr>
-							<th class="green" style="border-right: 2px solid #555;">qualifier</th>
-							<th class="green">sometimes</th>
-							<th class="green">frequently</td>
-							<th class="green">mostly</td>
-							<th class="green">generally</td>
-							<th class="green">always</td>
-						</tr>
-						<tr>
-							<td style="border-right: 2px solid #555;">positive</td>
-							<td style="text-align:center;">4</td>
-							<td style="text-align:center;">3</td>
-							<td style="text-align:center;">3</td>
-							<td style="text-align:center;">29</td>
-							<td style="text-align:center;">4</td>
-						</tr>
-						<tr>
-							<td style="border-right: 2px solid #555;">negative</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">1</td>
-							<td style="text-align:center;">5</td>
-							<td style="text-align:center;">-</td>
-						</tr>
-						<tr>
-							<td style="border-right: 2px solid #555;">can positive</td>
-							<td style="text-align:center;">1</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">17</td>
-							<td style="text-align:center;">1</td>
-						</tr>
-						<tr>
-							<td style="border-right: 2px solid #555;">can negative</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">-</td>
-						</tr>
-					</table></small>
-				 <span class="transparent">
-					<ul style="font-size: 30px;"> </br>
-						<li>most used are "generally": 39% and "can generally": 23%</li>
-						<li>positive qualifiers: 57% and modal positive qualifiers: 25%</li>
-						<li>negative qualifiers: 6% and modal negative qualifiers: 0%</li>
-					<ul>
-					</span>
-				</section>
-
-				<section data-transition="none">
-					<h3><span class="blue">Descriptive analysis</span>: used <span class="red">qualifiers</span></h3>
-					<small><table>
-						<tr>
-							<th class="green" style="border-right: 2px solid #555;">qualifier</th>
-							<th class="green">sometimes</th>
-							<th class="green">frequently</td>
-							<th class="green">mostly</td>
-							<th class="green">generally</td>
-							<th class="green">always</td>
-						</tr>
-						<tr>
-							<td style="border-right: 2px solid #555;">positive</td>
-							<td style="text-align:center;">4</td>
-							<td style="text-align:center;">3</td>
-							<td style="text-align:center;">3</td>
-							<td style="text-align:center;font-weight:bold;color:#ff6a6a;">29</td>
-							<td style="text-align:center;">4</td>
-						</tr>
-						<tr>
-							<td style="border-right: 2px solid #555;">negative</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">1</td>
-							<td style="text-align:center;">5</td>
-							<td style="text-align:center;">-</td>
-						</tr>
-						<tr>
-							<td style="border-right: 2px solid #555;">can positive</td>
-							<td style="text-align:center;">1</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;font-weight:bold;color:#ff6a6a;">17</td>
-							<td style="text-align:center;">1</td>
-						</tr>
-						<tr>
-							<td style="border-right: 2px solid #555;">can negative</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">-</td>
-						</tr>
-					</table></small>
-					<ul style="font-size: 30px;"></br>
-						<li>most used are <i>"generally"</i> (<b style="color:#ff6a6a;">39%</b>) and <i>"can generally"</i> (<b style="color:#ff6a6a;">23%</b>)</li>
-						<span class="transparent">
-							<li>positive qualifiers: 57% and modal positive qualifiers: 25%</li>
-							<li>negative qualifiers: 6% and modal negative qualifiers: 0%</li>
-						</span>
-					<ul>
-				</section>
-
-				<section data-transition="none">
-					<h3><span class="blue">Descriptive analysis</span>: used <span class="red">qualifiers</span></h3>
-					<small><table>
-						<tr>
-							<th class="green" style="border-right: 2px solid #555;">qualifier</th>
-							<th class="green">sometimes</th>
-							<th class="green">frequently</td>
-							<th class="green">mostly</td>
-							<th class="green">generally</td>
-							<th class="green">always</td>
-						</tr>
-						<tr>
-							<td style="border-right: 2px solid #555;font-weight:bold;color:#ff6a6a;">positive</td>
-							<td style="text-align:center;font-weight:bold;color:#ff6a6a;">4</td>
-							<td style="text-align:center;font-weight:bold;color:#ff6a6a;">3</td>
-							<td style="text-align:center;font-weight:bold;color:#ff6a6a;">3</td>
-							<td style="text-align:center;font-weight:bold;color:#ff6a6a;">29</td>
-							<td style="text-align:center;font-weight:bold;color:#ff6a6a;">4</td>
-						</tr>
-						<tr>
-							<td style="border-right: 2px solid #555;">negative</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">1</td>
-							<td style="text-align:center;">5</td>
-							<td style="text-align:center;">-</td>
-						</tr>
-						<tr>
-							<td style="border-right: 2px solid #555;font-weight:bold;color:#ff6a6a;">can positive</td>
-							<td style="text-align:center;font-weight:bold;color:#ff6a6a;">1</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;font-weight:bold;color:#ff6a6a;">17</td>
-							<td style="text-align:center;font-weight:bold;color:#ff6a6a;">1</td>
-						</tr>
-						<tr>
-							<td style="border-right: 2px solid #555;">can negative</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">-</td>
-						</tr>
-					</table></small>
-					<ul style="font-size: 30px;"></br>
-						<li>most used are <i>"generally"</i> (39%) and <i>"can generally"</i> (23%)</li>
-						<li>positive qualifiers: <b style="color:#ff6a6a;">57%</b> and modal positive qualifiers: <b style="color:#ff6a6a;">25%</b></li>
-						<span class="transparent">
-							<li>negative qualifiers: 6% and modal negative qualifiers: 0%</li>
-						</span>
-					<ul>
-				</section>
-
-				<section data-transition="none">
-					<h3><span class="blue">Descriptive analysis</span>: used <span class="red">qualifiers</span></h3>
-					<small><table>
-						<tr>
-							<th class="green" style="border-right: 2px solid #555;">qualifier</th>
-							<th class="green">sometimes</th>
-							<th class="green">frequently</td>
-							<th class="green">mostly</td>
-							<th class="green">generally</td>
-							<th class="green">always</td>
-						</tr>
-						<tr>
-							<td style="border-right: 2px solid #555;">positive</td>
-							<td style="text-align:center;">4</td>
-							<td style="text-align:center;">3</td>
-							<td style="text-align:center;">3</td>
-							<td style="text-align:center;">29</td>
-							<td style="text-align:center;">4</td>
-						</tr>
-						<tr>
-							<td style="border-right: 2px solid #555;font-weight:bold;color:#ff6a6a">negative</td>
-							<td style="text-align:center;font-weight:bold;color:#ff6a6a">-</td>
-							<td style="text-align:center;font-weight:bold;color:#ff6a6a">-</td>
-							<td style="text-align:center;font-weight:bold;color:#ff6a6a">1</td>
-							<td style="text-align:center;font-weight:bold;color:#ff6a6a">5</td>
-							<td style="text-align:center;font-weight:bold;color:#ff6a6a">-</td>
-						</tr>
-						<tr>
-							<td style="border-right: 2px solid #555;">can positive</td>
-							<td style="text-align:center;">1</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">-</td>
-							<td style="text-align:center;">17</td>
-							<td style="text-align:center;">1</td>
-						</tr>
-						<tr>
-							<td style="border-right: 2px solid #555;font-weight:bold;color:#ff6a6a">can negative</td>
-							<td style="text-align:center;font-weight:bold;color:#ff6a6a">-</td>
-							<td style="text-align:center;font-weight:bold;color:#ff6a6a">-</td>
-							<td style="text-align:center;font-weight:bold;color:#ff6a6a">-</td>
-							<td style="text-align:center;font-weight:bold;color:#ff6a6a">-</td>
-							<td style="text-align:center;font-weight:bold;color:#ff6a6a">-</td>
-						</tr>
-					</table></small>
-					<ul style="font-size: 30px;"></br>
-						<li>most used are <i>"generally"</i> (39%) and <i>"can generally"</i> (23%)</li>
-						<li>positive qualifiers: 57% and modal positive qualifiers: 25%</li>
-						<li>negative qualifiers: <b style="color:#ff6a6a;">6%</b> and modal negative qualifiers: <b style="color:#ff6a6a;">0%</b></li>
-					<ul>
-				</section>
-
-				<section data-transition="none">
+				<!-- <section data-transition="none">
 					<h3><span class="blue">Descriptive analysis</span>: used <span class="red">qualifiers</span></h3>
 					<small><table>
 						<tr>
@@ -329,7 +119,7 @@
 						<li>positive qualifiers: 57% and modal positive qualifiers: 25%</li>
 						<li>negative qualifiers: 6% and modal negative qualifiers: 0%</li>
 					<ul>
-				</section>
+				</section> -->
 
 				<section data-transition="none">
 					<h3><span class="blue">Descriptive analysis</span>: used <span class="red">relations</span></h3>
@@ -487,7 +277,7 @@
 						<table>
 						<tr>
 							<td class="green">relation</td>
-							<td class="green" style="text-align:center;">%</td>
+							<td class="green" style="text-align:center;"></td>
 							<td class="green">total(group)</td>
 						</tr>
 						<tr style="border-top: 2px solid #555;border-bottom: 2px solid #555;">
@@ -561,7 +351,7 @@
 						<table>
 							<tr>
 								<td class="green">relation</td>
-								<td class="green" style="text-align:center;">%</td>
+								<td class="green" style="text-align:center;"></td>
 								<td class="green">total(group)</td>
 							</tr>
 							<tr style="border-top: 2px solid #555;border-bottom: 2px solid #555;">
@@ -631,10 +421,10 @@
 
 				<section data-transition="none">
 					<h3><span class="red">Reliability</span> of super-pattern: <span class="blue">formalization study</span></h3>
-					<ul style="font-size: 28px;">
-						<li><span class="red">Knowledge representation experts</span> independently apply the super-pattern</li>
-						<li>Results <span class="blue">formalization study</span>: <span class="red">levels of agreement</br></span>
-						</br><small><table>
+					<ul style="font-size: 30px;">
+						<li><span class="red">Knowledge representation experts</span> apply the super-pattern</li>
+						<li>Results <span class="blue">formalization study</span>: define <span class="red">levels of agreement</span>
+						<div style="padding-top: 10px;"><table style="font-size: 22px;">
 							<tr>
 								<td rowspan="2" style="vertical-align: middle;border-right: 1px solid #555;" class="green">Agreement level: before and after discussion</td>
 								<td colspan="2" style="text-align:center;border-right: 1px solid #555;" class="green">before</td>
@@ -674,14 +464,9 @@
 								<td style="text-align:center;">0</td>
 								<td style="text-align:center;border-right: 1px solid #555;">0.00</td>
 							</tr>
-						</table></small>
+						</table></div>
 					</li>
 					</ul>
-				</section>
-
-				<section data-transition="none">
-					<h3><span class="blue">Formalization study</span>: agreement <span class="red">"convergence"</span></h3>
-					<img class="plain" style="width:80%;" src="img/voting_heatmap.png"/>
 				</section>
 
 				<section>
@@ -704,7 +489,7 @@
 				<section>
 					<h3><span class="blue">Semantics</span> of instantiated <span class="red">super-pattern</span></h3>
 					<table style="border:1px solid green;margin-bottom: 30px;"><tr><td class="green">
-						P( <span class="fragment" data-fragment-index="3">m(<span class="fragment" data-fragment-index="4">&exist;z<span class="fragment" data-fragment-index="5">(o(z)<span class="fragment" data-fragment-index="6">&xwedge;i(z,x)&xwedge;</span></span>r(y,z))</span>)</span> | <span class="fragment" data-fragment-index="5">s(y)&xwedge;c(x)<span class="fragment" data-fragment-index="6">&xwedge;i(y,x)</span></span> ) &leg; q
+						P( <span class="fragment" data-fragment-index="3">m(<span class="fragment" data-fragment-index="4">&exist;z<span class="fragment" data-fragment-index="5">(o(z)<span class="fragment" data-fragment-index="6">&and;i(z,x)&and;</span></span>r(y,z))</span>)</span> | <span class="fragment" data-fragment-index="5">s(y)&and;c(x)<span class="fragment" data-fragment-index="6">&and;i(y,x)</span></span> ) &leg; q
 					</td></tr></table>
 					<ul style="font-size:26px;">
 						<li class="fragment" data-fragment-index="4"><b><i>x, y</i></b> - free variables; <b><i>z</i></b> - bound variable</li>
