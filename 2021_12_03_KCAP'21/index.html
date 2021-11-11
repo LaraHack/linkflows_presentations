@@ -73,12 +73,22 @@
 				</section>
 
 				<section>
+					<h3>Instantiated super-pattern</h3>
+					<img class="plain stretch" style="height:70%"src="img/obesity_example.png"/>
+				</section>
+
+				<section>
+					<h3>Super-pattern interpretation</h3>
+					<img class="plain stretch" style="height:70%;"src="img/superpattern_interpretation_example.png"/>
+				</section>
+
+				<section>
 					<h3><span class="blue">Semantics</span> of instantiated <span class="red">super-pattern</span></h3>
 					<table style="border:1px solid green;margin-bottom: 30px;"><tr><td class="green">
 						P( m(&exist;z(o(z)&and;i(z,x)&and;r(y,z)) | s(y)&and;c(x)&and;i(y,x) ) &leg; q
 					</td></tr></table>
 					<ul style="font-size:26px;">
-						<li><b><i>x, y</i></b> - free variables; <b><i>z</i></b> - bound variable</li>
+						<li><b><i>x, y, z</i></b> - variables</li>
 						<li><b><i>c</i></b> - context, <b><i>s</i></b> - subject, <b><i>o</i></b> - object classes, map to unary predicates</li>
 						<li><b><i>i</i></b> - <i>"is in the context of"</i>, maps instances of <b><i>s</i></b> and <b><i>o</i></b> to <b><i>c</i></b></li>
 						<li><b><i>r</i></b> - relation, mapped to a binary predicate, from fixed list</li>
@@ -95,7 +105,7 @@
 						P( <span class="fragment" data-fragment-index="3">m(<span class="fragment" data-fragment-index="4">&exist;z<span class="fragment" data-fragment-index="5">(o(z)<span class="fragment" data-fragment-index="6">&and;i(z,x)&and;</span></span>r(y,z))</span>)</span> | <span class="fragment" data-fragment-index="5">s(y)&and;c(x)<span class="fragment" data-fragment-index="6">&and;i(y,x)</span></span> ) &leg; q
 					</td></tr></table>
 					<ul style="font-size:26px;">
-						<li class="fragment" data-fragment-index="4"><b><i>x, y</i></b> - free variables; <b><i>z</i></b> - bound variable</li>
+						<li class="fragment" data-fragment-index="4"><b><i>x, y, z</i></b> - variables</li>
 						<li class="fragment" data-fragment-index="5"><b><i>c</i></b> - context, <b><i>s</i></b> - subject, <b><i>o</i></b> - object classes, map to unary predicates</li>
 						<li class="fragment" data-fragment-index="6"><b><i>i</i></b> - <i>"is in the context of"</i>, maps instances of <b><i>s</i></b> and <b><i>o</i></b> to <b><i>c</i></b></li>
 						<li class="fragment" data-fragment-index="4"><b><i>r</i></b> - relation, mapped to a binary predicate, from fixed list</li>
@@ -187,16 +197,6 @@
 		</tr></table></small>
 				</section>
 
-				<section>
-					<h3>Instantiated super-pattern</h3>
-					<img class="plain stretch" style="height:70%"src="img/obesity_example.png"/>
-				</section>
-
-				<section>
-					<h3>Super-pattern interpretation</h3>
-					<img class="plain stretch" style="height:70%;"src="img/superpattern_interpretation_example.png"/>
-				</section>
-
 				<section data-transition="none">
 					<h3>Research questions</h3>
 					<ul style="font-size: 32px;">
@@ -210,10 +210,12 @@
 				<section data-transition="none">
 					<h3><span class="blue">Formalize</span> main claims from <span class="red">different disciplines</span></h3>
 					<ul style="font-size: 34px;">
-					 <li><span class="red"><b>Dataset A</span> (50 claims):</b>
+					 <li style="margin-bottom: 5px;"><span class="red"><b>Dataset A</span> (50 claims):</b>
 						 <ol style="font-size: 30px;">
 							 <li><span class="blue"><i>Select articles</i></span>: random from <a href="https://www.semanticscholar.org/">Semantic Scholar</a>, in English, published 2000+, research article with abstract</li>
-							 <li><span class="blue"><i>Identify main claim</i></span>: choose most high-level one, rephrase to an <a href="https://github.com/tkuhn/aida">AIDA sentence</a></li>
+							 <li><span class="blue"><i>Identify main claim</i></span>: choose most high-level one, rephrase if needed
+								 <!-- to an <a href="https://github.com/tkuhn/aida">AIDA sentence</a> -->
+							 </li>
 							 <li><span class="blue"><i>Apply super-pattern</i></span>: identify main classes, relation and qualifier from <a href="https://larahack.github.io/linkflows_superpattern/doc/sp/index-en.html">SuperPattern ontology</a></li>
 							 <li><span class="blue"><i>Find identifiers in existing ontologies</i></span>: <a href="https://www.wikidata.org/">Wikidata</a>, <a href="https://bioportal.bioontology.org/">BioOntology</a> and <a href="https://lov.linkeddata.es/">LOV</a></li>
 						 </ol>
@@ -233,7 +235,7 @@
 					</ul>
 				</section>
 
-				<section data-transition="none">
+				<!-- <section data-transition="none">
 					<h3><span class="blue">Vocabulary</span> usage: <span class="fragment" data-fragment-index="1">too <span class="red">few top-level classes</span></span></h3>
 					<small><table>
 						<tr>
@@ -279,7 +281,7 @@
 							<td style="color:#ff6a6a;">14.06%</td>
 						</tr>
 					</table></small>
-				</section>
+				</section> -->
 
 				<section data-transition="none">
 					<h3><span class="blue">Descriptive analysis</span>: used <span class="red">qualifiers</span></h3>
@@ -1032,10 +1034,10 @@
 					</table></small>
 				</section>
 
-				<section data-transition="none">
+				<!-- <section data-transition="none">
 					<h3><span class="blue">Formalization study</span>: agreement <span class="red">"convergence"</span></h3>
 					<img class="plain" style="width:80%;" src="img/voting_heatmap.png"/>
-				</section>
+				</section> -->
 
 				<section data-transition="none">
 					<h3>Conclusions</h3>
