@@ -37,26 +37,46 @@
 
 				<section>
 					<h3><span class="blue">Scientific communication</span>: accessible to <span class="red">human readers</span></h3>
+					<img class="plain stretch" style="height:70%;"src="img/too_much_to_read.jpg"/>
 					<ul style="font-size: 30px;">
-						<li><span class="blue">Long texts in natural language</span> in formats like PDF</li>
-						<li>Digitized, but <span class="red">not machine-interpretable</span></li>
-						<li><span class="blue">Semantic technologies</span>: mostly to <span class="red">annotate</span> and <span class="red">describe</span> on a metalevel scientific knowledge
+						<!-- <li><span class="blue">Long texts in natural language</span> in formats like PDF</li>
+						<li>Digitized, but <span class="red">not machine-interpretable</span></li> -->
+						<li class="fragment" data-fragment-index="1"><span class="blue">Semantic technologies</span>: mostly to <span class="red">annotate</span> and <span class="red">describe</span> on a metalevel scientific knowledge
 						</li>
 					</ul>
 				</section>
 
 				<section>
-					<h3><span class="blue">Scientific knowledge</span>: making it accessible for <span class="red">automated systems</span></h3>
-					<ul style="font-size: 30px;">
-						<li>Full <span class="blue">semantic representation</span> of natural language: still too <span class="red">complex</span></li>
-						<li>Mature <span class="blue">semantic technologies</span>: RDF, OWL and other formalisms <span class="red">based on formal logic</span></li>
-						<li>Extract simple <span class="blue">RDF structures from content</span>: needs <span class="red">manual curation</span></li>
-						<li>Represent <span class="blue">scientific findings in formal logic</span>: <span class="red">challenging for experts</span>
-							<!-- <ul class="fragment" data-fragment-index="1">
-								<li><b><span class="red">no general scheme or procedure!</span></b></li>
-							</ul> -->
-						</li>
-					</ul>
+					<table>
+						<!-- <tr style="text-align: center;">
+							<td colspan="2" style="text-align: center; border-bottom-style: none;"><h3><span class="blue">Scientific knowledge</span>: making it accessible for <span class="red">automated systems</span></h3>
+							</td>
+						</tr> -->
+						<tr>
+							<td style="vertical-align: text-top;">
+								<h3><span class="blue">Scientific knowledge</span>: making it accessible for <span class="red">automated systems</span></h3>
+								<ul style="font-size: 30px;">
+									<li>Mature <span class="blue">semantic technologies</span> exist</li>
+									<li>Full semantic representation of natural language: still too <span class="red">complex</span></li>
+									<li>Extracting structured content</span>: needs <span class="red">manual curation</span></li>
+									<li>Representing findings in formal logic: <span class="red">challenging for experts</span>
+									<!-- <li>Full <span class="blue">semantic representation</span> of natural language: still too <span class="red">complex</span></li>
+									<li>Mature <span class="blue">semantic technologies</span>: RDF, OWL and other formalisms <span class="red">based on formal logic</span></li>
+									<li>Extract simple <span class="blue">RDF structures from content</span>: needs <span class="red">manual curation</span></li>
+									<li>Represent <span class="blue">scientific findings in formal logic</span>: <span class="red">challenging for experts</span> -->
+										<!-- <ul class="fragment" data-fragment-index="1">
+											<li><b><span class="red">no general scheme or procedure!</span></b></li>
+										</ul> -->
+									</li>
+								</ul>
+							</td>
+							<td style="text-align: center; vertical-align: top; padding-top: 0px; padding-left: 0px;">
+								<!-- <img class="plain stretch" style="height:70%" src="img/robot_reading.png"/> -->
+								<!-- <img class="plain stretch" style="width:50%" src="img/robot_reading.png"/> -->
+								<img class="plain stretch" style="width:300px; height: 425px;" src="img/robot_reading.png"/>
+							</td>
+						</tr>
+				</table>
 				</section>
 
 				<section data-transition="none">
@@ -98,13 +118,13 @@
 					<ul style="font-size:26px;">
 						<!-- <li><b><i>x, y, z</i></b> - class instances of c, s and o respectively</li>
 						<li><b><i>c</i></b> - "Person", <b><i>s</i></b> - "Obesity together with metabolic abnormality", <b><i>o</i></b> - "Knee osteoarthritis"</li> -->
-						<li><b><i>c</i></b> - "Person", <b><i>x</i></b>  - class instances of <b><i>c</i></b></li>
-						<li><b><i>s</i></b> - "Obesity together with metabolic abnormality", <b><i>y</i></b>  - class instances of <b><i>s</i></b></li>
-						<li><b><i>o</i></b> - "Knee osteoarthritis", <b><i>z</i></b>  - class instances of <b><i>o</i></b></li>
+						<li><b><i>c</i></b> - <i>"Person"</i>, <b><i>x</i></b>  - class instances of <b><i>c</i></b></li>
+						<li><b><i>s</i></b> - <i>"Obesity together with metabolic abnormality"</i>, <b><i>y</i></b>  - class instances of <b><i>s</i></b></li>
+						<li><b><i>o</i></b> - <i>"Knee osteoarthritis"</i>, <b><i>z</i></b>  - class instances of <b><i>o</i></b></li>
 						<li><b><i>i</i></b> - <i>"is in the context of"</i>, maps instances of <b><i>s</i></b> and <b><i>o</i></b> to <b><i>c</i></b></li>
-						<li><b><i>r</i></b> - "co-occurs with"</li>
+						<li><b><i>r</i></b> - <i>"co-occurs with"</i></li>
 						<li><b><i>P(...|...)</i></b> - conditional probability function</li>
-						<li><b><i>&GreaterEqual; 0.1</i></b> - "frequently"</li>
+						<li><b><i>&GreaterEqual; 0.1</i></b> - <i>"frequently"</i></li>
 					</ul>
 				</section>
 
