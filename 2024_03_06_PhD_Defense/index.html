@@ -1,0 +1,399 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>PhD Defense presentation, March 2024</title>
+
+		<!-- Open all links in a new tab or window -->
+		<base target="_blank">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Customize css -->
+		<link rel="stylesheet" href="css/init.css">
+
+		<!-- Printing and PDF exports -->
+		<script src="js/print-pdf.js"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-transition="none">
+				<!-- <section data-background-image="img/coperta_cristina.jpg" data-background-opacity="0"
+				data-background-size="500px" background-position="bottom"> -->
+					<h3 style="letter-spacing: 0.01em; color:#78081C;">Linkflows: Towards Genuine Semantic</br>Publishing in Science</h3>
+					<small>
+						<p style="color:#78081C;">Cristina-Iulia Bucur</p>
+						<img class="plain stretch" style="width:50%;" src="img/image_bookmark_1.jpeg"/>
+						<!-- <p></br><i>PhD Defense, Vrije Universiteit Amsterdam, 6 March 2024</i></p> -->
+						<!-- <p style="font-size: 24px;"><em>These slides: <a href="https://raw.githack.com/LaraHack/linkflows_presentations/master/2021_12_03_KCAP'21/index.html"><b>http://bit.do/KCAP-2021-expressing-claims</b></a>
+						</em></p> -->
+					</small>
+				</section>
+
+				<section>
+					<h3 style="font-size: 50px;"><span class="blue">Goal</span>: Make scientific articles more </br><span class="red">machine-readable</span> and <span class="red">interpretable</span></h3>
+					<img class="plain stretch" style="height: fit-content;"src="img/coperta_cristina.jpg"/>
+				</section>
+
+				<section>
+					<h3><span class="blue">Scientific publishing</span>: still using the <span class="red">"paper" paradigm</span></h3>
+					<ol style="font-size: 30px;">
+						<!-- <li><b>RC1</b>: How to make reviewing less ambiguous and imprecise?</li>
+						<li><b>RC2</b>: How to support in practice editorial process using a transparent and accurate review model?</li>
+						<li><b>RC3</b>: How to represent scientific claims in a machine-readable way?</li> -->
+						<!-- in a machine-readable way -->
+						<!-- <li>scientific claims are buried in scientific text</li> -->
+						<!-- <li><b>RC4</b>: How to support in practice publishing of machine-readable claims?</li> -->
+						<!-- <li>Measure of quality: <span class="blue">reviewing</span> -->
+						</li>
+						<li>How to make <span class="red">reviewing</span> less <span class="blue">ambiguous</span> and <span class="blue">imprecise</span>?</li>
+						<li>How to support in practice <span class="red">editorial process</span> using a transparent and accurate <span class="blue">review model</span>?</li>
+						<!-- <li>Initial <span class="blue">paradigm of publishing</span>: <span class="red">the same</red>!</li> -->
+						<li>How to represent <span class="red">scientific claims</span> in a <span class="blue">machine-readable</span> way?</li>
+						<!-- in a machine-readable way -->
+						<!-- <li>scientific claims are buried in scientific text</li> -->
+						<li>How to support <span class="red">in practice publishing</span> of machine-readable <span class="blue">claims</span>?</li>
+						<!-- <li>Measure of quality: <span class="blue">reviewing</span> -->
+						</li>
+					</0l>
+				</section>
+
+				<!-- <section>
+					<h3>How to keep up?</h3>
+					<ul>
+						<li>It takes <span class="red">time</span> to stay up to date!
+							<ul>
+								<li><span class="blue">~20 hours/week</span> for epidemiologists (2004)</li>
+								<li><span class="blue">2000 papers/day</span> in PubMed (2018)</li>
+								<li><span class="blue">4-5%/year increase</span> in number of scientists</li>
+							</ul>
+						</li>
+					</ul>
+				</section> -->
+<!-- 
+				<section data-background-iframe="img/Reviews_Bulk.png" data-background-interactive style="background-position: center;">
+				</section> -->
+
+				<!-- <section data-background-iframe="img/Reviews_Bulk.png" data-background-interactive style="background-position: center; background-size: cover; "> -->
+					<!-- <section data-transition="none">
+						<h3><span class="blue">Reviewing</span> in the <span class="red">"paper" paradigm</span></h3>
+						<small><table>
+							<tr>
+								<td><img class="plain stretch" style="height:70%"src="img/Article_View.png"/>
+								<td><img class="plain stretch" style="height:70%"src="img/Reviews_Bulk.png"/>
+								</td>
+							</tr>
+						</table></small>
+					</section> -->
+
+					<section data-transition="none">
+						<h3><span class="blue">Reviewing</span> in the <span class="red">"paper" paradigm</span></h3>
+						<img class="plain stretch" style="height:300%" src="img/classic_article_reviews.svg"/>
+					</section>
+
+					<section data-transition="none">
+						<h3><span class="blue">Reviewing</span> in the <span class="red">"paper" paradigm</span></h3>
+						<img class="plain stretch" style="height:300%" src="img/1_classic_article_reviews.svg"/>
+					</section>
+
+					<!-- <section data-transition="none">
+						<h3><span class="blue">Reviewing</span> in the <span class="red">"paper" paradigm</span> (highlight)</h3>
+						<small><table>
+							<tr>
+								<td><img class="plain stretch" style="height:70%"src="img/Article_View.png"/>
+								<td><img class="plain stretch" style="height:70%"src="img/Reviews_Bulk.png"/>
+								</td>
+							</tr>
+						</table></small>
+					</section> -->
+
+					<section data-transition="none">
+						<h3>How to make <span class="red">reviewing</span> less <span class="blue">ambiguous</span> and <span class="blue">imprecise</span>?</h3>
+						<img class="plain stretch" style="height:300%" src="img/0_reviews_network_interaction.svg"/>
+					</section>
+
+					<section>
+					<h3 style="font-size: 50px;">Research Contribution 1: <span class="red">reviewing with semantic comments</span></h3>
+					<!-- <h5>Evaluation:</h5> -->
+					<ul style="font-size: 30px;">
+						<li>Evaluation:</li>
+						<ul style="font-size: 30px;">
+							<li>ground truth by <span class="blue">original reviewers</span> of the papers</li>
+							<li><span class="blue">user study</span> with reviewers and model experts</li>
+						</ul>
+						<li>Conclusions:</li>
+						<ul style="font-size: 30px;">
+							<li><span class="blue">model</span> can be <span class="blue">easily applied</span> by model experts and peers</li>
+							<li>model captures <span class="blue">unambiguously</span> the intentions of the reviewers</li>
+						</ul>
+					</ul>
+					</section>
+
+					<section data-transition="none">
+						<h3>How to support in practice <span class="red">editorial process</span> using a transparent and accurate <span class="blue">review model</span>?</h3>
+						<img class="plain stretch" style="height:300%" src="img/0_editor_network_interaction.svg"/>
+					</section>
+
+					<section data-transition="none">
+						<h3>How to support in practice <span class="red">editorial process</span> using a transparent and accurate <span class="blue">review model</span>?</h3>
+						<img class="plain stretch" style="height:300%" src="img/editor_network_interaction.svg"/>
+					</section>
+
+					<!-- <section data-transition="none">
+						<h3>A <span class="red"><u>genuine</u></span> <span class="blue">semantic publishing</span> model</h3>
+						<img class="plain stretch" style="height:300%" src="img/1_network_interaction.png"/>
+					</section> -->
+	
+					<!-- <section data-transition="none"
+						<h3>A model of the <span class="blue">processes</span> of <span class="red">fine-grained publishing</span></h3>
+						<h3>A <span class="red">genuine</span> <span class="blue">semantic publishing</span> model</h3>
+						<img class="plain stretch" style="height:300%" src="img/2_network_interaction.png"/>
+					</section> -->
+	
+					<!-- <section data-transition="none">
+						<h3>A <span class="red">genuine</span> <span class="blue">semantic publishing</span> model</h3>
+						<img class="plain stretch" style="height:300%" src="img/3_network_interaction.png"/>
+					</section> -->
+	
+					<!-- <section data-transition="none">
+						<h3>A <span class="red">genuine</span> <span class="blue">semantic publishing</span> model</h3>
+						<img class="plain stretch" style="height:300%" src="img/4_network_interaction.png"/>
+					</section> -->
+
+					<!-- <section data-transition="none">
+						<h3>A <span class="red">genuine</span> <span class="blue">semantic publishing</span> model</h3>
+						<img class="plain stretch" style="height:300%" src="img/5_network_interaction.png"/>
+					</section> -->
+
+					<!-- <section data-transition="none">
+						<h3>A <span class="red">genuine</span> <span class="blue">semantic publishing</span> model</h3>
+						<img class="plain stretch" style="height:300%" src="img/6_network_interaction.png"/>
+					</section> -->
+
+					<section>
+						<h3>Evaluated editor interface</h3>
+						<img class="plain stretch" style="height:70%"src="img/reviewer-oriented_view.png"/>
+					</section>
+
+					<!-- <section data-transition="none">
+						<h3>A model of the <span class="blue">processes</span> of <span class="red">fine-grained publishing</span></h3>
+						<img class="plain stretch" style="height:300%" src="img/editor_claim_publication_workflow.png"/>
+					</section> -->
+<!-- 
+					<section>
+						<h3>Publishing using nanopublications (add nanopubs)</h3>
+						<img class="plain stretch" style="height:70%"src="img/5_network_interaction.png"/>
+					</section> -->
+
+					<section>
+						<h3 style="font-size: 50px;">Research Contribution 2: <span class="red">interlinked publication elements schema</span></h3>
+						<!-- <h5>Evaluation:</h5> -->
+						<ul style="font-size: 30px;">
+							<li>Evaluation of the editor use case:</li>
+							<ul style="font-size: 30px;">
+								<li><span class="blue">compentency questions</span> assessment</li>
+								<li><span class="blue">user study</span> with two interfaces supporting <span class="blue">editors</span></li>
+							</ul>
+							<li>Conclusions:</li>
+							<ul style="font-size: 30px;">
+								<li>nanopublication-based model can <span class="blue">answer all competency questions</span></li>
+								<li>editor interfaces are <span class="blue">important</span> and <span class="blue">useful</span></li>
+							</ul>
+						</ul>
+						</section>
+
+					<!-- <section>
+						<h3>Evaluation of the editor use case</h3>
+						<ul style="font-size: 30px;">
+							<li>compentency questions assessment</li>
+							<li>user study with two interfaces supporting editors</li>
+						</ul>
+						<h4>Conclusions</h4>
+						<ul style="font-size: 30px;">
+							<li>nanopublication-based model can answer all competency questions</li>
+							<li>editor interfaces are important and useful</li>
+						</ul>
+						</section> -->
+
+				<section data-transition="none">
+					<h3>How to represent <span class="red">scientific claims</span> in a <span class="blue">machine-readable</span> way?</h3>
+					<img class="plain stretch" style="height:300%" src="img/editor_network_interaction.svg"/>
+				</section>
+
+				<section data-transition="none">
+					<h3>How to represent <span class="red">scientific claims</span> in a <span class="blue">machine-readable</span> way?</h3>
+					<img class="plain stretch" style="height:300%" src="img/5_network_interaction.png"/>
+				</section>
+
+				<section>
+					<h3>Formal representation of a scientific claim</h3>
+					<table style="border:1px solid black;margin-bottom: 30px;"><tr><td>
+						<b><i>P(</i></b> &exist;<i>z</i>(<b style="color: #6aa84f;">o(</b><i>z</i><b style="color: #6aa84f;">)</b>&and;<b style="color: #e69138;">i(</b><i>z</i><b style="color: #e69138;">,</b><i>x</i><b style="color: #e69138;">)</b>&and;<b style="color:#ff00ff;">r(</b><i>y</i><b style="color:#ff00ff;">,</b><i>z</i><b style="color:#ff00ff;">)</b>) <b>|</b> <b style="color: #980000;">s(</b><i>y</i><b style="color: #980000;">)</b>&and;<b style="color: #0000ff;">c(</b><i>x</i><b style="color: #0000ff;">)</b>&and;<b style="color: #e69138;">i(</b><i>y</i><b style="color: #e69138;">,</b><i>x</i><b style="color: #e69138;">)</b> <b><i>) &GreaterEqual; 0.1</i></b>
+					</td></tr></table>
+					<ul style="font-size:26px;">
+						<li><b><i>x, y, z</i></b> - class instances of c, s and o respectively</li>
+						<li><b><i>c</i></b> - "human", <b><i>s</i></b> - "STX1B mutation", <b><i>o</i></b> - "epilepsy"</li>
+						<li><b><i style="color: #0000ff;">c</i></b> - "<b><i style="color: #0000ff;">human</i></b>", <b><i>x</i></b>  - class instances of <b><i style="color: #0000ff;">c</i></b></li>
+						<li><b><i style="color: #980000;">s</i></b> - "<b><i style="color: #980000;">STX1B mutation</i></b>", <b><i>y</i></b>  - class instances of <b><i style="color: #980000;">s</i></b></li>
+						<li><b><i style="color: #6aa84f;">o</i></b> - "<b><i style="color: #6aa84f;">epilepsy</i></b>", <b><i>z</i></b>  - class instances of <b><i style="color: #6aa84f;">o</i></b></li>
+						<li><b><i style="color: #e69138;">i</i></b> - "<b><i style="color: #e69138;">is in the context of</i></b>", maps instances of <b><i style="color: #980000;">s</i></b> and <b><i style="color: #6aa84f;">o</i></b> to <b><i style="color: #0000ff;">c</i></b></li>
+						<li><b><i style="color:#ff00ff;">r</i></b> - "<b><i style="color:#ff00ff;">co-occurs with</i></b>"</li>
+						<li><b><i>P(...|...)</i></b> - conditional probability function</li>
+						<li><b><i>&GreaterEqual; 0.1</i></b> - "<b><i>frequently</i></b>"</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h3>Machine-readable view of a scientific claim</h3>
+					<img class="plain stretch" style="height:300%" src="img/Example_Nanopub.png"/>
+				</section>
+				
+				<section>
+					<h3>Human-readable view of a scientific claim</h3>
+					<p>In the context of all things of type <span style="color:#0000ff;">human</span>, things of type <span style="color:#980000;">STX1B mutation</span> <b>frequently</b> have a relation of type <span style="color:#ff00ff;">"co-occurs with"</span> to things of type <span style="color:#6aa84f;">epilepsy</span> that are in the same context (i.e. <span style="color:#0000ff;">human</span>).</p>
+				</section>
+
+
+				<section>
+					<h3 style="font-size: 50px;">Research Contribution 3: <span class="red">scientific claims with formal semantics</span></h3>
+					<!-- <h5>Evaluation:</h5> -->
+					<ul style="font-size: 30px;">
+						<li>Evaluation:</li>
+						<ul style="font-size: 30px;">
+							<li><span class="blue">formalization study</span> with three stages</li>
+						</ul>
+						<li>Conclusions:</li>
+						<ul style="font-size: 30px;">
+							<li>scientific knowledge can be expressed with <span class="blue">formal semantics from the start</span></li>
+							<li><span class="blue">scientific claims</span> from different fields <span class="blue">can be formalized</span> by different experts</li>
+						</ul>
+					</ul>
+					</section>
+
+					<!-- real papers, real authors, real reviewers and editors, real journal -->
+				<section data-transition="none">
+					<h3>How to support <span class="red">in practice publishing</span> of machine-readable <span class="blue">claims</span>?</h3>
+					<img class="plain stretch" style="height:300%" src="img/5_network_interaction.png"/>
+				</section>
+
+				<section data-transition="none">
+						<h3>A <span class="red">genuine</span> <span class="blue">semantic publishing</span> model</h3>
+						<img class="plain stretch" style="height:300%" src="img/6_network_interaction.png"/>
+				</section>
+
+				<section data-transition="none">
+					<h3>A <span class="red">genuine</span> <span class="blue">semantic publishing</span> model</h3>
+					<img class="plain stretch" style="height:300%" src="img/7_network_interaction.png"/>
+				</section>
+
+				<section data-transition="none">
+					<h3>A <span class="red">genuine</span> <span class="blue">semantic publishing</span> model</h3>
+					<img class="plain stretch" style="height:300%" src="img/editor_claim_publication_workflow.svg"/>
+				</section>
+
+				<section data-transition="none">
+					<h3>Machine-readable view</h3>
+					<img class="plain stretch" style="height:300%" src="img/machine_special_issue.png"/>
+				</section>
+
+				<section>
+					<h3>Human-readable view</h3>
+					<img class="plain stretch" style="height:70%"src="img/IOS_FP_interface.png"/>
+				</section>
+
+				<section>
+					<h3><span class="red">Special issue</span> with formalization papers</h3>
+					<img class="plain stretch" style="height:70%"src="img/np-graph.png"/>
+				</section>
+
+
+				<section>
+					<h3 style="font-size: 50px;">Research Contribution 4: <span class="red">field study with formalizations</span></h3>
+					<!-- <h5>Evaluation:</h5> -->
+					<ul style="font-size: 30px;">
+						<li>Evaluation:</li>
+						<ul style="font-size: 30px;">
+							<li><span class="blue">field study</span> with "formalization papers"</li>
+							<li>user feedback <span class="blue">questionnaire</span></li>
+						</ul>
+						<li>Conclusions:</li>
+						<ul style="font-size: 30px;">
+							<li><span class="blue">the entire publication process</span> can be represented in a <span class="blue">machine-interpretable</span> way</li>
+							<li>scientific publication can be made more <span class="blue">effective</span> and <span class="blue">efficient</span>  </li>
+						</ul>
+					</ul>
+					</section>
+
+				<!-- <section data-background-iframe="https://raw.githubusercontent.com/larahack/fpsi_analytics/main/np-graph.svg" data-background-interactive style="background-position: center; background-size: cover; ">
+				</section>
+
+				<section data-background-iframe="https://raw.githubusercontent.com/larahack/fpsi_analytics/main/np-graph.svg"
+				data-background-interactive>
+				</section> -->
+
+				<!-- <section data-transition="none">
+					<h3>Research contributions</h3>
+					<ul style="font-size: 32px;">
+						<li><b>RC1</b>: reviewing with <span class="red">semantic comments</span> using ontology</li>
+						<li><b>RC2</b>: <span class="red">unified scheme</span> for interlinked publication elements</li>
+						<li><b>RC3</b>: scientific claims with formal semantics using a <span class="red">semantic template</span></li>
+						<li><b>RC4</b>: field study formalizations with <span class="red">special journal issue</span></li>
+					</ul>
+				</section> -->
+
+				<section data-transition="none">
+					<h3>Conclusions</h3>
+					<ul style="font-size: 32px;">
+						<li>Models proposed can support the publishing practices</li>
+						<li>Users are able to use the <span class="red">novel tools</span> proposed with <span class="blue">ease</span></li>
+						<li><span class="red">Scientific publishing</span> can be brought closer to <span class="blue">automated systems</span></li>
+						<li>A <span class="red">new paradigm</span> of scientific communication <span class="blue">is possible</span></li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<!-- <section data-background-image="img/coperta_cristina.jpg" data-background-opacity="0"
+					data-background-size="500px" background-position="bottom"> -->
+						<h3 style="letter-spacing: 0.01em; color:#78081C;">Linkflows: Towards Genuine Semantic</br>Publishing in Science</h3>
+						<small>
+							<p style="color:#78081C;">Cristina-Iulia Bucur</p>
+							<img class="plain stretch" style="width:50%;" src="img/image_bookmark_1.jpeg"/>
+							<!-- <p></br><i>PhD Defense, Vrije Universiteit Amsterdam, 6 March 2024</i></p> -->
+							<!-- <p style="font-size: 24px;"><em>These slides: <a href="https://raw.githack.com/LaraHack/linkflows_presentations/master/2021_12_03_KCAP'21/index.html"><b>http://bit.do/KCAP-2021-expressing-claims</b></a>
+							</em></p> -->
+						</small>
+					</section>
+<!-- 
+				<section>
+					<h3>Discussion</h3>
+					<ul style="font-size: 30px;">
+						<li><span class="red">Content</span> of scientific claims can be represented with <span class="blue">formal semantics</span></li>
+						<li>We can now <span class="red">reason</span> with <span class="blue">scientific knowledge</span></li>
+						<li>The <span class="blue">super-pattern approach</span> seems to work <span class="red">across disciplines</span> </li>
+						<li>Solved: formally expressing the meaning of claims, even if most of the classes used are not top-level ones</li> -->
+						<!-- <li>Interesting to see how <span class="red">regular users</span> would <span class="blue">perform</span></li> -->
+						<!-- <li>Super-pattern in practice: Formalization Papers</li> -->
+						<!-- <li>The <span class="blue">extent</span> to which <span class="red">reasoning</span> can be applied</li>
+						<li><span class="red">Possible applications</span>: (partial) reasoning, answering questions, finding contradicting claims, etc.</li>
+					</ul>
+				</section> -->
+<!-- 
+				<section>
+					<img class="plain" style="width: 40%" src="img/questions.png"/>
+				</section> -->
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="init.js"></script>
+	</body>
+</html>
